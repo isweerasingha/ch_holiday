@@ -1,4 +1,4 @@
-import { Button, ColorSchemeScript, MantineProvider } from "@mantine/core";
+import { Button } from "@mantine/core";
 function Contact() {
   return (
     <>

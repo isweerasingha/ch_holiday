@@ -1,8 +1,10 @@
-function ButtonComponent() {
+import { Button } from "@mantine/core";
+
+function ButtonComponent({ children, color, size }) {
   return (
-    <>
-      <div>This is a button component</div>
-    </>
+    <Button size={size} className={`${color} font-bold px-20`}>
+      {children}
+    </Button>
   );
 }
 
