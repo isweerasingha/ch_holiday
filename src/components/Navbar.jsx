@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Logo from '../../src/assets/Logo.png';
-import Logo2 from '../../src/assets/Logo2.png';
+import Logo2 from '../../src/assets/logo2.png';
 import Image from 'next/image';
 import { CloseOutlined } from '@ant-design/icons';
 
