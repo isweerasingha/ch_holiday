@@ -123,7 +123,7 @@ export default function Home() {
           </div>
 
           <hr className="w-32 border" />
-          <p className="text-[16px] text-justify">Embark on a journey of unparalleled tourism experiences with 'Them Best Great Tourism,' exclusively presented on our website. Here, we invite you to delve into a world of extraordinary destinations and meticulously crafted itineraries that redefine the very essence of exploration. Whether you seek cultural immersion, natural wonders, or thrilling adventures, our platform is your gateway to a diverse tapestry of travel possibilities. Join us in discovering the best that global tourism has to offer, and let your wanderlust find its perfect match with 'Them Best Great Tourism.</p>
+          <p className="text-[16px] text-justify">Embark on a journey of unparalleled tourism experiences with &apos;Them Best Great Tourism,&apos; exclusively presented on our website. Here, we invite you to delve into a world of extraordinary destinations and meticulously crafted itineraries that redefine the very essence of exploration. Whether you seek cultural immersion, natural wonders, or thrilling adventures, our platform is your gateway to a diverse tapestry of travel possibilities. Join us in discovering the best that global tourism has to offer, and let your wanderlust find its perfect match with &apos;Them Best Great Tourism.</p>
           <div className="w-full">
             <button className='bg-transparent border-2 border-white  lg:py-[17px] lg:px-[55px] py-[10px] px-[20px] uppercase text-white hover:bg-[#ffffff1d] font-medium text-[16px]'>Learn More</button>
           </div>
