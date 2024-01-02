@@ -14,6 +14,7 @@ import { FaArrowUpFromGroundWater } from "react-icons/fa6";
 import { FaSackDollar } from "react-icons/fa6";
 import { MdSummarize } from "react-icons/md";
 import Tour_tab1 from '@/components/Tour_tab1';
+import Tour_tab2 from '@/components/Tour_tab2';
 
 const Moreinfo = () => {
 
@@ -62,7 +63,7 @@ const Moreinfo = () => {
                     </Tabs.Panel>
 
                     <Tabs.Panel value="Inclusions_Exclusions" className='py-10'>
-                        tab2
+                        <Tour_tab2/>
                     </Tabs.Panel>
 
                     <Tabs.Panel value="Hotels_Pricing" className='py-10'>
