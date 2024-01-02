@@ -159,7 +159,7 @@ const Tour_tab2 = () => {
 
                 <h1 className='mt-3 text-xl font-bold'>On arrival at the port of entry in Sri Lanka</h1>
                 <div className='flex flex-col gap-3'>
-                    <p>Upon arrival, produce your passport, vaccination card, and negative PCR test report to the immigration officer at the port of entry to obtain the necessary clearance. You should bring a copy of the ETA approval notice along with you. We'd like to bring your attention to the 'things you need to know ' for your safety as you make your way to an amazing time that is So Sri Lanka!</p>
+                    <p>Upon arrival, produce your passport, vaccination card, and negative PCR test report to the immigration officer at the port of entry to obtain the necessary clearance. You should bring a copy of the ETA approval notice along with you. We&apos;d like to bring your attention to the &apos;things you need to know &apos; for your safety as you make your way to an amazing time that is So Sri Lanka!</p>
                 </div>
 
             </div>

@@ -119,7 +119,7 @@ const Tour_tab1 = () => {
             </div>
 
             <div className='px-3 py-10 text-center lg:px-28 md:px-10 lg:py-20'>
-                <h1 className='text-2xl font-bold'>Locations You'll View</h1>
+                <h1 className='text-2xl font-bold'>Locations You&apos;ll View</h1>
                 <p className='pt-10'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
                 <div className='w-full pt-10'>
