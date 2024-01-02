@@ -4,15 +4,12 @@ import React, { useState, useEffect,useRef } from 'react';
 import Image from 'next/image';
 import Image1 from '../../src/assets/CarouselImage1.png';
 
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 import GREECE from '../../src/assets/greece.png';
 import AFRICA from '../../src/assets/africa.png';
 import FRANCE from '../../src/assets/france.png';
 
-import { Carousel } from '@mantine/carousel';
+// import { Carousel } from '@mantine/carousel';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -51,7 +48,7 @@ const HomeCarousel = () => {
 
     return (
         <>
-            <div className={`w-full lg:h-[100vh] md:h-[80vh] h-[50vh] poppin_font relative ${scrolling ? "lg:mt-20  duration-1000" : ""}`}>
+            <div className={`w-full lg:h-[100vh] md:h-[80vh] h-[50vh] poppin_font relative ${scrolling ? "lg:mt-20  duration-500" : ""}`}>
                 <Swiper
                     direction={'vertical'}
                     pagination={{
