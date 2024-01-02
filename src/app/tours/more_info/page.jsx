@@ -15,6 +15,8 @@ import { FaSackDollar } from "react-icons/fa6";
 import { MdSummarize } from "react-icons/md";
 import Tour_tab1 from '@/components/Tour_tab1';
 import Tour_tab2 from '@/components/Tour_tab2';
+import Tour_tab4 from '../../../components/Tour_tab4';
+import Tour_tab3 from '@/components/Tour_tab3';
 
 const Moreinfo = () => {
 
@@ -67,11 +69,11 @@ const Moreinfo = () => {
                     </Tabs.Panel>
 
                     <Tabs.Panel value="Hotels_Pricing" className='py-10'>
-                        tab3
+                         <Tour_tab3/>
                     </Tabs.Panel>
 
                     <Tabs.Panel value="Summery" className='py-10'>
-                        tab4
+                    <Tour_tab4/>
                     </Tabs.Panel>
 
                 </Tabs>

@@ -8,9 +8,7 @@ const PopularPackCard = ({ Img, Days, Location, Price, Rate }) => {
       <div className="relative flex flex-col">
         <div className='relative w-full overflow-hidden group'>
           <Image src={Img} alt="/" className="w-full" />
-          <div className='absolute w-full h-full duration-300 -bottom-full group-hover:bottom-0 bg-gradient-to-t from-[#fc0afc6a] to-[#ff57577e] flex justify-center items-end pb-10'>
-          <button className='bg-white border-2  lg:py-[17px] lg:px-[55px] py-[10px] px-[20px] uppercase font-bold text-[#EB268F] text-[16px] hover:scale-105 duration-200 hover:shadow-xl'>More Details</button>
-          </div>
+ 
         </div>
         <div className="p-6 bg-[#1C1D43] text-white">
           <div className="flex gap-2">
