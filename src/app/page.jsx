@@ -34,37 +34,37 @@ export default function Home() {
       <Fade>
         <HomeCarousel />
 
-        <div className="flex flex-col w-full gap-6 px-3 py-10 text-center md:gap-10 md:py-20 bg1 lg:px-28 md:px-5">
-          <span className="text-[#EB268F] text-[28px] font-medium">
-            SINCE 2020
-          </span>
-          <div className="flex flex-col gap-3 md:gap-5">
-            <h1 className="text-[40px] font-bold md:text-[44px] lg:text-[48px]">
-              Planning your next perfect
-            </h1>
-            <h1 className="text-[40px] font-bold md:text-[44px] lg:text-[48px]">
-              island trip is now hurdle-free
-            </h1>
-          </div>
-          <div className="grid md:grid-cols-5 lg:gap-[36px] text-white grid-cols-2 gap-3 md:gap-6 box">
-            {/*  */}
-            <div className="">
-              <div className="w-full h-48 card-container xl:w-60 xl:h-60 lg:h-40 lg:w-40 md:h-36 md:w-36">
-                <div className="card">
-                  <div className="front face bg-[#3E4095]">
-                    <div className="flex flex-col items-center justify-center w-full h-full gap-3 font-bold text-white">
-                      <Image src={earth_icon} alt="/" />
-                      <span className="text-[16px]">24/7 Availability</span>
-                    </div>
+      <div className="flex flex-col w-full gap-6 px-3 py-10 text-center md:gap-10 md:py-20 bg1 lg:px-28 md:px-5">
+        <span className="text-[#EB268F] text-[28px] font-medium">
+          SINCE 2020
+        </span>
+        <div className="flex flex-col gap-3 md:gap-5">
+          <h1 className="text-[40px] font-bold md:text-[44px] lg:text-[48px]">
+            Planning your next perfect
+          </h1>
+          <h1 className="text-[40px] font-bold md:text-[44px] lg:text-[48px]">
+            island trip is now hurdle-free
+          </h1>
+        </div>
+        <div className="grid md:grid-cols-5 lg:gap-[36px] text-white grid-cols-2 gap-3 md:gap-6 box">
+          {/*  */}
+          <div className="">
+            <div className="w-full h-48 card-container xl:w-60 xl:h-60 lg:h-40 lg:w-40 md:h-36 md:w-36">
+              <div className="card">
+                <div className="front face bg-[#3E4095]">
+                  <div className="flex flex-col items-center justify-center w-full h-full gap-3 font-bold text-white">
+                    <Image src={earth_icon} alt="/" />
+                    <span className="text-[16px]">24/7 Availability</span>
                   </div>
-                  <div className="back face">
-                    <div className="flex flex-col items-center justify-center w-full h-full gap-3 text-xl font-bold text-white">
-                      <span className="text-[16px]">24/7 Availability</span>
-                    </div>
+                </div>
+                <div className="back face">
+                  <div className="flex flex-col items-center justify-center w-full h-full gap-3 text-xl font-bold text-white">
+                    <span className="text-[16px]">24/7 Availability</span>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
 
             {/*  */}
             <div className="md:mt-24 xl:mt-36">
