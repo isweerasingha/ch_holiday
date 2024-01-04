@@ -116,7 +116,7 @@ const HomeCarousel = () => {
                     <div className='flex gap-4'>
                         <button className=' bg-[#3E4095] hover:bg-[#35367F] hover:cursor-pointer active:scale-105'>
                             <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
-                                <g clip-path="url(#clip0_1_778)">
+                                <g clipPath="url(#clip0_1_778)">
                                     <path d="M30 14.4318L27.336 11.7998L16 22.9998L27.336 34.1998L30 31.5678L21.3468 22.9998L30 14.4318Z" fill="white" />
                                 </g>
                                 <defs>
@@ -128,7 +128,7 @@ const HomeCarousel = () => {
                         </button>
                         <button className='bg-[#EB268F] hover:bg-[#C8207A] hover:cursor-pointer active:scale-105'>
                             <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
-                                <g clip-path="url(#clip0_1_773)">
+                                <g clipPath="url(#clip0_1_773)">
                                     <path d="M18.664 11.7998L16 14.4318L24.6532 22.9998L16 31.5678L18.664 34.1998L30 22.9998L18.664 11.7998Z" fill="white" />
                                 </g>
                                 <defs>
