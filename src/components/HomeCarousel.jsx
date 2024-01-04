@@ -24,6 +24,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Pagination, Autoplay } from "swiper/modules";
+import routes from "@/constants/routes";
 
 const HomeCarousel = () => {
   const [scrolling, setScrolling] = useState(false);
@@ -204,9 +205,11 @@ const HomeCarousel = () => {
                 <span className="mt-5 text-white text-[23px]">GREECE</span>
               </div>
             </div>
-            <button className="bg-transparent border-2 border-white w-[80%] lg:py-[17px] lg:px-[10px] py-[10px] px-[20px] uppercase text-white hover:bg-white hover:text-[#EB268F] font-medium absolute text-[13px] xl:text-[16px] -bottom-full group-hover:bottom-6 duration-300">
-              VIEW DESTINATION
-            </button>
+            <Link className="w-full flex justify-center font-medium absolute -bottom-full group-hover:bottom-1 duration-300" href={routes.DESTINATION_MORE_INFO}>
+              <button className="bg-transparent border-2 border-white w-[80%] lg:py-[17px] lg:px-[10px] py-[10px] px-[20px] uppercase text-white hover:bg-white hover:text-[#EB268F] font-medium absolute text-[13px] xl:text-[16px] -bottom-full group-hover:bottom-6 duration-300">
+                VIEW DESTINATION
+              </button>
+            </Link>
           </div>
 
           {/* 2 */}
@@ -217,9 +220,11 @@ const HomeCarousel = () => {
                 <span className="mt-5 text-white text-[23px]">AFRICA</span>
               </div>
             </div>
-            <button className="bg-transparent border-2 border-white w-[80%] lg:py-[17px] lg:px-[10px] py-[10px] px-[20px] uppercase text-white hover:bg-white hover:text-[#EB268F] font-medium absolute text-[13px] xl:text-[16px] -bottom-full group-hover:bottom-6 duration-300">
-              VIEW DESTINATION
-            </button>
+            <Link className="w-full flex justify-center font-medium absolute -bottom-full group-hover:bottom-1 duration-300" href={routes.DESTINATION_MORE_INFO}>
+              <button className="bg-transparent border-2 border-white w-[80%] lg:py-[17px] lg:px-[10px] py-[10px] px-[20px] uppercase text-white hover:bg-white hover:text-[#EB268F] font-medium absolute text-[13px] xl:text-[16px] -bottom-full group-hover:bottom-6 duration-300">
+                VIEW DESTINATION
+              </button>
+            </Link>
           </div>
 
           {/* 3 */}
@@ -230,7 +235,7 @@ const HomeCarousel = () => {
                 <span className="mt-5 text-white text-[23px]">FRENCH</span>
               </div>
             </div>
-            <Link>
+            <Link className="w-full flex justify-center font-medium absolute -bottom-full group-hover:bottom-1 duration-300" href={routes.DESTINATION_MORE_INFO}>
               <button className="bg-transparent border-2 border-white w-[80%] lg:py-[17px] lg:px-[10px] py-[10px] px-[20px] uppercase text-white hover:bg-white hover:text-[#EB268F] font-medium absolute text-[13px] xl:text-[16px] -bottom-full group-hover:bottom-6 duration-300">
                 VIEW DESTINATION
               </button>
