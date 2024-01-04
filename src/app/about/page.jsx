@@ -408,7 +408,7 @@ const page = () => {
                             Find the information you need to plan your perfect journey with CH Asian Holidays.</p>
                     </div>
 
-                    <div className='grid grid-cols-1 gap-10 lg:grid-cols-2'>
+                    <div className='grid w-full grid-cols-1 gap-10 lg:grid-cols-2'>
                         
                         <div className='flex flex-col gap-10'>
 
