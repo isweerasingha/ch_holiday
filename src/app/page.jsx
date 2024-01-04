@@ -32,11 +32,11 @@ export default function Home() {
       <Navbar />
       <HomeCarousel />
 
-      <div className="flex flex-col w-full gap-6 px-3 py-10 text-center md:gap-10 md:py-20 bg1 lg:px-28 md:px-5">
+      <div className="flex flex-col w-full gap-6 px-3 py-10 text-center md:gap-6 md:py-20 bg1 lg:px-28 md:px-5">
         <span className="text-[#EB268F] text-[28px] font-medium">
           SINCE 2020
         </span>
-        <div className="flex flex-col gap-3 md:gap-5">
+        <div className="flex flex-col ">
           <h1 className="text-[40px] font-bold md:text-[44px] lg:text-[48px]">
             Planning your next perfect
           </h1>
