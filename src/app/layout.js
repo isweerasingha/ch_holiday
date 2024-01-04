@@ -1,7 +1,16 @@
 import "@mantine/core/styles.css";
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { theme } from "./theme";
+
+const poppins = Poppins(
+  {
+    weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+    subsets: ["latin"],
+    display: 'swap',
+    variable: '--font-poppis',
+  });
 
 export const metadata = {
   title: "Ch Holiday / Home",
@@ -10,14 +19,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={poppins.variable}>
       <head>
         <meta charSet="UTF-8" />
         <meta http="true" equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <ColorSchemeScript />
       </head>
-      <body className="poppin_font">
+      <body className={poppins.style.fontFamily}>
 
         <MantineProvider theme={theme}> {children} </MantineProvider>
       </body>
