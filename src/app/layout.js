@@ -1,10 +1,7 @@
 import "@mantine/core/styles.css";
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import { theme } from "./theme";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Ch Holiday / Home",
@@ -20,8 +17,8 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <ColorSchemeScript />
       </head>
-      <body className={inter.className}>
-        
+      <body className="poppin_font">
+
         <MantineProvider theme={theme}> {children} </MantineProvider>
       </body>
     </html>
