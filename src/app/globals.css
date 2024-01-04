@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-    font-family: var(--font-poppis);
-}
-
 .bg1 {
     background-image: url(../../src/assets/home_bg1.png);
     background-position: center;

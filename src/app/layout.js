@@ -19,14 +19,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={poppins.variable}>
+    <html lang="en">
       <head>
         <meta charSet="UTF-8" />
         <meta http="true" equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <ColorSchemeScript />
       </head>
-      <body className={poppins.style.fontFamily}>
+      <body className={poppins.className}>
 
         <MantineProvider theme={theme}> {children} </MantineProvider>
       </body>
