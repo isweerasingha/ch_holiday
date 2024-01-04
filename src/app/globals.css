@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.poppin_font {
-    font-family: 'Poppins', sans-serif;
-}
-
 .bg1 {
     background-image: url(../../src/assets/home_bg1.png);
     background-position: center;
