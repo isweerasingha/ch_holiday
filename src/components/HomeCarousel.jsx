@@ -54,7 +54,7 @@ const HomeCarousel = () => {
         }`}
       >
         <Swiper
-          direction={"vertical"}
+          direction={"horizontal"}
           pagination={{
             clickable: true,
           }}
@@ -216,7 +216,7 @@ const HomeCarousel = () => {
                   </div>
                 </div>
                 <Link
-                  className="w-full flex justify-center font-medium absolute -bottom-full group-hover:bottom-1 duration-300"
+                  className="absolute flex justify-center w-full font-medium duration-300 -bottom-full group-hover:bottom-1"
                   href={routes.DESTINATION_MORE_INFO}
                 >
                   <button className="bg-transparent border-2 border-white w-[80%] lg:py-[17px] lg:px-[10px] py-[10px] px-[20px] uppercase text-white hover:bg-white hover:text-[#EB268F] font-medium absolute text-[13px] xl:text-[16px] -bottom-full group-hover:bottom-6 duration-300">
@@ -228,7 +228,7 @@ const HomeCarousel = () => {
 
             <SwiperSlide>
               {/* 2 */}
-              <div className="relative justify-center overflow-hidden group flex">
+              <div className="relative flex justify-center overflow-hidden group">
                 <Image src={AFRICA} alt="/" className="w-full" />
                 <div className="absolute w-full h-full bg-transparent top-0 hover:bg-[#000000a5] duration-500 p-5">
                   <div className="w-full ">
@@ -236,7 +236,7 @@ const HomeCarousel = () => {
                   </div>
                 </div>
                 <Link
-                  className="w-full flex justify-center font-medium absolute -bottom-full group-hover:bottom-1 duration-300"
+                  className="absolute flex justify-center w-full font-medium duration-300 -bottom-full group-hover:bottom-1"
                   href={routes.DESTINATION_MORE_INFO}
                 >
                   <button className="bg-transparent border-2 border-white w-[80%] lg:py-[17px] lg:px-[10px] py-[10px] px-[20px] uppercase text-white hover:bg-white hover:text-[#EB268F] font-medium absolute text-[13px] xl:text-[16px] -bottom-full group-hover:bottom-6 duration-300">
@@ -248,7 +248,7 @@ const HomeCarousel = () => {
 
             <SwiperSlide>
               {/* 3 */}
-              <div className="relative justify-center overflow-hidden group flex">
+              <div className="relative flex justify-center overflow-hidden group">
                 <Image src={FRANCE} alt="/" className="w-full" />
                 <div className="absolute w-full h-full bg-transparent top-0 hover:bg-[#000000a5] duration-500 p-5">
                   <div className="w-full ">
@@ -256,7 +256,7 @@ const HomeCarousel = () => {
                   </div>
                 </div>
                 <Link
-                  className="w-full flex justify-center font-medium absolute -bottom-full group-hover:bottom-1 duration-300"
+                  className="absolute flex justify-center w-full font-medium duration-300 -bottom-full group-hover:bottom-1"
                   href={routes.DESTINATION_MORE_INFO}
                 >
                   <button className="bg-transparent border-2 border-white w-[80%] lg:py-[17px] lg:px-[10px] py-[10px] px-[20px] uppercase text-white hover:bg-white hover:text-[#EB268F] font-medium absolute text-[13px] xl:text-[16px] -bottom-full group-hover:bottom-6 duration-300">
@@ -268,7 +268,7 @@ const HomeCarousel = () => {
 
             <SwiperSlide>
               {/* 3 */}
-              <div className="relative justify-center overflow-hidden group flex">
+              <div className="relative flex justify-center overflow-hidden group">
                 <Image src={FRANCE} alt="/" className="w-full" />
                 <div className="absolute w-full h-full bg-transparent top-0 hover:bg-[#000000a5] duration-500 p-5">
                   <div className="w-full ">
@@ -276,7 +276,7 @@ const HomeCarousel = () => {
                   </div>
                 </div>
                 <Link
-                  className="w-full flex justify-center font-medium absolute -bottom-full group-hover:bottom-1 duration-300"
+                  className="absolute flex justify-center w-full font-medium duration-300 -bottom-full group-hover:bottom-1"
                   href={routes.DESTINATION_MORE_INFO}
                 >
                   <button className="bg-transparent border-2 border-white w-[80%] lg:py-[17px] lg:px-[10px] py-[10px] px-[20px] uppercase text-white hover:bg-white hover:text-[#EB268F] font-medium absolute text-[13px] xl:text-[16px] -bottom-full group-hover:bottom-6 duration-300">

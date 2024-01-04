@@ -49,17 +49,17 @@ export default function Home() {
         <div className="grid md:grid-cols-5 lg:gap-[36px] text-white grid-cols-2 gap-3 md:gap-6 box">
           {/*  */}
           <div className="">
-            <div className="w-full h-48 card-container xl:w-60 xl:h-60 lg:h-40 lg:w-40 md:h-36 md:w-36">
+            <div className="w-full h-48 card-container xl:w-60 xl:h-60 lg:h-36 lg:w-36 md:h-36 md:w-36">
               <div className="card">
                 <div className="front face bg-[#3E4095]">
                   <div className="flex flex-col items-center justify-center w-full h-full gap-3 font-bold text-white">
                     <Image src={earth_icon} alt="/" />
-                    <span className="text-[16px]">24/7 Availability</span>
+                    <span className="text-[16px] md:text-[13px] xl:text-[16px]">24/7 Availability</span>
                   </div>
                 </div>
                 <div className="back face">
                   <div className="flex flex-col items-center justify-center w-full h-full gap-3 text-xl font-bold text-white">
-                    <span className="text-[16px]">24/7 Availability</span>
+                    <span className="text-[16px] md:text-[13px] xl:text-[16px]">24/7 Availability</span>
                   </div>
                 </div>
               </div>
@@ -68,17 +68,17 @@ export default function Home() {
 
             {/*  */}
             <div className="md:mt-24 xl:mt-36">
-              <div className="w-full h-48 card-container xl:w-60 xl:h-60 lg:h-40 lg:w-40 md:h-36 md:w-36">
+              <div className="w-full h-48 card-container xl:w-60 xl:h-60 lg:h-36 lg:w-36 md:h-36 md:w-36">
                 <div className="card">
                   <div className="front face bg-[#3E4095]">
                     <div className="flex flex-col items-center justify-center w-full h-full gap-3 font-bold text-white">
                       <Image src={money_icon} alt="/" />
-                      <span className="text-[16px]">Affordable Prices</span>
+                      <span className="text-[16px] md:text-[13px] xl:text-[16px]">Affordable Prices</span>
                     </div>
                   </div>
                   <div className="back face">
                     <div className="flex flex-col items-center justify-center w-full h-full gap-3 text-xl font-bold text-white">
-                      <span className="text-[16px]">Affordable Prices</span>
+                      <span className="text-[16px] md:text-[13px] xl:text-[16px]">Affordable Prices</span>
                     </div>
                   </div>
                 </div>
@@ -87,17 +87,17 @@ export default function Home() {
 
             {/*  */}
             <div className="md:mt-48 xl:mt-72">
-              <div className="w-full h-48 card-container xl:w-60 xl:h-60 lg:h-40 lg:w-40 md:h-36 md:w-36">
+              <div className="w-full h-48 card-container xl:w-60 xl:h-60 lg:h-36 lg:w-36 md:h-36 md:w-36">
                 <div className="card">
                   <div className="front face bg-[#3E4095]">
                     <div className="flex flex-col items-center justify-center w-full h-full gap-3 font-bold text-white">
                       <Image src={quality_icon} alt="/" />
-                      <span className="text-[16px]">Quality Services</span>
+                      <span className="text-[16px] md:text-[13px] xl:text-[16px]">Quality Services</span>
                     </div>
                   </div>
                   <div className="back face">
                     <div className="flex flex-col items-center justify-center w-full h-full gap-3 text-xl font-bold text-white">
-                      <span className="text-[16px]">Quality Services</span>
+                      <span className="text-[16px] md:text-[13px] xl:text-[16px]">Quality Services</span>
                     </div>
                   </div>
                 </div>
@@ -106,17 +106,17 @@ export default function Home() {
 
             {/*  */}
             <div className="md:mt-24 xl:mt-36">
-              <div className="w-full h-48 card-container xl:w-60 xl:h-60 lg:h-40 lg:w-40 md:h-36 md:w-36">
+              <div className="w-full h-48 card-container xl:w-60 xl:h-60 lg:h-36 lg:w-36 md:h-36 md:w-36">
                 <div className="card">
                   <div className="front face bg-[#3E4095]">
                     <div className="flex flex-col items-center justify-center w-full h-full gap-3 font-bold text-white">
                       <Image src={paper_icon} alt="/" />
-                      <span className="text-[16px]">Easy to reach</span>
+                      <span className="text-[16px] md:text-[13px] xl:text-[16px]">Easy to reach</span>
                     </div>
                   </div>
                   <div className="back face">
                     <div className="flex flex-col items-center justify-center w-full h-full gap-3 text-xl font-bold text-white">
-                      <span className="text-[16px]">Easy to reach</span>
+                      <span className="text-[16px] md:text-[13px] xl:text-[16px]">Easy to reach</span>
                     </div>
                   </div>
                 </div>
@@ -125,17 +125,17 @@ export default function Home() {
 
             {/*  */}
             <div className="">
-              <div className="w-full h-48 card-container xl:w-60 xl:h-60 lg:h-40 lg:w-40 md:h-36 md:w-36">
+              <div className="w-full h-48 card-container xl:w-60 xl:h-60 lg:h-36 lg:w-36 md:h-36 md:w-36">
                 <div className="card">
                   <div className="front face bg-[#3E4095]">
                     <div className="flex flex-col items-center justify-center w-full h-full gap-3 font-bold text-white">
                       <Image src={guide_icon} alt="/" />
-                      <span className="text-[16px]">City Guide</span>
+                      <span className="text-[16px] md:text-[13px] xl:text-[16px]">City Guide</span>
                     </div>
                   </div>
                   <div className="back face">
                     <div className="flex flex-col items-center justify-center w-full h-full gap-3 text-xl font-bold text-white">
-                      <span className="text-[16px]">City Guide</span>
+                      <span className="text-[16px] md:text-[13px] xl:text-[16px]">City Guide</span>
                     </div>
                   </div>
                 </div>
