@@ -54,7 +54,7 @@ import Up from '../../../assets/icon _keyboard arrow up_.png';
 import Rectangle from '../../../assets/Rectangle 82.svg';
 
 
-const page = () => {
+const DestinationMoreInfo = () => {
 
 
     const [opened1, setOpened1] = useState(false);
@@ -235,7 +235,7 @@ const page = () => {
                 <div className='grid w-full grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-0'>
                     <div className='flex flex-col justify-center gap-5 lg:gap-10'>
                         <h1 className='font-bold text-[33px]'>About The Greece</h1>
-                        <p className='text-justify'>Welcome to Greece, a captivating destination that seamlessly blends ancient history with breathtaking natural beauty. Nestled in southeastern Europe, Greece is renowned for its rich cultural heritage, spanning thousands of years. From the iconic white-washed buildings overlooking the azure Aegean Sea to the ancient ruins that whisper tales of gods and heroes, Greece offers a truly enchanting experience. Immerse yourself in the warmth of Greek hospitality, savor delectable Mediterranean cuisine, and explore a landscape that ranges from idyllic beaches to rugged mountains. Whether you're drawn to the historical wonders of Athens, the idyllic islands of Santorini and Mykonos, or the tranquil villages of Crete, Greece beckons with a tapestry of experiences waiting to be discovered. Join us on a journey to a land where myth and reality intertwine, and every corner reveals a piece of a timeless and extraordinary story.</p>
+                        <p className='text-justify'>Welcome to Greece, a captivating destination that seamlessly blends ancient history with breathtaking natural beauty. Nestled in southeastern Europe, Greece is renowned for its rich cultural heritage, spanning thousands of years. From the iconic white-washed buildings overlooking the azure Aegean Sea to the ancient ruins that whisper tales of gods and heroes, Greece offers a truly enchanting experience. Immerse yourself in the warmth of Greek hospitality, savor delectable Mediterranean cuisine, and explore a landscape that ranges from idyllic beaches to rugged mountains. Whether you&apos;re drawn to the historical wonders of Athens, the idyllic islands of Santorini and Mykonos, or the tranquil villages of Crete, Greece beckons with a tapestry of experiences waiting to be discovered. Join us on a journey to a land where myth and reality intertwine, and every corner reveals a piece of a timeless and extraordinary story.</p>
                     </div>
                     <div className='flex items-center justify-center w-full lg:justify-end lg:pl-10 xl:pl-0'>
                         <Image src={about_greece_image} alt="/" className='' />
@@ -273,7 +273,7 @@ const page = () => {
                             <Image src={Check} alt="/" className='' />
                             <h1 className='xl:text-[23px] text-[19px] font-bold'>Visa and Entry Requirements:</h1>
                         </div>
-                        <p className='text-[16px] text-justify'>Most visitors to Greece, including citizens of the EU, the USA, Canada, Australia, and many other countries, can enter for short stays (up to 90 days) without a visa. However, it's essential to check the specific entry requirements based on your nationality before traveling.</p>
+                        <p className='text-[16px] text-justify'>Most visitors to Greece, including citizens of the EU, the USA, Canada, Australia, and many other countries, can enter for short stays (up to 90 days) without a visa. However, it&apos;s essential to check the specific entry requirements based on your nationality before traveling.</p>
                     </div>
 
                     {/*  */}
@@ -282,7 +282,7 @@ const page = () => {
                             <Image src={Check} alt="/" className='' />
                             <h1 className='xl:text-[23px] text-[19px] font-bold'>Currency Exchange:</h1>
                         </div>
-                        <p className='text-[16px] text-justify'>The official currency is the Euro (EUR). Currency exchange services are widely available, and credit cards are widely accepted. ATMs are also easily accessible in major cities and tourist areas. Ensure you have travel insurance that covers medical expenses and potential travel disruptions. Additionally, carry essential documents, including a valid passport, any required visas, and contact information for your country's embassy or consulate in Greece. Feel free to reach out to our customer support for any additional information or assistance with your travel essentials. Your journey to Greece awaits</p>
+                        <p className='text-[16px] text-justify'>The official currency is the Euro (EUR). Currency exchange services are widely available, and credit cards are widely accepted. ATMs are also easily accessible in major cities and tourist areas. Ensure you have travel insurance that covers medical expenses and potential travel disruptions. Additionally, carry essential documents, including a valid passport, any required visas, and contact information for your country&apos;s embassy or consulate in Greece. Feel free to reach out to our customer support for any additional information or assistance with your travel essentials. Your journey to Greece awaits</p>
                     </div>
 
                 </div>
@@ -296,7 +296,7 @@ const page = () => {
                         <h1 className='font-bold text-[33px] text-center'>Local Cuisine</h1>
                     </div>
                     <h1 className='xl:text-[23px] text-[19px] font-bold'>Culinary Delights of Greece:</h1>
-                    <p className='text-[16px] text-justify'>Indulge your taste buds in the culinary wonders of Greece, where traditional flavors and fresh ingredients take center stage. Savor iconic dishes such as moussaka, aubergine-based and layered with minced meat, and souvlaki, skewered and grilled meat often served with pita. Don't miss the chance to enjoy a Greek salad with feta cheese, olives, and olive oil. Seafood lovers can relish the catch of the day in coastal towns, and be sure to try baklava for a sweet finale. Pair your meals with local wines or ouzo, an anise-flavored aperitif, for a truly authentic dining experience.</p>
+                    <p className='text-[16px] text-justify'>Indulge your taste buds in the culinary wonders of Greece, where traditional flavors and fresh ingredients take center stage. Savor iconic dishes such as moussaka, aubergine-based and layered with minced meat, and souvlaki, skewered and grilled meat often served with pita. Don&apos;t miss the chance to enjoy a Greek salad with feta cheese, olives, and olive oil. Seafood lovers can relish the catch of the day in coastal towns, and be sure to try baklava for a sweet finale. Pair your meals with local wines or ouzo, an anise-flavored aperitif, for a truly authentic dining experience.</p>
                 </div>
 
                 <div className='w-full'>
@@ -514,7 +514,7 @@ const page = () => {
                                 <Collapse in={opened1} transitionDuration={500} transitionTimingFunction="linear">
                                     <div className='flex flex-col w-full gap-3 '>
                                         <div className='flex gap-3'>
-                                            <p className='text-[16px] text-justify'>Greeks are known for their warmth and hospitality. Embrace local customs, such as greeting with a friendly "Kalimera" (Good morning) and showing respect in religious sites.</p>
+                                            <p className='text-[16px] text-justify'>Greeks are known for their warmth and hospitality. Embrace local customs, such as greeting with a friendly &quot;Kalimera&quot; (Good morning) and showing respect in religious sites.</p>
                                         </div>
                                     </div>
                                 </Collapse>
@@ -542,7 +542,7 @@ const page = () => {
                                 <Collapse in={opened2} transitionDuration={500} transitionTimingFunction="linear">
                                     <div className='flex flex-col w-full gap-3 '>
                                         <div className='flex gap-3'>
-                                            <p className='text-[16px] text-justify'>While major credit cards are widely accepted, it's advisable to carry some cash, especially in smaller towns and on islands. ATMs are available in urban centers.</p>
+                                            <p className='text-[16px] text-justify'>While major credit cards are widely accepted, it&apos;s advisable to carry some cash, especially in smaller towns and on islands. ATMs are available in urban centers.</p>
                                         </div>
                                     </div>
                                 </Collapse>
@@ -657,7 +657,7 @@ const page = () => {
                                 <Collapse in={opened8} transitionDuration={500} transitionTimingFunction="linear">
                                     <div className='flex flex-col w-full gap-3 '>
                                         <div className='flex gap-3'>
-                                            <p className='text-[16px] text-justify'>If you're planning to explore multiple islands, check ferry schedules
+                                            <p className='text-[16px] text-justify'>If you&apos;re planning to explore multiple islands, check ferry schedules
                                                 in advance, especially during peak seasons. Booking tickets ahead
                                                 of time ensures smoother island-hopping experiences.</p>
                                         </div>
@@ -735,4 +735,4 @@ A sturdy pair will enhance your comfort during your adventures.</p>
     )
 }
 
-export default page
+export default DestinationMoreInfo

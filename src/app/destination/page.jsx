@@ -15,7 +15,7 @@ import France2 from '../../assets/francee2.png';
 import India from '../../assets/india.png';
 import DestinationCard from '@/components/DestinationCard';
 
-const page = () => {
+const Destinations = () => {
     return (
         <div className='w-full'>
             <Navbar />
@@ -47,4 +47,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Destinations

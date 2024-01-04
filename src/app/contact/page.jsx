@@ -11,7 +11,7 @@ import Location from '../../assets/location_on.png';
 import Email from '../../assets/mail.png';
 import Phone from '../../assets/wifi_calling_3.png';
 
-const page = () => {
+const Contact = () => {
   return (
     <div className='w-full'>
       <Navbar />
@@ -33,8 +33,8 @@ const page = () => {
 
         <div className='grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-0'>
           <div className='flex flex-col gap-5 lg:pr-20'>
-            <h1 className='text-[33px] font-bold'>We're here to assist you on your journey</h1>
-            <p>Feel free to reach out to us for any inquiries, support, or travel-related assistance. Our dedicated team is committed to ensuring your travel experience is seamless and enjoyable. Whether you have questions about bookings, need assistance with your itinerary, or have feedback to share, we're here to help. Simply fill out the form below, and we'll get back to you as soon as possible. Your journey begins with us, and we're here to make it extraordinary.</p>
+            <h1 className='text-[33px] font-bold'>We&apos;re here to assist you on your journey</h1>
+            <p>Feel free to reach out to us for any inquiries, support, or travel-related assistance. Our dedicated team is committed to ensuring your travel experience is seamless and enjoyable. Whether you have questions about bookings, need assistance with your itinerary, or have feedback to share, we&apos;re here to help. Simply fill out the form below, and we&apos;ll get back to you as soon as possible. Your journey begins with us, and we&apos;re here to make it extraordinary.</p>
             <h1 className='font-bold text-[19px] border-b-2 pb-3'>Opening Hours</h1>
 
             <div className='flex gap-10 pb-3 border-b-2 text-[16px]'>
@@ -112,4 +112,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Contact

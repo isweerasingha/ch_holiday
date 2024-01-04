@@ -18,7 +18,7 @@ import Tour_tab2 from '@/components/Tour_tab2';
 import Tour_tab4 from '../../../components/Tour_tab4';
 import Tour_tab3 from '@/components/Tour_tab3';
 
-const Moreinfo = () => {
+const TourMoreInfo = () => {
 
     const iconStyle = { width: rem(20), height: rem(20) };
 
@@ -84,4 +84,4 @@ const Moreinfo = () => {
     )
 }
 
-export default Moreinfo
+export default TourMoreInfo
