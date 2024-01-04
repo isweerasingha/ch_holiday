@@ -102,7 +102,7 @@ const HomeCarousel = () => {
                         <h1 className='mt-10  font-bold md:mt-16 lg:mt-0 text-[40px]'>Explore the Unexplored!</h1>
                         <span className='text-[16px]'>Get ready for your Next Trip with CH Asian Holidays as your Reliable Traveling Partner</span>
                         <div className='flex justify-start gap-6 '>
-                            <button className='bg-[#EB268F] lg:py-[17px] lg:px-[40px] w-full py-[10px] px-[20px] uppercase text-white hover:bg-[#C8207A] font-medium text-[16px] duration-300'>Tale a Tour</button>
+                            <button className='bg-[#EB268F] lg:py-[17px] lg:px-[40px] w-full py-[10px] px-[20px] uppercase text-white hover:bg-[#C8207A] font-medium text-[16px] duration-300'>Take a Tour</button>
                             <button className='bg-transparent border-2 border-white w-full lg:py-[17px] lg:px-[40px] py-[10px] px-[20px] uppercase text-white hover:bg-white hover:text-[#EB268F] duration-300 font-medium text-[16px]'>Learn More</button>
                         </div>
                     </div>
