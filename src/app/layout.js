@@ -3,6 +3,7 @@ import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { theme } from "./theme";
+import { Slide } from "react-awesome-reveal";
 
 const poppins = Poppins(
   {
@@ -28,7 +29,12 @@ export default function RootLayout({ children }) {
       </head>
       <body className={poppins.className}>
 
-        <MantineProvider theme={theme}> {children} </MantineProvider>
+        <MantineProvider theme={theme}>
+
+          {children}
+
+        </MantineProvider>
+
       </body>
     </html>
   );

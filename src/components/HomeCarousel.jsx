@@ -17,6 +17,7 @@ import FRANCE from "../../src/assets/france.png";
 // import { Carousel } from '@mantine/carousel';
 
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
@@ -142,7 +143,7 @@ const HomeCarousel = () => {
             What’s your dream holiday destination around the world?
           </span>
           <div className="flex gap-4">
-            <button className=" bg-[#3E4095] hover:bg-[#35367F] hover:cursor-pointer active:scale-105">
+            <button className="swiper-button-prev bg-[#3E4095] hover:bg-[#35367F] hover:cursor-pointer active:scale-105">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="46"
@@ -168,7 +169,7 @@ const HomeCarousel = () => {
                 </defs>
               </svg>
             </button>
-            <button className="bg-[#EB268F] hover:bg-[#C8207A] hover:cursor-pointer active:scale-105">
+            <button className="swiper-button-next bg-[#EB268F] hover:bg-[#C8207A] hover:cursor-pointer active:scale-105">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="46"
@@ -196,51 +197,95 @@ const HomeCarousel = () => {
             </button>
           </div>
         </div>
-        <div className="z-40 grid w-full grid-cols-1 gap-5 md:-mt-16 lg:w-3/4 md:w-2/3 lg:grid-cols-3 md:grid-cols-2">
-          {/* 1 */}
-          <div className="relative flex justify-center overflow-hidden group">
-            <Image src={GREECE} alt="/" className="w-full" />
-            <div className="absolute w-full h-full bg-transparent top-0 hover:bg-[#000000a5] duration-500 p-5">
-              <div className="w-full ">
-                <span className="mt-5 text-white text-[23px]">GREECE</span>
+        <div className="z-40 w-full grid-cols-1 gap-5 md:-mt-16 lg:w-3/4 md:w-2/3">
+          <Swiper
+            modules={[Navigation]}
+            navigation={{
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            }}
+            spaceBetween={20}
+            slidesPerView={3}
+          >
+            <SwiperSlide>
+              <div className="relative flex justify-center overflow-hidden group">
+                <Image src={GREECE} alt="/" className="w-full" />
+                <div className="absolute w-full h-full bg-transparent top-0 hover:bg-[#000000a5] duration-500 p-5">
+                  <div className="w-full ">
+                    <span className="mt-5 text-white text-[23px]">GREECE</span>
+                  </div>
+                </div>
+                <Link
+                  className="w-full flex justify-center font-medium absolute -bottom-full group-hover:bottom-1 duration-300"
+                  href={routes.DESTINATION_MORE_INFO}
+                >
+                  <button className="bg-transparent border-2 border-white w-[80%] lg:py-[17px] lg:px-[10px] py-[10px] px-[20px] uppercase text-white hover:bg-white hover:text-[#EB268F] font-medium absolute text-[13px] xl:text-[16px] -bottom-full group-hover:bottom-6 duration-300">
+                    VIEW DESTINATION
+                  </button>
+                </Link>
               </div>
-            </div>
-            <Link className="w-full flex justify-center font-medium absolute -bottom-full group-hover:bottom-1 duration-300" href={routes.DESTINATION_MORE_INFO}>
-              <button className="bg-transparent border-2 border-white w-[80%] lg:py-[17px] lg:px-[10px] py-[10px] px-[20px] uppercase text-white hover:bg-white hover:text-[#EB268F] font-medium absolute text-[13px] xl:text-[16px] -bottom-full group-hover:bottom-6 duration-300">
-                VIEW DESTINATION
-              </button>
-            </Link>
-          </div>
+            </SwiperSlide>
 
-          {/* 2 */}
-          <div className="relative justify-center hidden overflow-hidden group md:flex">
-            <Image src={AFRICA} alt="/" className="w-full" />
-            <div className="absolute w-full h-full bg-transparent top-0 hover:bg-[#000000a5] duration-500 p-5">
-              <div className="w-full ">
-                <span className="mt-5 text-white text-[23px]">AFRICA</span>
+            <SwiperSlide>
+              {/* 2 */}
+              <div className="relative justify-center overflow-hidden group flex">
+                <Image src={AFRICA} alt="/" className="w-full" />
+                <div className="absolute w-full h-full bg-transparent top-0 hover:bg-[#000000a5] duration-500 p-5">
+                  <div className="w-full ">
+                    <span className="mt-5 text-white text-[23px]">AFRICA</span>
+                  </div>
+                </div>
+                <Link
+                  className="w-full flex justify-center font-medium absolute -bottom-full group-hover:bottom-1 duration-300"
+                  href={routes.DESTINATION_MORE_INFO}
+                >
+                  <button className="bg-transparent border-2 border-white w-[80%] lg:py-[17px] lg:px-[10px] py-[10px] px-[20px] uppercase text-white hover:bg-white hover:text-[#EB268F] font-medium absolute text-[13px] xl:text-[16px] -bottom-full group-hover:bottom-6 duration-300">
+                    VIEW DESTINATION
+                  </button>
+                </Link>
               </div>
-            </div>
-            <Link className="w-full flex justify-center font-medium absolute -bottom-full group-hover:bottom-1 duration-300" href={routes.DESTINATION_MORE_INFO}>
-              <button className="bg-transparent border-2 border-white w-[80%] lg:py-[17px] lg:px-[10px] py-[10px] px-[20px] uppercase text-white hover:bg-white hover:text-[#EB268F] font-medium absolute text-[13px] xl:text-[16px] -bottom-full group-hover:bottom-6 duration-300">
-                VIEW DESTINATION
-              </button>
-            </Link>
-          </div>
+            </SwiperSlide>
 
-          {/* 3 */}
-          <div className="relative justify-center hidden overflow-hidden group lg:flex">
-            <Image src={FRANCE} alt="/" className="w-full" />
-            <div className="absolute w-full h-full bg-transparent top-0 hover:bg-[#000000a5] duration-500 p-5">
-              <div className="w-full ">
-                <span className="mt-5 text-white text-[23px]">FRENCH</span>
+            <SwiperSlide>
+              {/* 3 */}
+              <div className="relative justify-center overflow-hidden group flex">
+                <Image src={FRANCE} alt="/" className="w-full" />
+                <div className="absolute w-full h-full bg-transparent top-0 hover:bg-[#000000a5] duration-500 p-5">
+                  <div className="w-full ">
+                    <span className="mt-5 text-white text-[23px]">FRENCH</span>
+                  </div>
+                </div>
+                <Link
+                  className="w-full flex justify-center font-medium absolute -bottom-full group-hover:bottom-1 duration-300"
+                  href={routes.DESTINATION_MORE_INFO}
+                >
+                  <button className="bg-transparent border-2 border-white w-[80%] lg:py-[17px] lg:px-[10px] py-[10px] px-[20px] uppercase text-white hover:bg-white hover:text-[#EB268F] font-medium absolute text-[13px] xl:text-[16px] -bottom-full group-hover:bottom-6 duration-300">
+                    VIEW DESTINATION
+                  </button>
+                </Link>
               </div>
-            </div>
-            <Link className="w-full flex justify-center font-medium absolute -bottom-full group-hover:bottom-1 duration-300" href={routes.DESTINATION_MORE_INFO}>
-              <button className="bg-transparent border-2 border-white w-[80%] lg:py-[17px] lg:px-[10px] py-[10px] px-[20px] uppercase text-white hover:bg-white hover:text-[#EB268F] font-medium absolute text-[13px] xl:text-[16px] -bottom-full group-hover:bottom-6 duration-300">
-                VIEW DESTINATION
-              </button>
-            </Link>
-          </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              {/* 3 */}
+              <div className="relative justify-center overflow-hidden group flex">
+                <Image src={FRANCE} alt="/" className="w-full" />
+                <div className="absolute w-full h-full bg-transparent top-0 hover:bg-[#000000a5] duration-500 p-5">
+                  <div className="w-full ">
+                    <span className="mt-5 text-white text-[23px]">FRENCH2</span>
+                  </div>
+                </div>
+                <Link
+                  className="w-full flex justify-center font-medium absolute -bottom-full group-hover:bottom-1 duration-300"
+                  href={routes.DESTINATION_MORE_INFO}
+                >
+                  <button className="bg-transparent border-2 border-white w-[80%] lg:py-[17px] lg:px-[10px] py-[10px] px-[20px] uppercase text-white hover:bg-white hover:text-[#EB268F] font-medium absolute text-[13px] xl:text-[16px] -bottom-full group-hover:bottom-6 duration-300">
+                    VIEW DESTINATION
+                  </button>
+                </Link>
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
       </div>
     </>
