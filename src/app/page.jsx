@@ -1,10 +1,11 @@
 "use client";
+import { Fade } from "react-awesome-reveal";
 
 import HomeCarousel from "@/components/HomeCarousel";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Couple from "../assets/couple.png";
-import { Fade } from "react-awesome-reveal";
+ 
 
 import PopularPackImg1 from "../assets/popularPack_img1.png";
 import PopularPackImg2 from "../assets/popularPack_img2.png";

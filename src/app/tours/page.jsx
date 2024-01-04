@@ -1,4 +1,5 @@
 "use client";
+import { Fade } from "react-awesome-reveal";
 
 import Navbar from "@/components/Navbar";
 import React, { useState } from "react";
@@ -74,6 +75,10 @@ const Tours = () => {
   return (
     <div className="w-full">
       <Navbar />
+
+      <Fade>
+        
+       
       <div className="relative w-full">
         <Image src={hero} alt="/" className="w-full" />
         <div className="absolute top-0 left-0 w-full h-full bg-[#0000004a] flex justify-center items-center text-white">
@@ -102,7 +107,11 @@ const Tours = () => {
         ))}
       </div>
 
+      
+
       <Footer />
+
+      </Fade>
     </div>
   );
 };

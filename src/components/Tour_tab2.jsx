@@ -1,3 +1,6 @@
+"use client";
+import { Fade } from "react-awesome-reveal";
+
 import React from 'react'
 import Image from 'next/image';
 import Check_green from '../assets/check_green.png';
@@ -6,6 +9,8 @@ import Cancel from '../assets/cancel.png';
 const Tour_tab2 = () => {
     return (
         <div className='flex flex-col gap-10 lg:gap-14'>
+            
+            <Fade> 
             <div className='flex flex-col px-3 lg:px-28 md:px-10'>
                 <h1 className='text-2xl font-bold'>Inclusions :</h1>
                 <div className='grid w-full grid-cols-1 gap-3 pt-6 md:gap-5 lg:pt-10 md:grid-cols-2'>
@@ -164,7 +169,7 @@ const Tour_tab2 = () => {
 
             </div>
             
-
+            </Fade>
         </div>
     )
 }

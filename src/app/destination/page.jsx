@@ -1,4 +1,6 @@
 "use client";
+import { Fade } from "react-awesome-reveal";
+
 import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
@@ -62,33 +64,38 @@ const Destinations = () => {
   return (
     <div className="w-full">
       <Navbar />
-      <div className="relative w-full">
-        <Image src={hero} alt="/" className="w-full" />
-        <div className="absolute top-0 left-0 w-full h-full bg-[#0000004a] flex justify-center items-center text-white">
-          <div className="flex flex-col gap-2">
-            <h1 className="text-5xl font-bold">Destination</h1>
-            <div className="flex items-center justify-center gap-2 md:text-xl">
-              <h1 className="font-bold">Home</h1>
-              <Image src={Arrow} alt="/" className="w-4" />
-              <h1>Destination</h1>
+
+      <Fade>
+        <div className="relative w-full">
+          <Image src={hero} alt="/" className="w-full" />
+          <div className="absolute top-0 left-0 w-full h-full bg-[#0000004a] flex justify-center items-center text-white">
+            <div className="flex flex-col gap-2">
+              <h1 className="text-5xl font-bold">Destination</h1>
+              <div className="flex items-center justify-center gap-2 md:text-xl">
+                <h1 className="font-bold">Home</h1>
+                <Image src={Arrow} alt="/" className="w-4" />
+                <h1>Destination</h1>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="grid w-full grid-cols-1 gap-3 px-3 py-10 lg:gap-10 md:grid-cols-3 lg:py-20 lg:px-28 md:px-10">
-        {destinations.map((destination) => (
-          <Link key={destination.id} href={routes.DESTINATION_MORE_INFO}>
-            <DestinationCard
-              Img={destination.image}
-              Place={destination.place}
-              Desc={destination.description}
-            />
-          </Link>
-        ))}
-      </div>
+        <div className="grid w-full grid-cols-1 gap-3 px-3 py-10 lg:gap-10 md:grid-cols-3 lg:py-20 lg:px-28 md:px-10">
+          {destinations.map((destination) => (
+            <Link key={destination.id} href={routes.DESTINATION_MORE_INFO}>
+              <DestinationCard
+                Img={destination.image}
+                Place={destination.place}
+                Desc={destination.description}
+              />
+            </Link>
+          ))}
+        </div>
 
-      <Footer />
+        <Footer />
+
+      </Fade>
+
     </div>
   );
 };

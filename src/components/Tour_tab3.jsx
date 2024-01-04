@@ -1,3 +1,6 @@
+"use client";
+import { Fade } from "react-awesome-reveal";
+
 import React from 'react'
 import Image from 'next/image';
 import Table1 from '../assets/Table1.png';
@@ -10,6 +13,8 @@ const Tour_tab3 = () => {
 
     return (
         <div className='flex flex-col gap-10 lg:gap-14'>
+            
+            <Fade> 
             <div className='flex flex-col gap-6 px-3 lg:px-44 md:px-10'>
                 <Image src={Table1} alt='/' className='w-full' />
 
@@ -54,7 +59,7 @@ const Tour_tab3 = () => {
 
             </div>
             
-
+            </Fade>
         </div>
     )
 }
