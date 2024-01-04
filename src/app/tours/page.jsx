@@ -90,9 +90,8 @@ const Tours = () => {
 
       <div className="grid w-full grid-cols-1 gap-3 px-3 py-10 lg:gap-10 md:grid-cols-3 lg:py-20 lg:px-28 md:px-10">
         {tourPackages.map((tour, index) => (
-          <Link href={routes.TOUR_PACKAGE_MORE_INFO}>
+          <Link key={tour.id} href={routes.TOUR_PACKAGE_MORE_INFO}>
             <PopularPackCard
-              key={tour.id}
               Img={tour.image}
               Days={tour.days}
               Location={tour.location}

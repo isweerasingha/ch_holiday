@@ -78,9 +78,8 @@ const Destinations = () => {
 
       <div className="grid w-full grid-cols-1 gap-3 px-3 py-10 lg:gap-10 md:grid-cols-3 lg:py-20 lg:px-28 md:px-10">
         {destinations.map((destination) => (
-          <Link href={routes.DESTINATION_MORE_INFO}>
+          <Link key={destination.id} href={routes.DESTINATION_MORE_INFO}>
             <DestinationCard
-              key={destination.id}
               Img={destination.image}
               Place={destination.place}
               Desc={destination.description}
