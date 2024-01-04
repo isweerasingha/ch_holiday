@@ -94,21 +94,13 @@ const HomeCarousel = () => {
 
                 </Swiper>
 
-                {/* <Carousel orientation="vertical" height={200} withIndicators>
-                    <Carousel.Slide> <div className=''>
-                        <Image src={Image1} alt="/" className='w-full lg:h-[100vh] md:h-[80vh] h-[50vh]' />
-                    </div></Carousel.Slide>
-                    <Carousel.Slide> <div className=''>
-                        <Image src={Image1} alt="/" className='w-full lg:h-[100vh] md:h-[80vh] h-[50vh]' />
-                    </div></Carousel.Slide>
-
-                </Carousel> */}
+ 
 
 
                 <div className='lg:w-[50%] md:w-[70%] w-[100%] lg:h-[100vh] absolute   top-0 z-30  flex text-white'>
                     <div className='flex flex-col justify-center gap-6 px-3 md:gap-10 lg:px-28 md:px-10'>
-                        <h1 className='mt-10 text-3xl font-bold md:mt-16 lg:mt-0 md:text-7xl'>Explore the Unexplored!</h1>
-                        <span className='text-base md:text-xl'>Get ready for your Next Trip with CH Asian Holidays as your Reliable Traveling Partner</span>
+                        <h1 className='mt-10  font-bold md:mt-16 lg:mt-0 text-[40px]'>Explore the Unexplored!</h1>
+                        <span className='text-[16px]'>Get ready for your Next Trip with CH Asian Holidays as your Reliable Traveling Partner</span>
                         <div className='flex justify-start gap-6 '>
                             <button className='bg-[#EB268F] lg:py-[17px] lg:px-[40px] w-full py-[10px] px-[20px] uppercase text-white hover:bg-[#C8207A] font-medium text-[16px] duration-300'>Tale a Tour</button>
                             <button className='bg-transparent border-2 border-white w-full lg:py-[17px] lg:px-[40px] py-[10px] px-[20px] uppercase text-white hover:bg-white hover:text-[#EB268F] duration-300 font-medium text-[16px]'>Learn More</button>
@@ -156,7 +148,7 @@ const HomeCarousel = () => {
                         <Image src={GREECE} alt="/" className='w-full' />
                         <div className='absolute w-full h-full bg-transparent top-0 hover:bg-[#000000a5] duration-500 p-5'>
                             <div className='w-full '>
-                                <span className='mt-5 text-white'>GREECE</span>
+                                <span className='mt-5 text-white text-[23px]'>GREECE</span>
                             </div>
 
                         </div>
@@ -169,7 +161,7 @@ const HomeCarousel = () => {
                         <Image src={AFRICA} alt="/" className='w-full' />
                         <div className='absolute w-full h-full bg-transparent top-0 hover:bg-[#000000a5] duration-500 p-5'>
                             <div className='w-full '>
-                                <span className='mt-5 text-white'>AFRICA</span>
+                                <span className='mt-5 text-white text-[23px]'>AFRICA</span>
                             </div>
 
                         </div>
@@ -182,7 +174,7 @@ const HomeCarousel = () => {
                         <Image src={FRANCE} alt="/" className='w-full' />
                         <div className='absolute w-full h-full bg-transparent top-0 hover:bg-[#000000a5] duration-500 p-5'>
                             <div className='w-full '>
-                                <span className='mt-5 text-white'>FRENCH</span>
+                                <span className='mt-5 text-white text-[23px]'>FRENCH</span>
                             </div>
 
                         </div>

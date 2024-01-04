@@ -13,14 +13,14 @@ const Footer = () => {
             <div className='lg:h-[50vh] h-full w-full flex flex-col lg:flex-row bg-[#262626] px-3  lg:px-28 md:px-5 gap-10 lg:gap-6  items-center'>
                 <div className='flex flex-col w-full gap-5 pr-gap-1010 xl: lg:w-2/6'>
                     <Image src={white_logo} alt="/" />
-                    <p className='text-justify xl:text-lg'>From the vibrant landscapes of Sri Lanka to the allure of global destinations, we invite you to embark on a journey with us.</p>
+                    <p className='text-[16px] text-justify'>From the vibrant landscapes of Sri Lanka to the allure of global destinations, we invite you to embark on a journey with us.</p>
                 </div>
                 <div className='flex flex-col w-full gap-10 lg:gap-5 lg:flex-row lg:w-4/6'>
                     <div className='grid w-full grid-cols-2 gap-5 md:w-3/5'>
 
                         {/*  */}
                         <div className='flex flex-col gap-5'>
-                            <h1>Quick Link</h1>
+                            <h1 className='text-[19px]'>Quick Link</h1>
                             <hr className='border-[#EB268F] border-2 w-40 ' />
                             <div className='flex items-center gap-2'>
                             <Image src={Arrow} alt="/" />
@@ -42,7 +42,7 @@ const Footer = () => {
 
                         {/*  */}
                         <div className='flex flex-col gap-5'>
-                            <h1>Information</h1>
+                            <h1 className='text-[19px]'>Information</h1>
                             <hr className='border-[#EB268F] border-2 w-40' />
                             <div className='flex items-center gap-2'>
                             <Image src={Arrow} alt="/" />
@@ -64,9 +64,9 @@ const Footer = () => {
                     </div>
                     <div className='w-full pb-10 lg:pb-0 lg:w-2/5'>
                         <div className='flex flex-col gap-5'>
-                            <h1>Get in Touch</h1>
+                            <h1 className='text-[19px]'>Get in Touch</h1>
                             <hr className='border-[#EB268F] border-2 w-40' />
-                            <div className='flex gap-5 lg:flex-col xl:flex-row xl:text-sm'>
+                            <div className='flex gap-5 lg:flex-col xl:text-sm'>
                                 <div className='flex items-center gap-2'>
                                 <Image src={location} alt="/" />
                                     <span>99 Roving St., Pku</span>

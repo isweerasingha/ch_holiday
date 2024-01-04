@@ -33,10 +33,10 @@ export default function Home() {
       <HomeCarousel />
 
       <div className="flex flex-col w-full gap-6 px-3 py-10 text-center md:gap-10 md:py-20 bg1 lg:px-28 md:px-5" >
-        <span className="text-[#EB268F] text-xl font-medium">SINCE 2020</span>
+        <span className="text-[#EB268F] text-[28px] font-medium">SINCE 2020</span>
         <div className="flex flex-col gap-3 md:gap-5">
-          <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl">Planning your next perfect</h1>
-          <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl">island trip is now hurdle-free</h1>
+          <h1 className="text-[40px] font-bold md:text-[44px] lg:text-[48px]">Planning your next perfect</h1>
+          <h1 className="text-[40px] font-bold md:text-[44px] lg:text-[48px]">island trip is now hurdle-free</h1>
         </div>
         <div className="grid md:grid-cols-5 lg:gap-[36px] text-white grid-cols-2 gap-3 md:gap-6 box">
 
@@ -47,12 +47,12 @@ export default function Home() {
                 <div class="front face bg-[#3E4095]">
                   <div className="flex flex-col items-center justify-center w-full h-full gap-3 font-bold text-white">
                     <Image src={earth_icon} alt="/" />
-                    <span>24/7 Availability</span>
+                    <span className="text-[16px]">24/7 Availability</span>
                   </div>
                 </div>
                 <div class="back face">
                   <div className="flex flex-col items-center justify-center w-full h-full gap-3 text-xl font-bold text-white">
-                    <span>24/7 Availability</span>
+                    <span className="text-[16px]">24/7 Availability</span>
                   </div>
                 </div>
               </div>
@@ -66,12 +66,12 @@ export default function Home() {
                 <div class="front face bg-[#3E4095]">
                   <div className="flex flex-col items-center justify-center w-full h-full gap-3 font-bold text-white">
                     <Image src={money_icon} alt="/" />
-                    <span>Affordable Prices</span>
+                    <span className="text-[16px]">Affordable Prices</span>
                   </div>
                 </div>
                 <div class="back face">
                   <div className="flex flex-col items-center justify-center w-full h-full gap-3 text-xl font-bold text-white">
-                    <span>Affordable Prices</span>
+                    <span className="text-[16px]">Affordable Prices</span>
                   </div>
                 </div>
               </div>
@@ -85,12 +85,12 @@ export default function Home() {
                 <div class="front face bg-[#3E4095]">
                   <div className="flex flex-col items-center justify-center w-full h-full gap-3 font-bold text-white">
                     <Image src={quality_icon} alt="/" />
-                    <span>Quality Services</span>
+                    <span className="text-[16px]">Quality Services</span>
                   </div>
                 </div>
                 <div class="back face">
                   <div className="flex flex-col items-center justify-center w-full h-full gap-3 text-xl font-bold text-white">
-                    <span>Quality Services</span>
+                    <span className="text-[16px]">Quality Services</span>
                   </div>
                 </div>
               </div>
@@ -105,12 +105,12 @@ export default function Home() {
                 <div class="front face bg-[#3E4095]">
                   <div className="flex flex-col items-center justify-center w-full h-full gap-3 font-bold text-white">
                     <Image src={paper_icon} alt="/" />
-                    <span>Easy to reach</span>
+                    <span className="text-[16px]">Easy to reach</span>
                   </div>
                 </div>
                 <div class="back face">
                   <div className="flex flex-col items-center justify-center w-full h-full gap-3 text-xl font-bold text-white">
-                    <span>Easy to reach</span>
+                    <span className="text-[16px]">Easy to reach</span>
                   </div>
                 </div>
               </div>
@@ -124,12 +124,12 @@ export default function Home() {
                 <div class="front face bg-[#3E4095]">
                   <div className="flex flex-col items-center justify-center w-full h-full gap-3 font-bold text-white">
                     <Image src={guide_icon} alt="/" />
-                    <span>City Guide</span>
+                    <span className="text-[16px]">City Guide</span>
                   </div>
                 </div>
                 <div class="back face">
                   <div className="flex flex-col items-center justify-center w-full h-full gap-3 text-xl font-bold text-white">
-                    <span>City Guide</span>
+                    <span className="text-[16px]">City Guide</span>
                   </div>
                 </div>
               </div>
@@ -147,7 +147,7 @@ export default function Home() {
           <Image src={Couple} alt="/" className='lg:h-[110vh] xl:h-[90vh] md:h-full h-[50vh] absolute w-auto bottom-0' />
         </div>
         <div className="flex flex-col justify-center gap-[34px] lg:py-16 md:py-10 py-5 text-white lg:pl-10">
-          <div className="flex flex-col text-4xl font-medium">
+          <div className="flex flex-col text-[28px] font-medium">
             <h1>Them Best Great</h1>
             <h1>Tourism is right here</h1>
           </div>
@@ -165,14 +165,14 @@ export default function Home() {
 
       <div className="w-full px-3 py-10 lg:px-28 md:px-5 md:py-20">
         <div className="flex flex-col w-full gap-3 text-center">
-          <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl">Uncover the Mesmerizing</h1>
-          <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl">Sri Lanka tour packages</h1>
-          <span className="mt-4">Aesthetic, Nature Lover, Adventurous or Religious – What’s on your mind?</span>
+          <h1 className="text-[40px] font-bold md:text-[44px] lg:text-[48px]">Uncover the Mesmerizing</h1>
+          <h1 className="text-[40px] font-bold md:text-[44px] lg:text-[48px]">Sri Lanka tour packages</h1>
+          <span className="mt-4 text-[16px]">Aesthetic, Nature Lover, Adventurous or Religious – What’s on your mind?</span>
         </div>
 
         <div className="flex justify-between w-full py-10">
           <div className="flex items-center gap-3 text-2xl font-bold">
-            <h1>Popular Packages</h1>
+            <h1 className="text-[33px]">Popular Packages</h1>
             <hr className="hidden w-12 border-2 border-black md:block" />
           </div>
 
@@ -223,7 +223,7 @@ export default function Home() {
             <Image src={Couple2} alt="/" className="" />
           </div>
           <div className="flex flex-col gap-10 py-10 md:py-16">
-            <h1 className="text-5xl font-medium text-white">Why Us</h1>
+            <h1 className="text-[40px] font-bold md:text-[44px] lg:text-[48px] text-white">Why Us</h1>
             <div className="flex flex-col gap-5">
 
               {/*  */}
@@ -254,8 +254,8 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex flex-col justify-between gap-2 mt-3 md:pl-4 md:mt-0">
-                  <h1 className="text-[#EB268F] group-hover:text-white">All Around the world tours </h1>
-                  <span className="text-sm text-justify group-hover:text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</span>
+                  <h1 className="text-[#EB268F] group-hover:text-white text-[19px]">All Around the world tours </h1>
+                  <span className="text-sm text-justify group-hover:text-white text-[16px]">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</span>
                 </div>
               </div>
 
@@ -276,8 +276,8 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex flex-col justify-between gap-2 mt-3 md:pl-4 md:mt-0">
-                  <h1 className="text-[#EB268F] group-hover:text-white">Private & Customized Tours </h1>
-                  <span className="text-sm text-justify group-hover:text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</span>
+                  <h1 className="text-[#EB268F] group-hover:text-white text-[19px]">Private & Customized Tours </h1>
+                  <span className="text-sm text-justify group-hover:text-white text-[16px]">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</span>
                 </div>
               </div>
 
@@ -298,8 +298,8 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex flex-col justify-between gap-2 mt-3 md:pl-4 group-hover:text-white md:mt-0">
-                  <h1 className="text-[#EB268F] group-hover:text-white">Immigration & Passport Help </h1>
-                  <span className="text-sm text-justify">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</span>
+                  <h1 className="text-[#EB268F] group-hover:text-white text-[19px]">Immigration & Passport Help </h1>
+                  <span className="text-sm text-justify text-[16px]">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</span>
                 </div>
               </div>
 
@@ -316,7 +316,7 @@ export default function Home() {
 
 
           <div className="flex flex-col justify-center gap-[34px] lg:py-20 md:py-10 py-5 lg:pr-14 bg-logo">
-            <div className="flex flex-col text-4xl font-bold">
+            <div className="flex flex-col text-[40px] font-bold md:text-[44px] lg:text-[48px]">
               <h1>We make your Journey</h1>
               <h1>Worth Remembering!</h1>
             </div>
@@ -339,9 +339,9 @@ export default function Home() {
         <div className="absolute top-0 left-0 flex items-center justify-center w-full h-full px-3 lg:px-28 md:px-5">
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="flex flex-col bg-[#3E4095] md:p-8 lg:p-16 p-6 gap-6 text-white">
-              <span>Testimonials & Reviews </span>
-              <h1 className="text-5xl font-bold">What People Say</h1>
-              <p>Sed congue mollis orci et tempus. Etiam semper elit id turpis ornare posuere a sit amet elit. Nulla facilisi. Nullam augue lectus, lobortis et risus id, ornare porttitor arcu. Pellentesque habitant morbi tristique senectus et netus.</p>
+              <span className="text-[16px]">Testimonials & Reviews </span>
+              <h1 className="text-[40px] font-bold md:text-[44px] lg:text-[48px]">What People Say</h1>
+              <p className="text-[16px]">Sed congue mollis orci et tempus. Etiam semper elit id turpis ornare posuere a sit amet elit. Nulla facilisi. Nullam augue lectus, lobortis et risus id, ornare porttitor arcu. Pellentesque habitant morbi tristique senectus et netus.</p>
               <div>
                 <button className='bg-white lg:py-[17px] lg:px-[55px] font-bold py-[10px] px-[20px] text-[#3E4095] hover:bg-[#e6e6e6]  text-[16px] uppercase'>Contact Us</button>
               </div>
@@ -355,7 +355,7 @@ export default function Home() {
                 <Image src={Star2} alt="/" />
               </div>
 
-              <p>Nulla mollis tristique blandit. Nam at accumsan felis, vitae pharetra nunc. Morbi imperdiet dui eu facilisis vestibulum.
+              <p className="text-[16px]">Nulla mollis tristique blandit. Nam at accumsan felis, vitae pharetra nunc. Morbi imperdiet dui eu facilisis vestibulum.
                 Sed dignissim non nibh auctor finibus. Integer mollis varius.</p>
 
               <div className="flex items-center justify-between">
@@ -364,8 +364,8 @@ export default function Home() {
                     <Image src={Person} alt="/" className="w-full h-full" />
                   </div>
                   <div className="flex flex-col justify-center gap-3">
-                    <h1 className="text-2xl font-bold md:text-xl lg:text-2xl">Kumto Warming</h1>
-                    <span>Designation</span>
+                    <h1 className="text-[23px] font-bold ">Kumto Warming</h1>
+                    <span className="text-[16px]">Designation</span>
                   </div>
                 </div>
                 <div className="justify-center hidden md:flex">
