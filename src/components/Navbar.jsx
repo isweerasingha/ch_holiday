@@ -175,23 +175,23 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        <li className="items-center hidden gap-5 font-bold md:flex">
-          <ul>
+        <ul className="items-center hidden gap-5 font-bold md:flex">
+          <li>
             <Link href={routes.HOME}>Home</Link>
-          </ul>
-          <ul>
+          </li>
+          <li>
             <Link href={routes.ALL_TOUR_PACKAGES}>Tours</Link>
-          </ul>
-          <ul>
+          </li>
+          <li>
             <Link href={routes.ALL_DESTINATIONS}>Destinations</Link>
-          </ul>
-          <ul>
+          </li>
+          <li>
             <Link href={routes.ABOUT_US}>About Us</Link>
-          </ul>
-          <ul>
+          </li>
+          <li>
             <Link href={routes.CONTACT_US}>Contact Us</Link>
-          </ul>
-        </li>
+          </li>
+        </ul>
         <div className="flex items-center">
           <button className="bg-[#3E4095] lg:py-[17px] lg:px-[55px] md:py-[10px] md:px-[35px] uppercase text-white hover:bg-[#31327a] font-medium text-[16px] hidden md:flex">
             Book Now
@@ -233,12 +233,21 @@ const Navbar = () => {
         </div>
 
         <ul className="flex flex-col gap-5 mt-5 font-bold text-center uppercase">
-          <li className=""> Home </li>
-          <li className=""> Tours </li>
-          <li className=""> Destinations </li>
-          <li className=""> Blog </li>
-          <li className=""> About Us </li>
-          <li className=""> Contact Us </li>
+          <li>
+            <Link href={routes.HOME}>Home</Link>
+          </li>
+          <li>
+            <Link href={routes.ALL_TOUR_PACKAGES}>Tours</Link>
+          </li>
+          <li>
+            <Link href={routes.ALL_DESTINATIONS}>Destinations</Link>
+          </li>
+          <li>
+            <Link href={routes.ABOUT_US}>About Us</Link>
+          </li>
+          <li>
+            <Link href={routes.CONTACT_US}>Contact Us</Link>
+          </li>
         </ul>
         <div className="flex justify-center w-full pb-5 mt-5 border-b-2">
           <button className="bg-[#3E4095]  py-[10px]  px-[35px] uppercase text-white hover:bg-[#31327a] font-medium text-[16px]">
