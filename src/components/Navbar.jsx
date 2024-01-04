@@ -39,7 +39,7 @@ const Navbar = () => {
         <div className={`z-50 flex flex-col w-full   poppin_font `}>
 
             {/*  */}
-            <div className='flex justify-between bg-[#3E4095] w-full lg:px-28 md:px-5 px-3 text-white py-3'>
+            <div className='flex justify-between bg-[#3E4095] w-full lg:px-28 md:px-5 px-3 text-white py-3 '>
                 <div className='flex items-center gap-2 md:gap-5'>
                     <div className='flex items-center gap-2 md:gap-3'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">

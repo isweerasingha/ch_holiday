@@ -7,12 +7,14 @@ const PopularPackCard = ({ Img, Days, Location, Price, Rate }) => {
     <div>
       <div className="relative flex flex-col">
         <div className='relative w-full overflow-hidden group'>
-          <Image src={Img} alt="/" className="w-full" />
- 
+          <Image src={Img} alt="/" className="w-full duration-300 group-hover:scale-110" />
+          {/* <div className='absolute z-40 w-full h-full duration-300 -bottom-full group-hover:bottom-0 bg-gradient-to-t from-[#fc0afc6a] to-[#ff57577e] flex justify-center items-end pb-10'>
+          <button className='bg-white border-2  lg:py-[17px] lg:px-[55px] py-[10px] px-[20px] uppercase font-bold text-[#EB268F] text-[16px] hover:scale-105 duration-200 hover:shadow-xl'>More Details</button>
+          </div> */}
         </div>
-        <div className="p-6 bg-[#1C1D43] text-white">
-          <div className="flex gap-2">
-            <div className="flex flex-col w-2/3 gap-3 border-e-2">
+        <div className="xl:p-6 lg:p-2 p-6 md:p-4 bg-[#1C1D43] text-white">
+          <div className="flex justify-between gap-3">
+            <div className="flex flex-col w-2/3 gap-3 pr-2 border-e-2">
               <span>Sri Lanka Tour Package {Days} Days | Private Tour</span>
               <div className="flex items-center gap-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">

@@ -76,3 +76,43 @@
     height: 100%;
     object-fit: cover;
 }
+
+
+/*  */
+
+.card-container {
+    position: relative;
+    z-index: 1;
+    float: left;
+    perspective: 1000px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all .8s linear;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .3);
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+    box-shadow: -5px 5px 15px rgba(0, 0, 0, .3);
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.back {
+    display: block;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    opacity: 1;
+    background: #EB268F;
+}
