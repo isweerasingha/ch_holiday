@@ -38,6 +38,11 @@ import Up from "../../assets/icon _keyboard arrow up_.png";
 
 import Rectangle from "../../assets/Rectangle 82.svg";
 
+import Apart_imag1 from "../../assets/Apart_imag1.svg";
+import Apart_imag2 from "../../assets/Apart_imag2.svg";
+import Apart_imag3 from "../../assets/Apart_imag3.svg";
+import Apart_imag4 from "../../assets/Apart_imag4.svg";
+
 const About = () => {
   const [opened1, setOpened1] = useState(false);
   const handleOpened1 = () => {
@@ -202,8 +207,11 @@ const About = () => {
               </div>
 
               <div className="grid grid-cols-1 lg:grid-cols-2">
+                
                 <div className="flex flex-col items-center gap-5 p-5 text-center border-b lg:border-e">
-                  <Image src="" alt="/" className="w-full" />
+                  
+                  <Image src={Apart_imag1} alt="/" className="" />
+                  
                   <h1 className="text-[23px] font-bold ">
                     Tailored Sri Lankan Adventures
                   </h1>
@@ -216,7 +224,7 @@ const About = () => {
                 </div>
 
                 <div className="flex flex-col items-center gap-5 p-5 text-center border-b lg:border-s">
-                  <Image src="" alt="/" className="w-full" />
+                  <Image src={Apart_imag2} alt="/" className="" />
                   <h1 className="text-[23px] font-bold">
                     Global Odyssey Expeditions
                   </h1>
@@ -230,7 +238,7 @@ const About = () => {
                 </div>
 
                 <div className="flex flex-col items-center gap-5 p-5 text-center border-b lg:border-t lg:border-e lg:border-b-0">
-                  <Image src="" alt="/" className="w-full" />
+                  <Image src={Apart_imag3} alt="/" className="" />
                   <h1 className="text-[23px] font-bold">Expertly Guided Tours</h1>
                   <p className="text-[16px] text-center">
                     Benefit from the knowledge and passion of our experienced guides
@@ -242,7 +250,7 @@ const About = () => {
                 </div>
 
                 <div className="flex flex-col items-center gap-5 p-5 text-center border-b lg:border-t lg:border-s lg:border-b-0">
-                  <Image src="" alt="/" className="w-full" />
+                  <Image src={Apart_imag4} alt="/" className="" />
                   <h1 className="text-[23px] font-bold">
                     Luxurious Accommodations
                   </h1>
@@ -254,6 +262,7 @@ const About = () => {
                     luxury to your overall travel experience.
                   </p>
                 </div>
+                
               </div>
             </div>
           </Fade>
@@ -271,7 +280,8 @@ const About = () => {
                 </p>
               </div>
 
-              <div className="hidden w-full md:flex">
+              {/* lg */}
+              <div className="hidden w-full lg:flex">
                 <Swiper
                   slidesPerView={3}
                   spaceBetween={30}
@@ -374,6 +384,111 @@ const About = () => {
                 </Swiper>
               </div>
 
+              {/* md */}
+              <div className="hidden w-full md:flex lg:hidden">
+                <Swiper
+                  slidesPerView={2}
+                  spaceBetween={30}
+                  pagination={{
+                    clickable: true,
+                  }}
+                  modules={[Pagination]}
+                  className="grid grid-cols-3 mySwiper"
+                >
+                  <SwiperSlide>
+                    <div className="relative">
+                      <Image src={boy1} alt="/" className="" />
+                      <div className="absolute top-0 left-0 flex items-end w-full h-full px-3 ">
+                        <div className="flex flex-col items-center w-full gap-2 p-3 bg-[#3E4095] text-white">
+                          <h1 className="font-bold ">Mr. Alexander Turner</h1>
+                          <span className="text-sm">Founder & CEO</span>
+                          <div className="flex justify-between w-1/2 pt-2">
+                            <div className="">
+                              <Image src={FB} alt="/" className="w-6" />
+                            </div>
+                            <div className="">
+                              <Image src={Linkedin} alt="/" className="" />
+                            </div>
+                            <div className="">
+                              <Image src={Insta} alt="/" className="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="relative">
+                      <Image src={girl} alt="/" className="" />
+                      <div className="absolute top-0 left-0 flex items-end w-full h-full px-3 ">
+                        <div className="flex flex-col items-center w-full gap-2 p-3 bg-[#3E4095] text-white">
+                          <h1 className="font-bold ">Ms. Emerson Jane</h1>
+                          <span className="text-sm">Lead Travel Consultant</span>
+                          <div className="flex justify-between w-1/2 pt-2">
+                            <div className="">
+                              <Image src={FB} alt="/" className="w-6" />
+                            </div>
+                            <div className="">
+                              <Image src={Linkedin} alt="/" className="" />
+                            </div>
+                            <div className="">
+                              <Image src={Insta} alt="/" className="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="relative">
+                      <Image src={boy2} alt="/" className="" />
+                      <div className="absolute top-0 left-0 flex items-end w-full h-full px-3 ">
+                        <div className="flex flex-col items-center w-full gap-2 p-3 bg-[#3E4095] text-white">
+                          <h1 className="font-bold ">Mr. Rahul Patel </h1>
+                          <span className="text-sm">
+                            Customer Experience Manager
+                          </span>
+                          <div className="flex justify-between w-1/2 pt-2">
+                            <div className="">
+                              <Image src={FB} alt="/" className="w-6" />
+                            </div>
+                            <div className="">
+                              <Image src={Linkedin} alt="/" className="" />
+                            </div>
+                            <div className="">
+                              <Image src={Insta} alt="/" className="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="relative">
+                      <Image src={girl} alt="/" className="" />
+                      <div className="absolute top-0 left-0 flex items-end w-full h-full px-3 ">
+                        <div className="flex flex-col items-center w-full gap-2 p-3 bg-[#3E4095] text-white">
+                          <h1 className="font-bold ">Ms. Emerson Jane</h1>
+                          <span className="text-sm">Lead Travel Consultant</span>
+                          <div className="flex justify-between w-1/2 pt-2">
+                            <div className="">
+                              <Image src={FB} alt="/" className="w-6" />
+                            </div>
+                            <div className="">
+                              <Image src={Linkedin} alt="/" className="" />
+                            </div>
+                            <div className="">
+                              <Image src={Insta} alt="/" className="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                </Swiper>
+              </div>
+
+              {/* sm */}
               <div className="flex w-full md:hidden">
                 <Swiper
                   slidesPerView={1}

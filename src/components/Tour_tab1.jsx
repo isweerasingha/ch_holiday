@@ -31,6 +31,16 @@ import Vehicle from '../assets/vehicle.png';
 
 import Pinnawala from '../assets/pinnawala.png';
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// // import required modules
+// import { Pagination, Autoplay } from "swiper/modules";
+
 const Tour_tab1 = () => {
 
     const [opened1, setOpened1] = useState(false);
@@ -107,7 +117,7 @@ const Tour_tab1 = () => {
                         </div>
                     </div>
                 </div>
- 
+
                 <div className='bg-[#3E4095] py-6 grid md:grid-cols-3 lg:px-28 md:px-10 px-3 w-full text-white grid-cols-1 gap-6 md:gap-0'>
                     <div className='flex flex-col items-center justify-center gap-3 pb-5 border-b-2 md:border-e-2 md:border-b-0 md:flex-row md:pb-0'>
                         <Image src={Download} alt='/' />
@@ -122,57 +132,213 @@ const Tour_tab1 = () => {
                         <h1>Ask a Question</h1>
                     </div>
                 </div>
-   
+
                 <div className='px-3 py-10 text-center lg:px-28 md:px-10 lg:py-20'>
                     <h1 className='text-2xl font-bold'>Locations You&apos;ll View</h1>
                     <p className='pt-10'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                         dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
                     <div className='w-full pt-10'>
                         <div className='flex justify-end gap-4'>
-                            <button className=' bg-[#3E4095] hover:bg-[#31327a] hover:cursor-pointer'>
+                            <button className=' bg-[#3E4095] hover:bg-[#31327a] hover:cursor-pointer swiper-button-prev'>
                                 <Image src={Left} alt='/' />
                             </button>
-                            <button className='bg-[#EB268F] hover:bg-[#792c55] hover:cursor-pointer'>
+                            <button className='bg-[#EB268F] hover:bg-[#792c55] hover:cursor-pointer swiper-button-next'>
                                 <Image src={Right} alt='/' />
                             </button>
 
                         </div>
                     </div>
 
-                    <div className='grid grid-cols-1 gap-10 pt-10 md:grid-cols-3'>
-                        <div className='relative'>
-                            <Image src={Ella} alt='/' className='w-full' />
-                            <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end'>
-                                <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
-                                    <h1 className='text-2xl font-bold'>Ella</h1>
-                                    <p>Nestled hills, tea plantations, waterfalls,
-                                        and Nine Arch Bridge.</p>
+                    {/* lg */}
+                    <div className='hidden pt-10 lg:flex'>
+                        <Swiper
+                            modules={[Navigation]}
+                            navigation={{
+                                nextEl: ".swiper-button-next",
+                                prevEl: ".swiper-button-prev",
+                            }}
+                            spaceBetween={20}
+                            slidesPerView={3}
+                        >
+
+                            <SwiperSlide>
+                                <div className='relative'>
+                                    <Image src={Ella} alt='/' className='w-full' />
+                                    <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end'>
+                                        <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
+                                            <h1 className='text-2xl font-bold'>Ella</h1>
+                                            <p>Nestled hills, tea plantations, waterfalls,
+                                                and Nine Arch Bridge.</p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div className='relative'>
-                            <Image src={Kandy} alt='/' className='w-full' />
-                            <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end'>
-                                <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
-                                    <h1 className='text-2xl font-bold'>Kandy</h1>
-                                    <p>Cultural capital, Temple of the Tooth,
-                                        Kandy Lake, and cultural performances.</p>
+                            </SwiperSlide>
+
+                            <SwiperSlide>
+                                <div className='relative'>
+                                    <Image src={Kandy} alt='/' className='w-full' />
+                                    <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end'>
+                                        <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
+                                            <h1 className='text-2xl font-bold'>Kandy</h1>
+                                            <p>Cultural capital, Temple of the Tooth,
+                                                Kandy Lake, and cultural performances.</p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div className='relative'>
-                            <Image src={Sigiriya} alt='/' className='w-full' />
-                            <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end'>
-                                <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
-                                    <h1 className='text-2xl font-bold'>Sigiriya</h1>
-                                    <p>UNESCO site, Sigiriya Rock Fortress,
-                                        ancient city, and mesmerizing frescoes.</p>
+                            </SwiperSlide>
+
+                            <SwiperSlide>
+                                <div className='relative'>
+                                    <Image src={Sigiriya} alt='/' className='w-full' />
+                                    <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end'>
+                                        <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
+                                            <h1 className='text-2xl font-bold'>Sigiriya</h1>
+                                            <p>UNESCO site, Sigiriya Rock Fortress,
+                                                ancient city, and mesmerizing frescoes.</p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
+                            </SwiperSlide>
+
+                            <SwiperSlide>
+                                <div className='relative'>
+                                    <Image src={Sigiriya} alt='/' className='w-full' />
+                                    <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end'>
+                                        <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
+                                            <h1 className='text-2xl font-bold'>Sigiriya</h1>
+                                            <p>UNESCO site, Sigiriya Rock Fortress,
+                                                ancient city, and mesmerizing frescoes.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+
+                        </Swiper>
                     </div>
+
+                    {/* md */}
+                    <div className='hidden pt-10 md:flex lg:hidden'>
+                        <Swiper
+                            modules={[Navigation]}
+                            navigation={{
+                                nextEl: ".swiper-button-next",
+                                prevEl: ".swiper-button-prev",
+                            }}
+                            spaceBetween={20}
+                            slidesPerView={2}
+                        >
+
+                            <SwiperSlide>
+                                <div className='relative'>
+                                    <Image src={Ella} alt='/' className='w-full' />
+                                    <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end'>
+                                        <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
+                                            <h1 className='text-2xl font-bold'>Ella</h1>
+                                            <p>Nestled hills, tea plantations, waterfalls,
+                                                and Nine Arch Bridge.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+
+                            <SwiperSlide>
+                                <div className='relative'>
+                                    <Image src={Kandy} alt='/' className='w-full' />
+                                    <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end'>
+                                        <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
+                                            <h1 className='text-2xl font-bold'>Kandy</h1>
+                                            <p>Cultural capital, Temple of the Tooth,
+                                                Kandy Lake, and cultural performances.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+
+                            <SwiperSlide>
+                                <div className='relative'>
+                                    <Image src={Sigiriya} alt='/' className='w-full' />
+                                    <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end'>
+                                        <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
+                                            <h1 className='text-2xl font-bold'>Sigiriya</h1>
+                                            <p>UNESCO site, Sigiriya Rock Fortress,
+                                                ancient city, and mesmerizing frescoes.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+
+                            <SwiperSlide>
+                                <div className='relative'>
+                                    <Image src={Sigiriya} alt='/' className='w-full' />
+                                    <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end'>
+                                        <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
+                                            <h1 className='text-2xl font-bold'>Sigiriya</h1>
+                                            <p>UNESCO site, Sigiriya Rock Fortress,
+                                                ancient city, and mesmerizing frescoes.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+
+                        </Swiper>
+                    </div>
+
+                    {/* sm */}
+                    <div className='pt-10 md:hidden'>
+                        <Swiper
+                            modules={[Navigation]}
+                            navigation={{
+                                nextEl: ".swiper-button-next",
+                                prevEl: ".swiper-button-prev",
+                            }}
+                            spaceBetween={20}
+                            slidesPerView={1}
+                        >
+
+                            <SwiperSlide>
+                                <div className='relative'>
+                                    <Image src={Ella} alt='/' className='w-full' />
+                                    <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end'>
+                                        <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
+                                            <h1 className='text-2xl font-bold'>Ella</h1>
+                                            <p>Nestled hills, tea plantations, waterfalls,
+                                                and Nine Arch Bridge.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+
+                            <SwiperSlide>
+                                <div className='relative'>
+                                    <Image src={Kandy} alt='/' className='w-full' />
+                                    <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end'>
+                                        <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
+                                            <h1 className='text-2xl font-bold'>Kandy</h1>
+                                            <p>Cultural capital, Temple of the Tooth,
+                                                Kandy Lake, and cultural performances.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+
+                            <SwiperSlide>
+                                <div className='relative'>
+                                    <Image src={Sigiriya} alt='/' className='w-full' />
+                                    <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end'>
+                                        <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
+                                            <h1 className='text-2xl font-bold'>Sigiriya</h1>
+                                            <p>UNESCO site, Sigiriya Rock Fortress,
+                                                ancient city, and mesmerizing frescoes.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+
+                        </Swiper>
+                    </div>
+
                 </div>
- 
+
                 <div className='flex flex-col px-3 lg:px-28 md:px-10'>
                     <h1 className='text-2xl font-bold'>Highlights</h1>
                     <div className='grid w-full grid-cols-1 gap-3 pt-6 md:gap-5 lg:pt-10 md:grid-cols-2'>
@@ -222,20 +388,20 @@ const Tour_tab1 = () => {
                         </div>
                     </div>
                 </div>
- 
+
                 <div className='flex flex-col px-3 pt-10 lg:pt-20 lg:px-28 md:px-10'>
                     <h1 className='text-2xl font-bold'>The Schedule</h1>
                     <p className='pt-6 lg:pt-10'>Begin and conclude in Colombo! You have an 8-day tour package with the In-depth Cultural tour Lifetime Experience in Sri Lanka that includes travel to Negombo, Sri Lanka, as well as 12 other locations. A hotel stay, a professional guide, meals, transportation, and other amenities are all included in the
                         Lifetime Experience in Sri Lanka.
                     </p>
                 </div>
- 
+
                 <div className='flex flex-col px-3 pt-10 lg:pt-20 lg:px-28 md:px-10'>
                     <h1 className='text-2xl font-bold'>Introduction</h1>
                     <p className='pt-6 lg:pt-10'>This exclusive 8-day tour is thoughtfully planned to include both beach and city time, as well as nature and wildlife, history and culture. The cozy hotels and resorts in Sri Lanka will provide you with the warm hospitality of the country. Sri Lanka is well-known for being a complete travel destination because it has everything a traveler could possibly want, including beaches, mountains, historical sites, wildlife, and a vibrant local culture. Your tour guide, who speaks multiple languages and is well-versed in every facet of this amazing nation, will show you around a lot of intriguing locations and impart his wisdom on Sri Lankan history and customs. We are therefore confident that you will have a fantastic, fulfilling vacation and treasured memories that will last a lifetime.
                     </p>
                 </div>
- 
+
                 <div className='flex flex-col w-full px-3 pt-10 lg:pt-20 lg:px-28 md:px-10'>
                     <Box   >
                         <Group justify="between" mb={5}>

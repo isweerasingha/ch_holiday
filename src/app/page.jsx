@@ -5,7 +5,7 @@ import HomeCarousel from "@/components/HomeCarousel";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Couple from "../assets/couple.png";
- 
+
 
 import PopularPackImg1 from "../assets/popularPack_img1.png";
 import PopularPackImg2 from "../assets/popularPack_img2.png";
@@ -25,8 +25,20 @@ import quality_icon from "../assets/quality_icon.png";
 import paper_icon from "../assets/paper_icon.png";
 import guide_icon from "../assets/guide_icon.png";
 
+import review_vector_icon from "../assets/review_vector_icon.svg";
+
 import Person from "../assets/person.png";
 import Footer from "@/components/Footer";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// // import required modules
+// import { Pagination, Autoplay } from "swiper/modules";
 
 export default function Home() {
   return (
@@ -35,37 +47,37 @@ export default function Home() {
       <Fade>
         <HomeCarousel />
 
-      <div className="flex flex-col w-full gap-6 px-3 py-10 text-center md:gap-10 md:py-20 bg1 lg:px-28 md:px-5">
-        <span className="text-[#EB268F] text-[28px] font-medium">
-          SINCE 2020
-        </span>
-        <div className="flex flex-col gap-3 md:gap-5">
-          <h1 className="text-[40px] font-bold md:text-[44px] lg:text-[48px]">
-            Planning your next perfect
-          </h1>
-          <h1 className="text-[40px] font-bold md:text-[44px] lg:text-[48px]">
-            island trip is now hurdle-free
-          </h1>
-        </div>
-        <div className="grid md:grid-cols-5 lg:gap-[36px] text-white grid-cols-2 gap-3 md:gap-6 box">
-          {/*  */}
-          <div className="">
-            <div className="w-full h-48 card-container xl:w-60 xl:h-60 lg:h-36 lg:w-36 md:h-36 md:w-36">
-              <div className="card">
-                <div className="front face bg-[#3E4095]">
-                  <div className="flex flex-col items-center justify-center w-full h-full gap-3 font-bold text-white">
-                    <Image src={earth_icon} alt="/" />
-                    <span className="text-[16px] md:text-[13px] xl:text-[16px]">24/7 Availability</span>
+        <div className="flex flex-col w-full gap-6 px-3 py-10 text-center md:gap-10 md:py-20 bg1 lg:px-28 md:px-5">
+          <span className="text-[#EB268F] text-[28px] font-medium">
+            SINCE 2020
+          </span>
+          <div className="flex flex-col gap-3 md:gap-5">
+            <h1 className="text-[40px] font-bold md:text-[44px] lg:text-[48px]">
+              Planning your next perfect
+            </h1>
+            <h1 className="text-[40px] font-bold md:text-[44px] lg:text-[48px]">
+              island trip is now hurdle-free
+            </h1>
+          </div>
+          <div className="grid md:grid-cols-5 lg:gap-[36px] text-white grid-cols-2 gap-3 md:gap-6 box">
+            {/*  */}
+            <div className="">
+              <div className="w-full h-48 card-container xl:w-60 xl:h-60 lg:h-36 lg:w-36 md:h-36 md:w-36">
+                <div className="card">
+                  <div className="front face bg-[#3E4095]">
+                    <div className="flex flex-col items-center justify-center w-full h-full gap-3 font-bold text-white">
+                      <Image src={earth_icon} alt="/" />
+                      <span className="text-[16px] md:text-[13px] xl:text-[16px]">24/7 Availability</span>
+                    </div>
                   </div>
-                </div>
-                <div className="back face">
-                  <div className="flex flex-col items-center justify-center w-full h-full gap-3 text-xl font-bold text-white">
-                    <span className="text-[16px] md:text-[13px] xl:text-[16px]">24/7 Availability</span>
+                  <div className="back face">
+                    <div className="flex flex-col items-center justify-center w-full h-full gap-3 text-xl font-bold text-white">
+                      <span className="text-[16px] md:text-[13px] xl:text-[16px]">24/7 Availability</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
             {/*  */}
             <div className="md:mt-24 xl:mt-36">
@@ -204,7 +216,7 @@ export default function Home() {
             </div>
 
             <div className="flex gap-4">
-              <button className=" bg-[#3E4095] hover:bg-[#35367F] hover:cursor-pointer active:scale-105">
+              <button className="swiper-button-prev bg-[#3E4095] hover:bg-[#35367F] hover:cursor-pointer active:scale-105">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="46"
@@ -230,7 +242,7 @@ export default function Home() {
                   </defs>
                 </svg>
               </button>
-              <button className="bg-[#EB268F] hover:bg-[#C8207A] hover:cursor-pointer active:scale-105">
+              <button className="swiper-button-next bg-[#EB268F] hover:bg-[#C8207A] hover:cursor-pointer active:scale-105">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="46"
@@ -259,28 +271,160 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
-            <PopularPackCard
-              Img={PopularPackImg1}
-              Days={"3"}
-              Location={"Galle, Sri Lanka"}
-              Price={"$136"}
-              Rate={"4.0 (24)"}
-            />
-            <PopularPackCard
-              Img={PopularPackImg2}
-              Days={"5"}
-              Location={"Kandy, Sri Lanka"}
-              Price={"$525"}
-              Rate={"4.0 (24)"}
-            />
-            <PopularPackCard
-              Img={PopularPackImg3}
-              Days={"7"}
-              Location={"Colombo, Sri Lanka"}
-              Price={"$850"}
-              Rate={"3.5 (18)"}
-            />
+          <div className="hidden lg:flex">
+            <Swiper
+              modules={[Navigation]}
+              navigation={{
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              }}
+              spaceBetween={20}
+              slidesPerView={3}
+            >
+
+              <SwiperSlide>
+                <PopularPackCard
+                  Img={PopularPackImg1}
+                  Days={"3"}
+                  Location={"Galle, Sri Lanka"}
+                  Price={"$136"}
+                  Rate={"4.0 (24)"}
+                />
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <PopularPackCard
+                  Img={PopularPackImg2}
+                  Days={"5"}
+                  Location={"Kandy, Sri Lanka"}
+                  Price={"$525"}
+                  Rate={"4.0 (24)"}
+                />
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <PopularPackCard
+                  Img={PopularPackImg3}
+                  Days={"7"}
+                  Location={"Colombo, Sri Lanka"}
+                  Price={"$850"}
+                  Rate={"3.5 (18)"}
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <PopularPackCard
+                  Img={PopularPackImg3}
+                  Days={"7"}
+                  Location={"Colombo, Sri Lanka"}
+                  Price={"$850"}
+                  Rate={"3.5 (18)"}
+                />
+              </SwiperSlide>
+            </Swiper>
+          </div>
+
+          <div className="hidden md:flex lg:hidden">
+            <Swiper
+              modules={[Navigation]}
+              navigation={{
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              }}
+              spaceBetween={20}
+              slidesPerView={2}
+            >
+
+              <SwiperSlide>
+                <PopularPackCard
+                  Img={PopularPackImg1}
+                  Days={"3"}
+                  Location={"Galle, Sri Lanka"}
+                  Price={"$136"}
+                  Rate={"4.0 (24)"}
+                />
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <PopularPackCard
+                  Img={PopularPackImg2}
+                  Days={"5"}
+                  Location={"Kandy, Sri Lanka"}
+                  Price={"$525"}
+                  Rate={"4.0 (24)"}
+                />
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <PopularPackCard
+                  Img={PopularPackImg3}
+                  Days={"7"}
+                  Location={"Colombo, Sri Lanka"}
+                  Price={"$850"}
+                  Rate={"3.5 (18)"}
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <PopularPackCard
+                  Img={PopularPackImg3}
+                  Days={"7"}
+                  Location={"Colombo, Sri Lanka"}
+                  Price={"$850"}
+                  Rate={"3.5 (18)"}
+                />
+              </SwiperSlide>
+            </Swiper>
+          </div>
+
+          <div className="md:hidden">
+            <Swiper
+              modules={[Navigation]}
+              navigation={{
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              }}
+              spaceBetween={20}
+              slidesPerView={1}
+            >
+
+              <SwiperSlide>
+                <PopularPackCard
+                  Img={PopularPackImg1}
+                  Days={"3"}
+                  Location={"Galle, Sri Lanka"}
+                  Price={"$136"}
+                  Rate={"4.0 (24)"}
+                />
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <PopularPackCard
+                  Img={PopularPackImg2}
+                  Days={"5"}
+                  Location={"Kandy, Sri Lanka"}
+                  Price={"$525"}
+                  Rate={"4.0 (24)"}
+                />
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <PopularPackCard
+                  Img={PopularPackImg3}
+                  Days={"7"}
+                  Location={"Colombo, Sri Lanka"}
+                  Price={"$850"}
+                  Rate={"3.5 (18)"}
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <PopularPackCard
+                  Img={PopularPackImg3}
+                  Days={"7"}
+                  Location={"Colombo, Sri Lanka"}
+                  Price={"$850"}
+                  Rate={"3.5 (18)"}
+                />
+              </SwiperSlide>
+            </Swiper>
           </div>
 
           <div className="flex justify-center w-full pt-12">
@@ -528,64 +672,88 @@ export default function Home() {
                   </button>
                 </div>
               </div>
-              <div className="bg-[#ececf4] flex flex-col md:p-8 lg:p-16 p-6 gap-6 justify-between">
-                <div className="flex gap-2">
-                  <Image src={Star1} alt="/" />
-                  <Image src={Star1} alt="/" />
-                  <Image src={Star1} alt="/" />
-                  <Image src={Star1} alt="/" />
-                  <Image src={Star2} alt="/" />
-                </div>
+              <div className="bg-[#ececf4] flex flex-col md:p-8 lg:p-16 p-6 justify-between">
 
-                <p className="text-[16px]">
-                  Nulla mollis tristique blandit. Nam at accumsan felis, vitae
-                  pharetra nunc. Morbi imperdiet dui eu facilisis vestibulum.
-                  Sed dignissim non nibh auctor finibus. Integer mollis varius.
-                </p>
+                <Swiper
+                  modules={[Navigation]}
+                  navigation={{
+                    nextEl: ".swiper-button-next-review",
+                    prevEl: ".swiper-button-prev-review",
+                  }}
+                  spaceBetween={20}
+                  slidesPerView={1}
+                  className="bg-[#ececf4]"
+                >
+                  <SwiperSlide>
+                    <div className="flex flex-col gap-6 bg-[#ececf4] py-10">
+                      <div className="flex w-1/2 gap-2 pr-10">
+                        <Image src={Star1} alt="/" />
+                        <Image src={Star1} alt="/" />
+                        <Image src={Star1} alt="/" />
+                        <Image src={Star1} alt="/" />
+                        <Image src={Star2} alt="/" />
+                      </div>
 
-                <div className="flex items-center justify-between">
-                  <div className="flex gap-5">
-                    <div className="flex items-center justify-center w-24 h-24 overflow-hidden rounded-full">
-                      <Image src={Person} alt="/" className="w-full h-full" />
+                      <p className="text-[16px]  text-justify">
+                        Nulla mollis tristique blandit. Nam at accumsan felis, vitae
+                        pharetra nunc. Morbi imperdiet dui eu facilisis vestibulum.
+                        Sed dignissim non nibh auctor finibus. Integer mollis varius.
+                      </p>
+
+                      <div className="flex items-center justify-between">
+                        <div className="flex gap-5">
+                          <div className="flex items-center justify-center w-24 h-24 overflow-hidden rounded-full">
+                            <Image src={Person} alt="/" className="w-full h-full" />
+                          </div>
+                          <div className="flex flex-col items-start justify-center gap-3">
+                            <h1 className="text-[23px] font-bold ">Kumto Warming</h1>
+                            <span className="text-[16px]">Designation</span>
+                          </div>
+                        </div>
+                        <div className="justify-center hidden md:flex">
+                        <Image src={review_vector_icon} alt="/" />
+                        </div>
+                      </div>
                     </div>
-                    <div className="flex flex-col justify-center gap-3">
-                      <h1 className="text-[23px] font-bold ">Kumto Warming</h1>
-                      <span className="text-[16px]">Designation</span>
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <div className="flex flex-col gap-6 bg-[#ececf4] py-10">
+                      <div className="flex w-1/2 gap-2 pr-10">
+                        <Image src={Star1} alt="/" />
+                        <Image src={Star1} alt="/" />
+                        <Image src={Star1} alt="/" />
+                        <Image src={Star1} alt="/" />
+                        <Image src={Star2} alt="/" />
+                      </div>
+
+                      <p className="text-[16px] text-justify">
+                        Nulla mollis tristique blandit. Nam at accumsan felis, vitae
+                        pharetra nunc. Morbi imperdiet dui eu facilisis vestibulum.
+                        Sed dignissim non nibh auctor finibus. Integer mollis varius.
+                      </p>
+
+                      <div className="flex items-center justify-between">
+                        <div className="flex gap-5">
+                          <div className="flex items-center justify-center w-24 h-24 overflow-hidden rounded-full">
+                            <Image src={Person} alt="/" className="w-full h-full" />
+                          </div>
+                          <div className="flex flex-col items-start justify-center gap-3">
+                            <h1 className="text-[23px] font-bold ">Kumto Warming</h1>
+                            <span className="text-[16px]">Designation</span>
+                          </div>
+                        </div>
+                        <div className="justify-center hidden md:flex">
+                        <Image src={review_vector_icon} alt="/" />
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div className="justify-center hidden md:flex">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="45"
-                      height="33"
-                      viewBox="0 0 45 33"
-                      fill="none"
-                    >
-                      <g clipPath="url(#clip0_1_1744)">
-                        <path
-                          d="M10.1097 0.499868C11.5045 0.492056 12.8842 0.78762 14.1534 1.36607C15.4225 1.94453 16.5507 2.79204 17.4597 3.84987C18.463 4.94972 19.2441 6.23331 19.7597 7.62987C20.3176 9.05782 20.6058 10.5768 20.6097 12.1099C20.525 15.5514 19.4486 18.8952 17.5097 21.7399C15.3658 25.064 12.5316 27.888 9.19972 30.0199C6.27305 31.9465 3.97305 32.9132 2.29972 32.9199C1.69253 32.9427 1.10045 32.7274 0.649722 32.3199C0.433625 32.1149 0.263835 31.8661 0.151732 31.5901C0.0396285 31.3142 -0.0121993 31.0175 -0.000278375 30.7199C0.0435514 30.1637 0.245792 29.6317 0.582511 29.1869C0.91923 28.7421 1.37633 28.403 1.89972 28.2099C4.36854 27.056 6.61854 25.4827 8.54972 23.5599C9.88305 22.1332 10.5497 21.0832 10.5497 20.4099C10.5497 19.7799 10.0497 19.4099 9.04972 19.2599L8.38972 19.1599L7.63972 19.1099C5.56019 18.832 3.67029 17.7561 2.36972 16.1099C1.00799 14.3665 0.300312 12.201 0.369722 9.98987C0.333149 7.60856 1.23055 5.30761 2.86972 3.57987C3.78688 2.57963 4.90749 1.78727 6.15627 1.25603C7.40504 0.724784 8.75305 0.466956 10.1097 0.499868Z"
-                          fill="#3E4095"
-                        />
-                        <path
-                          d="M34.0697 0.499923C35.4647 0.49009 36.8451 0.784748 38.1146 1.36334C39.384 1.94193 40.512 2.79053 41.4197 3.84992C42.4265 4.94715 43.208 6.23146 43.7197 7.62992C44.2775 9.05787 44.5657 10.5769 44.5697 12.1099C44.485 15.5514 43.4085 18.8953 41.4697 21.7399C39.3294 25.0636 36.4986 27.8876 33.1697 30.0199C30.2297 31.9466 27.9264 32.9133 26.2597 32.9199C25.653 32.9396 25.0621 32.7247 24.6097 32.3199C24.3936 32.1149 24.2238 31.8661 24.1117 31.5902C23.9996 31.3143 23.9478 31.0175 23.9597 30.7199C24.0059 30.1645 24.209 29.6336 24.5454 29.1892C24.8818 28.7448 25.3376 28.4052 25.8597 28.2099C28.3312 27.0556 30.5845 25.4824 32.5197 23.5599C33.8497 22.1299 34.5197 21.0799 34.5197 20.4099C34.5197 19.7399 34.0197 19.4099 33.0197 19.2599L32.3697 19.1599L31.6197 19.1099C29.5366 18.8345 27.6426 17.7584 26.3397 16.1099C24.978 14.3665 24.2703 12.201 24.3397 9.98992C24.3074 7.60938 25.2042 5.30998 26.8397 3.57992C27.7565 2.582 28.8757 1.79109 30.1224 1.25997C31.3692 0.728855 32.7149 0.469741 34.0697 0.499923Z"
-                          fill="#3E4095"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_1_1744">
-                          <rect
-                            width="44.57"
-                            height="32.42"
-                            fill="white"
-                            transform="translate(0 0.5)"
-                          />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </div>
-                </div>
+                  </SwiperSlide>
+
+                </Swiper>
+
                 <div className="flex gap-4 mt-6">
-                  <button className=" bg-[#3E4095] hover:bg-[#35367F] hover:cursor-pointer active:scale-105">
+                  <button className="swiper-button-prev-review bg-[#3E4095] hover:bg-[#35367F] hover:cursor-pointer active:scale-105">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="46"
@@ -611,7 +779,7 @@ export default function Home() {
                       </defs>
                     </svg>
                   </button>
-                  <button className="bg-[#EB268F] hover:bg-[#C8207A] hover:cursor-pointer active:scale-105">
+                  <button className="swiper-button-next-review bg-[#EB268F] hover:bg-[#C8207A] hover:cursor-pointer active:scale-105">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="46"

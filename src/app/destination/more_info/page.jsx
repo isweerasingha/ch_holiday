@@ -19,6 +19,13 @@ import 'swiper/css/pagination';
 // import required modules
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// // import required modules
+// import { Pagination, Autoplay } from "swiper/modules";
+
 import Carousel_img1 from '../../../assets/des_more_carousel_img1.svg';
 
 import highlidhts_icon1 from '../../../assets/highlidhts_icon1.svg';
@@ -304,43 +311,191 @@ const DestinationMoreInfo = () => {
 
                         <div className='w-full'>
                             <div className='flex justify-end gap-4'>
-                                <button className=' bg-[#3E4095] hover:bg-[#35367F] hover:cursor-pointer active:scale-105'>
+                                <button className='bg-[#3E4095] swiper-button-prev-Local-Cuisine hover:bg-[#35367F] hover:cursor-pointer active:scale-105'>
                                     <Image src={Left} alt='/' />
                                 </button>
-                                <button className='bg-[#EB268F] hover:bg-[#C8207A] hover:cursor-pointer active:scale-105'>
+                                <button className='bg-[#EB268F] swiper-button-next-Local-Cuisine hover:bg-[#C8207A] hover:cursor-pointer active:scale-105'>
                                     <Image src={Right} alt='/' />
                                 </button>
 
                             </div>
                         </div>
 
-                        <div className='grid grid-cols-1 gap-6 pt-10 md:grid-cols-3'>
+                        {/* lg */}
+                        <div className='hidden pt-10 lg:flex'>
+                            <Swiper
+                                modules={[Navigation]}
+                                navigation={{
+                                    nextEl: ".swiper-button-next-Local-Cuisine",
+                                    prevEl: ".swiper-button-prev-Local-Cuisine",
+                                }}
+                                spaceBetween={20}
+                                slidesPerView={3}
+                            >
 
-                            <div className='relative overflow-hidden group'>
-                                <Image src={food1} alt='/' className='w-full' />
-                                <div className='absolute -bottom-full w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end group-hover:top-0 group-hover:left-0 duration-500'>
-                                    <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
-                                        <h1 className='xl:text-[23px] text-[19px] font-bold'>Greek Yogurt</h1>
+                                <SwiperSlide>
+                                    <div className='relative overflow-hidden group'>
+                                        <Image src={food1} alt='/' className='w-full' />
+                                        <div className='absolute -bottom-full w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end group-hover:top-0 group-hover:left-0 duration-500'>
+                                            <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
+                                                <h1 className='xl:text-[23px] text-[19px] font-bold'>Greek Yogurt</h1>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div className='relative overflow-hidden group'>
-                                <Image src={food2} alt='/' className='w-full' />
-                                <div className='absolute -bottom-full w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end group-hover:top-0 group-hover:left-0 duration-500'>
-                                    <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
-                                        <h1 className='xl:text-[23px] text-[19px] font-bold'>Greek Yogurt</h1>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='relative overflow-hidden group'>
-                                <Image src={food3} alt='/' className='w-full' />
-                                <div className='absolute -bottom-full w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end group-hover:top-0 group-hover:left-0 duration-500'>
-                                    <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
-                                        <h1 className='xl:text-[23px] text-[19px] font-bold'>Greek Yogurt</h1>
-                                    </div>
-                                </div>
-                            </div>
+                                </SwiperSlide>
 
+                                <SwiperSlide>
+                                    <div className='relative overflow-hidden group'>
+                                        <Image src={food2} alt='/' className='w-full' />
+                                        <div className='absolute -bottom-full w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end group-hover:top-0 group-hover:left-0 duration-500'>
+                                            <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
+                                                <h1 className='xl:text-[23px] text-[19px] font-bold'>Greek Yogurt</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <div className='relative overflow-hidden group'>
+                                        <Image src={food3} alt='/' className='w-full' />
+                                        <div className='absolute -bottom-full w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end group-hover:top-0 group-hover:left-0 duration-500'>
+                                            <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
+                                                <h1 className='xl:text-[23px] text-[19px] font-bold'>Greek Yogurt</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <div className='relative overflow-hidden group'>
+                                        <Image src={food3} alt='/' className='w-full' />
+                                        <div className='absolute -bottom-full w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end group-hover:top-0 group-hover:left-0 duration-500'>
+                                            <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
+                                                <h1 className='xl:text-[23px] text-[19px] font-bold'>Greek Yogurt</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+
+                            </Swiper>
+                        </div>
+
+                        {/* md */}
+                        <div className='hidden pt-10 md:flex lg:hidden'>
+                            <Swiper
+                                modules={[Navigation]}
+                                navigation={{
+                                    nextEl: ".swiper-button-next-Local-Cuisine",
+                                    prevEl: ".swiper-button-prev-Local-Cuisine",
+                                }}
+                                spaceBetween={20}
+                                slidesPerView={2}
+                            >
+
+                                <SwiperSlide>
+                                    <div className='relative overflow-hidden group'>
+                                        <Image src={food1} alt='/' className='w-full' />
+                                        <div className='absolute -bottom-full w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end group-hover:top-0 group-hover:left-0 duration-500'>
+                                            <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
+                                                <h1 className='xl:text-[23px] text-[19px] font-bold'>Greek Yogurt</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <div className='relative overflow-hidden group'>
+                                        <Image src={food2} alt='/' className='w-full' />
+                                        <div className='absolute -bottom-full w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end group-hover:top-0 group-hover:left-0 duration-500'>
+                                            <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
+                                                <h1 className='xl:text-[23px] text-[19px] font-bold'>Greek Yogurt</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <div className='relative overflow-hidden group'>
+                                        <Image src={food3} alt='/' className='w-full' />
+                                        <div className='absolute -bottom-full w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end group-hover:top-0 group-hover:left-0 duration-500'>
+                                            <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
+                                                <h1 className='xl:text-[23px] text-[19px] font-bold'>Greek Yogurt</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <div className='relative overflow-hidden group'>
+                                        <Image src={food3} alt='/' className='w-full' />
+                                        <div className='absolute -bottom-full w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end group-hover:top-0 group-hover:left-0 duration-500'>
+                                            <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
+                                                <h1 className='xl:text-[23px] text-[19px] font-bold'>Greek Yogurt</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+
+                            </Swiper>
+                        </div>
+
+                        {/* sm */}
+                        <div className='pt-10 md:hidden'>
+                            <Swiper
+                                modules={[Navigation]}
+                                navigation={{
+                                    nextEl: ".swiper-button-next-Local-Cuisine",
+                                    prevEl: ".swiper-button-prev-Local-Cuisine",
+                                }}
+                                spaceBetween={20}
+                                slidesPerView={1}
+                            >
+
+                                <SwiperSlide>
+                                    <div className='relative overflow-hidden group'>
+                                        <Image src={food1} alt='/' className='w-full' />
+                                        <div className='absolute -bottom-full w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end group-hover:top-0 group-hover:left-0 duration-500'>
+                                            <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
+                                                <h1 className='xl:text-[23px] text-[19px] font-bold'>Greek Yogurt</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <div className='relative overflow-hidden group'>
+                                        <Image src={food2} alt='/' className='w-full' />
+                                        <div className='absolute -bottom-full w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end group-hover:top-0 group-hover:left-0 duration-500'>
+                                            <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
+                                                <h1 className='xl:text-[23px] text-[19px] font-bold'>Greek Yogurt</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <div className='relative overflow-hidden group'>
+                                        <Image src={food3} alt='/' className='w-full' />
+                                        <div className='absolute -bottom-full w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end group-hover:top-0 group-hover:left-0 duration-500'>
+                                            <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
+                                                <h1 className='xl:text-[23px] text-[19px] font-bold'>Greek Yogurt</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <div className='relative overflow-hidden group'>
+                                        <Image src={food3} alt='/' className='w-full' />
+                                        <div className='absolute -bottom-full w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end group-hover:top-0 group-hover:left-0 duration-500'>
+                                            <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
+                                                <h1 className='xl:text-[23px] text-[19px] font-bold'>Greek Yogurt</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+
+                            </Swiper>
                         </div>
 
                     </div>
@@ -369,13 +524,13 @@ const DestinationMoreInfo = () => {
                         <div className='grid grid-cols-1 gap-6 pt-5 md:grid-cols-2'>
 
                             {/*  */}
-                            <div className='flex flex-col h-48 gap-5 p-5 border-2 group  hover:bg-[#EB268F] duration-300'>
-                                <div className='flex items-center gap-3'>
+                            <div className='flex flex-col lg:h-56   gap-5 p-5 border-2 group  hover:bg-[#EB268F] duration-300'>
+                                <div className='flex flex-col items-center gap-3 lg:flex-row'>
                                     <div className='flex justify-center w-1/4 p-6 group-hover:bg-white'>
                                         <Image src={bus} alt="/" className='w-full' />
                                     </div>
 
-                                    <div className='flex flex-col items-start w-3/4 gap-3 group-hover:text-white'>
+                                    <div className='flex flex-col items-start gap-3 lg:w-3/4 group-hover:text-white'>
                                         <h1 className='xl:text-[23px] text-[19px] font-bold'>Public Transportation</h1>
                                         <p className='text-[16px] text-justify'>In major cities like Athens, buses, trams, and the metro provide efficient and cost-effective ways to navigate. Consider purchasing a reloadable transportation card for convenience.</p>
                                     </div>
@@ -383,13 +538,13 @@ const DestinationMoreInfo = () => {
                             </div>
 
                             {/*  */}
-                            <div className='flex flex-col h-48 gap-5 p-5 border-2 group  hover:bg-[#EB268F] duration-300'>
-                                <div className='flex items-center gap-3'>
+                            <div className='flex flex-col lg:h-56 gap-5 p-5 border-2 group  hover:bg-[#EB268F] duration-300'>
+                                <div className='flex flex-col items-center gap-3 lg:flex-row'>
                                     <div className='flex justify-center w-1/4 p-6 group-hover:bg-white'>
                                         <Image src={boat} alt="/" className='w-full' />
                                     </div>
 
-                                    <div className='flex flex-col items-start w-3/4 gap-3 group-hover:text-white'>
+                                    <div className='flex flex-col items-start gap-3 lg:w-3/4 group-hover:text-white'>
                                         <h1 className='xl:text-[23px] text-[19px] font-bold'>Ferries and Boats</h1>
                                         <p className='text-[16px] text-justify'>With numerous islands dotting the Aegean and Ionian Seas, ferries and boats are essential for island hopping. Ensure you check schedules and book tickets in advance during peak seasons.</p>
                                     </div>
@@ -397,13 +552,13 @@ const DestinationMoreInfo = () => {
                             </div>
 
                             {/*  */}
-                            <div className='flex flex-col h-48 gap-5 p-5 border-2 group  hover:bg-[#EB268F] duration-300'>
-                                <div className='flex items-center gap-3'>
+                            <div className='flex flex-col lg:h-56 gap-5 p-5 border-2 group  hover:bg-[#EB268F] duration-300'>
+                                <div className='flex flex-col items-center gap-3 lg:flex-row'>
                                     <div className='flex justify-center w-1/4 p-6 group-hover:bg-white'>
                                         <Image src={car} alt="/" className='w-full' />
                                     </div>
 
-                                    <div className='flex flex-col items-start w-3/4 gap-3 group-hover:text-white'>
+                                    <div className='flex flex-col items-start gap-3 lg:w-3/4 group-hover:text-white'>
                                         <h1 className='xl:text-[23px] text-[19px] font-bold'>Car Rentals</h1>
                                         <p className='text-[16px] text-justify'>Renting a car provides flexibility, especially when exploring the mainland and less accessible areas. Greece has a well-maintained road network, and driving allows you to discover hidden gems..</p>
                                     </div>
@@ -411,13 +566,13 @@ const DestinationMoreInfo = () => {
                             </div>
 
                             {/*  */}
-                            <div className='flex flex-col h-48 gap-5 p-5 border-2 group  hover:bg-[#EB268F] duration-300'>
-                                <div className='flex items-center gap-3'>
+                            <div className='flex flex-col lg:h-56 gap-5 p-5 border-2 group  hover:bg-[#EB268F] duration-300'>
+                                <div className='flex flex-col items-center gap-3 lg:flex-row'>
                                     <div className='flex justify-center w-1/4 p-6 group-hover:bg-white'>
                                         <Image src={taxi} alt="/" className='w-full' />
                                     </div>
 
-                                    <div className='flex flex-col items-start w-3/4 gap-3 group-hover:text-white'>
+                                    <div className='flex flex-col items-start gap-3 lg:w-3/4 group-hover:text-white'>
                                         <h1 className='xl:text-[23px] text-[19px] font-bold'>Taxis</h1>
                                         <p className='text-[16px] text-justify'>Taxis are readily available in urban centers. Confirm fares before the journey or ensure the meter is running.</p>
                                     </div>
@@ -444,39 +599,178 @@ const DestinationMoreInfo = () => {
 
                         <div className='w-full'>
                             <div className='flex justify-end gap-4'>
-                                <button className=' bg-[#3E4095] hover:bg-[#35367F] hover:cursor-pointer active:scale-105'>
+                                <button className='swiper-button-prev-Accommodations bg-[#3E4095]   hover:bg-[#35367F] hover:cursor-pointer active:scale-105'>
                                     <Image src={Left} alt='/' />
                                 </button>
-                                <button className='bg-[#EB268F] hover:bg-[#C8207A] hover:cursor-pointer active:scale-105'>
+                                <button className='swiper-button-next-Accommodations bg-[#EB268F]   hover:bg-[#C8207A] hover:cursor-pointer active:scale-105'>
                                     <Image src={Right} alt='/' />
                                 </button>
 
                             </div>
                         </div>
 
-                        <div className='grid grid-cols-1 gap-6 pt-10 md:grid-cols-3'>
+                        {/* lg */}
+                        <div className='hidden pt-10 lg:flex'>
+                            <Swiper
+                                modules={[Navigation]}
+                                navigation={{
+                                    nextEl: ".swiper-button-next-Accommodations",
+                                    prevEl: ".swiper-button-prev-Accommodations",
+                                }}
+                                spaceBetween={20}
+                                slidesPerView={3}
+                            >
+                                <SwiperSlide>
+                                    <div className='relative overflow-hidden group'>
+                                        <Image src={hotel1} alt='/' className='w-full' />
+                                        <div className='flex flex-col w-full h-48 gap-3 p-3 text-center bg-white lg:p-6 md:h-64 lg:h-52'>
+                                            <h1 className='xl:text-[23px] text-[19px] font-bold'>Luxurious Resorts</h1>
+                                            <p className='text-[16px] text-center'>Experience opulence in seaside resorts with stunning views, private beaches, and world-class amenities. Ideal for a relaxing getaway.</p>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
 
-                            <div className=''>
-                                <Image src={hotel1} alt='/' className='w-full' />
-                                <div className='flex flex-col w-full h-48 gap-3 p-3 text-center bg-white lg:p-6 md:h-64 lg:h-52'>
-                                    <h1 className='xl:text-[23px] text-[19px] font-bold'>Luxurious Resorts</h1>
-                                    <p className='text-[16px] text-center'>Experience opulence in seaside resorts with stunning views, private beaches, and world-class amenities. Ideal for a relaxing getaway.</p>
-                                </div>
-                            </div>
-                            <div className='relative overflow-hidden group'>
-                                <Image src={hotel2} alt='/' className='w-full' />
-                                <div className='flex flex-col w-full h-48 gap-3 p-3 text-center bg-white lg:p-6 md:h-64 lg:h-52'>
-                                    <h1 className='xl:text-[23px] text-[19px] font-bold'>Charming Villas</h1>
-                                    <p className='text-[16px] text-center'>Explore the rustic charm of Greece by staying in traditional villas. Enjoy the comfort of a home away from home while immersing yourself in local culture.</p>
-                                </div>
-                            </div>
-                            <div className='relative overflow-hidden group'>
-                                <Image src={hotel3} alt='/' className='w-full' />
-                                <div className='flex flex-col w-full h-48 gap-3 p-3 text-center bg-white lg:p-6 md:h-64 lg:h-52'>
-                                    <h1 className='xl:text-[23px] text-[19px] font-bold'>Budget-Friendly Options</h1>
-                                    <p className='text-[16px] text-center'>Hostels and budget hotels are available, especially in popular tourist areas, providing economical choices without compromising on comfort.</p>
-                                </div>
-                            </div>
+                                <SwiperSlide>
+                                    <div className='relative overflow-hidden group'>
+                                        <Image src={hotel2} alt='/' className='w-full' />
+                                        <div className='flex flex-col w-full h-48 gap-3 p-3 text-center bg-white lg:p-6 md:h-64 lg:h-52'>
+                                            <h1 className='xl:text-[23px] text-[19px] font-bold'>Charming Villas</h1>
+                                            <p className='text-[16px] text-center'>Explore the rustic charm of Greece by staying in traditional villas. Enjoy the comfort of a home away from home while immersing yourself in local culture.</p>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <div className='relative overflow-hidden group'>
+                                        <Image src={hotel3} alt='/' className='w-full' />
+                                        <div className='flex flex-col w-full h-48 gap-3 p-3 text-center bg-white lg:p-6 md:h-64 lg:h-52'>
+                                            <h1 className='xl:text-[23px] text-[19px] font-bold'>Budget-Friendly Options</h1>
+                                            <p className='text-[16px] text-center'>Hostels and budget hotels are available, especially in popular tourist areas, providing economical choices without compromising on comfort.</p>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <div className='relative overflow-hidden group'>
+                                        <Image src={hotel3} alt='/' className='w-full' />
+                                        <div className='flex flex-col w-full h-48 gap-3 p-3 text-center bg-white lg:p-6 md:h-64 lg:h-52'>
+                                            <h1 className='xl:text-[23px] text-[19px] font-bold'>Budget-Friendly Options</h1>
+                                            <p className='text-[16px] text-center'>Hostels and budget hotels are available, especially in popular tourist areas, providing economical choices without compromising on comfort.</p>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+
+                            </Swiper>
+
+                        </div>
+
+                        {/* md */}
+                        <div className='hidden pt-10 md:flex lg:hidden'>
+                            <Swiper
+                                modules={[Navigation]}
+                                navigation={{
+                                    nextEl: ".swiper-button-next-Accommodations",
+                                    prevEl: ".swiper-button-prev-Accommodations",
+                                }}
+                                spaceBetween={20}
+                                slidesPerView={2}
+                            >
+                                <SwiperSlide>
+                                    <div className='relative overflow-hidden group'>
+                                        <Image src={hotel1} alt='/' className='w-full' />
+                                        <div className='flex flex-col w-full h-48 gap-3 p-3 text-center bg-white lg:p-6 md:h-64 lg:h-52'>
+                                            <h1 className='xl:text-[23px] text-[19px] font-bold'>Luxurious Resorts</h1>
+                                            <p className='text-[16px] text-center'>Experience opulence in seaside resorts with stunning views, private beaches, and world-class amenities. Ideal for a relaxing getaway.</p>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <div className='relative overflow-hidden group'>
+                                        <Image src={hotel2} alt='/' className='w-full' />
+                                        <div className='flex flex-col w-full h-48 gap-3 p-3 text-center bg-white lg:p-6 md:h-64 lg:h-52'>
+                                            <h1 className='xl:text-[23px] text-[19px] font-bold'>Charming Villas</h1>
+                                            <p className='text-[16px] text-center'>Explore the rustic charm of Greece by staying in traditional villas. Enjoy the comfort of a home away from home while immersing yourself in local culture.</p>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <div className='relative overflow-hidden group'>
+                                        <Image src={hotel3} alt='/' className='w-full' />
+                                        <div className='flex flex-col w-full h-48 gap-3 p-3 text-center bg-white lg:p-6 md:h-64 lg:h-52'>
+                                            <h1 className='xl:text-[23px] text-[19px] font-bold'>Budget-Friendly Options</h1>
+                                            <p className='text-[16px] text-center'>Hostels and budget hotels are available, especially in popular tourist areas, providing economical choices without compromising on comfort.</p>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <div className='relative overflow-hidden group'>
+                                        <Image src={hotel3} alt='/' className='w-full' />
+                                        <div className='flex flex-col w-full h-48 gap-3 p-3 text-center bg-white lg:p-6 md:h-64 lg:h-52'>
+                                            <h1 className='xl:text-[23px] text-[19px] font-bold'>Budget-Friendly Options</h1>
+                                            <p className='text-[16px] text-center'>Hostels and budget hotels are available, especially in popular tourist areas, providing economical choices without compromising on comfort.</p>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+
+                            </Swiper>
+
+                        </div>
+
+                        {/* sm */}
+                        <div className='pt-10 md:hidden'>
+                            <Swiper
+                                modules={[Navigation]}
+                                navigation={{
+                                    nextEl: ".swiper-button-next-Accommodations",
+                                    prevEl: ".swiper-button-prev-Accommodations",
+                                }}
+                                spaceBetween={20}
+                                slidesPerView={1}
+                            >
+                                <SwiperSlide>
+                                    <div className='relative overflow-hidden group'>
+                                        <Image src={hotel1} alt='/' className='w-full' />
+                                        <div className='flex flex-col w-full h-48 gap-3 p-3 text-center bg-white lg:p-6 md:h-64 lg:h-52'>
+                                            <h1 className='xl:text-[23px] text-[19px] font-bold'>Luxurious Resorts</h1>
+                                            <p className='text-[16px] text-center'>Experience opulence in seaside resorts with stunning views, private beaches, and world-class amenities. Ideal for a relaxing getaway.</p>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <div className='relative overflow-hidden group'>
+                                        <Image src={hotel2} alt='/' className='w-full' />
+                                        <div className='flex flex-col w-full h-48 gap-3 p-3 text-center bg-white lg:p-6 md:h-64 lg:h-52'>
+                                            <h1 className='xl:text-[23px] text-[19px] font-bold'>Charming Villas</h1>
+                                            <p className='text-[16px] text-center'>Explore the rustic charm of Greece by staying in traditional villas. Enjoy the comfort of a home away from home while immersing yourself in local culture.</p>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <div className='relative overflow-hidden group'>
+                                        <Image src={hotel3} alt='/' className='w-full' />
+                                        <div className='flex flex-col w-full h-48 gap-3 p-3 text-center bg-white lg:p-6 md:h-64 lg:h-52'>
+                                            <h1 className='xl:text-[23px] text-[19px] font-bold'>Budget-Friendly Options</h1>
+                                            <p className='text-[16px] text-center'>Hostels and budget hotels are available, especially in popular tourist areas, providing economical choices without compromising on comfort.</p>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <div className='relative overflow-hidden group'>
+                                        <Image src={hotel3} alt='/' className='w-full' />
+                                        <div className='flex flex-col w-full h-48 gap-3 p-3 text-center bg-white lg:p-6 md:h-64 lg:h-52'>
+                                            <h1 className='xl:text-[23px] text-[19px] font-bold'>Budget-Friendly Options</h1>
+                                            <p className='text-[16px] text-center'>Hostels and budget hotels are available, especially in popular tourist areas, providing economical choices without compromising on comfort.</p>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+
+                            </Swiper>
 
                         </div>
 
