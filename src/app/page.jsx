@@ -162,7 +162,7 @@ export default function Home() {
             <Image
               src={Couple}
               alt="/"
-              className="lg:h-[110vh] xl:h-[90vh] md:h-full h-[50vh] absolute w-auto bottom-0"
+              className="lg:h-[110vh]  xl:h-[75vh]  md:h-full h-[50vh] absolute w-auto bottom-0"
             />
           </div>
           <div className="flex flex-col justify-center gap-[34px] lg:py-16 md:py-10 py-5 text-white lg:pl-10">
