@@ -6,11 +6,13 @@ import Phone from '../assets/wifi_calling_3.png';
 import Mail from '../assets/mail.png';
 import Arrow from '../assets/arrow_back_ios_new.png';
 
+import Footer_image from '../assets/foote_bg_vector.png';
+
 const Footer = () => {
     return (
-        <div className='footer_bg h-[100vh] w-full grid grid-cols-1  text-white'>
-            <div className='h-[50vh]'></div>
-            <div className='lg:h-[50vh] h-full w-full flex flex-col lg:flex-row bg-[#262626] px-3  lg:px-28 md:px-5 gap-10 lg:gap-6  items-center'>
+        <div className='flex flex-col w-full text-white'>
+            <Image src={Footer_image} alt="/" className='w-full'/>
+            <div className=' h-full w-full flex flex-col lg:flex-row bg-[#262626] px-3 py-10  lg:px-28 md:px-5 gap-10 lg:gap-6  items-center'>
                 <div className='flex flex-col w-full gap-5 pr-gap-1010 xl: lg:w-2/6'>
                     <Image src={white_logo} alt="/" />
                     <p className='text-[16px] text-justify'>From the vibrant landscapes of Sri Lanka to the allure of global destinations, we invite you to embark on a journey with us.</p>

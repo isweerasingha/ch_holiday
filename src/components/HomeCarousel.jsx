@@ -210,12 +210,12 @@ const HomeCarousel = () => {
             <SwiperSlide>
               <div className="relative flex justify-center overflow-hidden group">
                 <Image src={GREECE} alt="/" className="w-full" />
-                <div className="absolute w-full h-full bg-transparent top-0 hover:bg-[#000000a5] duration-500 p-5">
-                  <div className="w-full ">
-                    <span className="mt-5 text-white text-[23px]">GREECE</span>
+                <div className="absolute w-full h-full bg-transparent top-0 hover:bg-[#000000a5] duration-500 p-5 flex flex-col items-center">
+                  <div className="flex justify-start w-full">
+                    <span className=" text-white text-[23px]">GREECE</span>
                   </div>
-                </div>
-                <Link
+
+                  <Link
                   className="absolute flex justify-center w-full font-medium duration-300 -bottom-full group-hover:bottom-1"
                   href={routes.DESTINATION_MORE_INFO}
                 >
@@ -223,6 +223,8 @@ const HomeCarousel = () => {
                     VIEW DESTINATION
                   </button>
                 </Link>
+                </div>
+ 
               </div>
             </SwiperSlide>
 
@@ -230,12 +232,12 @@ const HomeCarousel = () => {
               {/* 2 */}
               <div className="relative flex justify-center overflow-hidden group">
                 <Image src={AFRICA} alt="/" className="w-full" />
-                <div className="absolute w-full h-full bg-transparent top-0 hover:bg-[#000000a5] duration-500 p-5">
-                  <div className="w-full ">
-                    <span className="mt-5 text-white text-[23px]">AFRICA</span>
+                <div className="absolute w-full h-full bg-transparent top-0 hover:bg-[#000000a5] duration-500 p-5 flex flex-col items-center">
+                  <div className="flex justify-start w-full">
+                    <span className=" text-white text-[23px]">AFRICA</span>
                   </div>
-                </div>
-                <Link
+
+                  <Link
                   className="absolute flex justify-center w-full font-medium duration-300 -bottom-full group-hover:bottom-1"
                   href={routes.DESTINATION_MORE_INFO}
                 >
@@ -243,6 +245,8 @@ const HomeCarousel = () => {
                     VIEW DESTINATION
                   </button>
                 </Link>
+                </div>
+
               </div>
             </SwiperSlide>
 
@@ -250,12 +254,12 @@ const HomeCarousel = () => {
               {/* 3 */}
               <div className="relative flex justify-center overflow-hidden group">
                 <Image src={FRANCE} alt="/" className="w-full" />
-                <div className="absolute w-full h-full bg-transparent top-0 hover:bg-[#000000a5] duration-500 p-5">
-                  <div className="w-full ">
-                    <span className="mt-5 text-white text-[23px]">FRENCH</span>
+                <div className="absolute w-full h-full bg-transparent top-0 hover:bg-[#000000a5] duration-500 p-5 flex flex-col items-center">
+                  <div className="flex justify-start w-full">
+                    <span className=" text-white text-[23px]">FRENCH</span>
                   </div>
-                </div>
-                <Link
+                  
+                  <Link
                   className="absolute flex justify-center w-full font-medium duration-300 -bottom-full group-hover:bottom-1"
                   href={routes.DESTINATION_MORE_INFO}
                 >
@@ -263,19 +267,22 @@ const HomeCarousel = () => {
                     VIEW DESTINATION
                   </button>
                 </Link>
+                
+                </div>
+                
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
-              {/* 3 */}
+              {/* 4 */}
               <div className="relative flex justify-center overflow-hidden group">
                 <Image src={FRANCE} alt="/" className="w-full" />
-                <div className="absolute w-full h-full bg-transparent top-0 hover:bg-[#000000a5] duration-500 p-5">
-                  <div className="w-full ">
-                    <span className="mt-5 text-white text-[23px]">FRENCH2</span>
+                <div className="absolute w-full h-full bg-transparent top-0 hover:bg-[#000000a5] duration-500 p-5 flex flex-col items-center">
+                  <div className="flex justify-start w-full">
+                    <span className=" text-white text-[23px]">FRENCH2</span>
                   </div>
-                </div>
-                <Link
+
+                  <Link
                   className="absolute flex justify-center w-full font-medium duration-300 -bottom-full group-hover:bottom-1"
                   href={routes.DESTINATION_MORE_INFO}
                 >
@@ -283,6 +290,9 @@ const HomeCarousel = () => {
                     VIEW DESTINATION
                   </button>
                 </Link>
+                
+                </div>
+                
               </div>
             </SwiperSlide>
           </Swiper>

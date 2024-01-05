@@ -175,7 +175,7 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        <ul className="items-center hidden gap-5 font-bold md:flex">
+        <ul className="items-center hidden gap-5 font-bold xl:gap-10 md:flex">
           <li>
             <Link href={routes.HOME}>Home</Link>
           </li>

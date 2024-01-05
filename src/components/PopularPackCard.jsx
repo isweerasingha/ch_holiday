@@ -18,7 +18,7 @@ const PopularPackCard = ({ Img, Days, Location, Price, Rate }) => {
           </div>
           <div className="xl:p-6 lg:p-2 p-6 md:p-4 bg-[#1C1D43] text-white">
             <div className="flex justify-between gap-3">
-              <div className="flex flex-col w-2/3 gap-3 pr-2 border-e-2">
+              <div className="flex flex-col w-3/5 gap-3 pr-2 border-e-2">
                 <span>Sri Lanka Tour Package {Days} Days | Private Tour</span>
                 <div className="flex items-center gap-3">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -27,9 +27,9 @@ const PopularPackCard = ({ Img, Days, Location, Price, Rate }) => {
                   <span className="text-sm">{Location}</span>
                 </div>
               </div>
-              <div className="flex flex-col w-1/3 gap-3">
+              <div className="flex flex-col w-2/5 gap-3">
                 <span className="text-sm">{Days} Days</span>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-1">
                   <h1 className="font-bold">{Price} /</h1>
                   <span className="text-sm"> Person</span>
                 </div>
