@@ -275,7 +275,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="hidden lg:flex">
+          <div className="flex">
             <Swiper
               autoplay={{
                 delay: 2500,
@@ -289,115 +289,17 @@ export default function Home() {
               }}
               spaceBetween={20}
               slidesPerView={3}
-            >
-
-              <SwiperSlide>
-                <PopularPackCard
-                  Img={PopularPackImg1}
-                  Days={"3"}
-                  Location={"Galle, Sri Lanka"}
-                  Price={"$136"}
-                  Rate={"4.0 (24)"}
-                />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <PopularPackCard
-                  Img={PopularPackImg2}
-                  Days={"5"}
-                  Location={"Kandy, Sri Lanka"}
-                  Price={"$525"}
-                  Rate={"4.0 (24)"}
-                />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <PopularPackCard
-                  Img={PopularPackImg3}
-                  Days={"7"}
-                  Location={"Colombo, Sri Lanka"}
-                  Price={"$850"}
-                  Rate={"3.5 (18)"}
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <PopularPackCard
-                  Img={PopularPackImg3}
-                  Days={"7"}
-                  Location={"Colombo, Sri Lanka"}
-                  Price={"$850"}
-                  Rate={"3.5 (18)"}
-                />
-              </SwiperSlide>
-            </Swiper>
-          </div>
-
-          <div className="hidden md:flex lg:hidden">
-            <Swiper
-              autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
+              breakpoints={{
+                480: {
+                  slidesPerView: 1,
+                },
+                768: {
+                  slidesPerView: 2,
+                },
+                1024: {
+                  slidesPerView: 3,
+                }
               }}
-              modules={[Autoplay,Navigation]}
-              loop={true}
-              navigation={{
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-              }}
-              spaceBetween={20}
-              slidesPerView={2}
-            >
-
-              <SwiperSlide>
-                <PopularPackCard
-                  Img={PopularPackImg1}
-                  Days={"3"}
-                  Location={"Galle, Sri Lanka"}
-                  Price={"$136"}
-                  Rate={"4.0 (24)"}
-                />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <PopularPackCard
-                  Img={PopularPackImg2}
-                  Days={"5"}
-                  Location={"Kandy, Sri Lanka"}
-                  Price={"$525"}
-                  Rate={"4.0 (24)"}
-                />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <PopularPackCard
-                  Img={PopularPackImg3}
-                  Days={"7"}
-                  Location={"Colombo, Sri Lanka"}
-                  Price={"$850"}
-                  Rate={"3.5 (18)"}
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <PopularPackCard
-                  Img={PopularPackImg3}
-                  Days={"7"}
-                  Location={"Colombo, Sri Lanka"}
-                  Price={"$850"}
-                  Rate={"3.5 (18)"}
-                />
-              </SwiperSlide>
-            </Swiper>
-          </div>
-
-          <div className="md:hidden">
-            <Swiper
-              modules={[Navigation]}
-              navigation={{
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-              }}
-              spaceBetween={20}
-              slidesPerView={1}
             >
 
               <SwiperSlide>
