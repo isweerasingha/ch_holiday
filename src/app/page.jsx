@@ -31,14 +31,14 @@ import Person from "../assets/person.png";
 import Footer from "@/components/Footer";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation,Autoplay } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/autoplay";
 
 // // import required modules
-// import { Pagination, Autoplay } from "swiper/modules";
 
 export default function Home() {
   return (
@@ -273,7 +273,12 @@ export default function Home() {
 
           <div className="hidden lg:flex">
             <Swiper
-              modules={[Navigation]}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              modules={[Autoplay,Navigation]}
+              loop={true}
               navigation={{
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
@@ -325,7 +330,12 @@ export default function Home() {
 
           <div className="hidden md:flex lg:hidden">
             <Swiper
-              modules={[Navigation]}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              modules={[Autoplay,Navigation]}
+              loop={true}
               navigation={{
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
@@ -675,7 +685,12 @@ export default function Home() {
               <div className="bg-[#ececf4] flex flex-col md:p-8 lg:p-16 p-6 justify-between">
 
                 <Swiper
-                  modules={[Navigation]}
+                  autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                  }}
+                  modules={[ Autoplay,Navigation]}
+                  loop={true}
                   navigation={{
                     nextEl: ".swiper-button-next-review",
                     prevEl: ".swiper-button-prev-review",

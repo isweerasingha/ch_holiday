@@ -16,14 +16,11 @@ import FRANCE from "../../src/assets/france.png";
 
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
-
+import { Pagination, Autoplay,Navigation } from "swiper/modules";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
-// import required modules
-import { Pagination, Autoplay } from "swiper/modules";
+import "swiper/css/autoplay";
 import routes from "@/constants/routes";
 
 const HomeCarousel = () => {
@@ -199,11 +196,16 @@ const HomeCarousel = () => {
 
         <div className="z-40 hidden w-full md:-mt-16 lg:w-3/4 md:w-2/3 lg:flex">
           <Swiper
-            modules={[Navigation]}
             navigation={{
               nextEl: ".swiper-button-next",
               prevEl: ".swiper-button-prev",
             }}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            modules={[Pagination, Autoplay,Navigation]}
+            loop={true}
             spaceBetween={20}
             slidesPerView={3}
           >
@@ -300,11 +302,12 @@ const HomeCarousel = () => {
         
         <div className="z-40 hidden w-full md:-mt-16 lg:w-3/4 md:w-2/3 md:flex lg:hidden">
           <Swiper
-            modules={[Navigation]}
-            navigation={{
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
             }}
+            modules={[Pagination, Autoplay,Navigation]}
+            loop={true}
             spaceBetween={20}
             slidesPerView={2}
           >
@@ -401,11 +404,12 @@ const HomeCarousel = () => {
 
         <div className="z-40 w-full md:-mt-16 lg:w-3/4 md:w-2/3 md:hidden">
           <Swiper
-            modules={[Navigation]}
-            navigation={{
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
             }}
+            modules={[Pagination, Autoplay,Navigation]}
+            loop={true}
             spaceBetween={20}
             slidesPerView={1}
           >
