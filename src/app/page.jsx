@@ -51,11 +51,10 @@ export default function Home() {
           <span className="text-[#EB268F] text-[28px] font-medium">
             SINCE 2020
           </span>
-          <div className="flex flex-col gap-3 md:gap-5">
-            <h1 className="text-[40px] font-bold md:text-[44px] lg:text-[48px]">
+          <div className="flex flex-col">
+            <h1 className="text-[40px] font-bold md:text-[44px] lg:text-[48px] leading-tight">
               Planning your next perfect
-            </h1>
-            <h1 className="text-[40px] font-bold md:text-[44px] lg:text-[48px]">
+              <br/>
               island trip is now hurdle-free
             </h1>
           </div>
@@ -72,6 +71,7 @@ export default function Home() {
                   </div>
                   <div className="back face">
                     <div className="flex flex-col items-center justify-center w-full h-full gap-3 text-xl font-bold text-white">
+                    <Image src={earth_icon} alt="/" />
                       <span className="text-[16px] md:text-[13px] xl:text-[13px] 2xl:text-[16px]">24/7 Availability</span>
                     </div>
                   </div>
@@ -91,6 +91,7 @@ export default function Home() {
                   </div>
                   <div className="back face">
                     <div className="flex flex-col items-center justify-center w-full h-full gap-3 text-xl font-bold text-white">
+                    <Image src={money_icon} alt="/" />
                       <span className="text-[16px] md:text-[13px] xl:text-[13px] 2xl:text-[16px]">Affordable Prices</span>
                     </div>
                   </div>
@@ -110,6 +111,7 @@ export default function Home() {
                   </div>
                   <div className="back face">
                     <div className="flex flex-col items-center justify-center w-full h-full gap-3 text-xl font-bold text-white">
+                    <Image src={quality_icon} alt="/" />
                       <span className="text-[16px] md:text-[13px] xl:text-[13px] 2xl:text-[16px]">Quality Services</span>
                     </div>
                   </div>
@@ -129,6 +131,7 @@ export default function Home() {
                   </div>
                   <div className="back face">
                     <div className="flex flex-col items-center justify-center w-full h-full gap-3 text-xl font-bold text-white">
+                    <Image src={paper_icon} alt="/" />
                       <span className="text-[16px] md:text-[13px] xl:text-[13px] 2xl:text-[16px]">Easy to reach</span>
                     </div>
                   </div>
@@ -148,6 +151,7 @@ export default function Home() {
                   </div>
                   <div className="back face">
                     <div className="flex flex-col items-center justify-center w-full h-full gap-3 text-xl font-bold text-white">
+                    <Image src={guide_icon} alt="/" />
                       <span className="text-[16px] md:text-[13px] xl:text-[13px] 2xl:text-[16px]">City Guide</span>
                     </div>
                   </div>
