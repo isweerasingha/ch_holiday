@@ -61,8 +61,8 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-5 lg:gap-[36px] text-white grid-cols-2 gap-3 md:gap-6 box">
             {/*  */}
-            <div className="">
-              <div className="w-full h-48 card-container xl:w-60 xl:h-60 lg:h-36 lg:w-36 md:h-36 md:w-36">
+            <div className="flex justify-center">
+              <div className="w-full h-48 card-container xl:w-52 xl:h-52 lg:h-36 lg:w-36 md:h-36 md:w-36">
                 <div className="card">
                   <div className="front face bg-[#3E4095]">
                     <div className="flex flex-col items-center justify-center w-full h-full gap-3 font-bold text-white">
@@ -80,8 +80,8 @@ export default function Home() {
             </div>
 
             {/*  */}
-            <div className="md:mt-24 xl:mt-36">
-              <div className="w-full h-48 card-container xl:w-60 xl:h-60 lg:h-36 lg:w-36 md:h-36 md:w-36">
+            <div className="flex justify-center md:mt-24 xl:mt-36">
+              <div className="w-full h-48 card-container xl:w-52 xl:h-52 lg:h-36 lg:w-36 md:h-36 md:w-36">
                 <div className="card">
                   <div className="front face bg-[#3E4095]">
                     <div className="flex flex-col items-center justify-center w-full h-full gap-3 font-bold text-white">
@@ -99,8 +99,8 @@ export default function Home() {
             </div>
 
             {/*  */}
-            <div className="md:mt-48 xl:mt-72">
-              <div className="w-full h-48 card-container xl:w-60 xl:h-60 lg:h-36 lg:w-36 md:h-36 md:w-36">
+            <div className="flex justify-center md:mt-48 xl:mt-72">
+              <div className="w-full h-48 card-container xl:w-52 xl:h-52 lg:h-36 lg:w-36 md:h-36 md:w-36">
                 <div className="card">
                   <div className="front face bg-[#3E4095]">
                     <div className="flex flex-col items-center justify-center w-full h-full gap-3 font-bold text-white">
@@ -118,8 +118,8 @@ export default function Home() {
             </div>
 
             {/*  */}
-            <div className="md:mt-24 xl:mt-36">
-              <div className="w-full h-48 card-container xl:w-60 xl:h-60 lg:h-36 lg:w-36 md:h-36 md:w-36">
+            <div className="flex justify-center md:mt-24 xl:mt-36">
+              <div className="w-full h-48 card-container xl:w-52 xl:h-52 lg:h-36 lg:w-36 md:h-36 md:w-36">
                 <div className="card">
                   <div className="front face bg-[#3E4095]">
                     <div className="flex flex-col items-center justify-center w-full h-full gap-3 font-bold text-white">
@@ -137,8 +137,8 @@ export default function Home() {
             </div>
 
             {/*  */}
-            <div className="">
-              <div className="w-full h-48 card-container xl:w-60 xl:h-60 lg:h-36 lg:w-36 md:h-36 md:w-36">
+            <div className="flex justify-center">
+              <div className="w-full h-48 card-container xl:w-52 xl:h-52 lg:h-36 lg:w-36 md:h-36 md:w-36">
                 <div className="card">
                   <div className="front face bg-[#3E4095]">
                     <div className="flex flex-col items-center justify-center w-full h-full gap-3 font-bold text-white">

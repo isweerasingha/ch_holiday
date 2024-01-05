@@ -12,9 +12,7 @@ const PopularPackCard = ({ Img, Days, Location, Price, Rate }) => {
         <div className="relative flex flex-col">
           <div className='relative w-full overflow-hidden group'>
             <Image src={Img} alt="/" className="w-full duration-300 group-hover:scale-110" />
-            {/* <div className='absolute z-40 w-full h-full duration-300 -bottom-full group-hover:bottom-0 bg-gradient-to-t from-[#fc0afc6a] to-[#ff57577e] flex justify-center items-end pb-10'>
-          <button className='bg-white border-2  lg:py-[17px] lg:px-[55px] py-[10px] px-[20px] uppercase font-bold text-[#EB268F] text-[16px] hover:scale-105 duration-200 hover:shadow-xl'>More Details</button>
-          </div> */}
+
           </div>
           <div className="xl:p-6 lg:p-2 p-6 md:p-4 bg-[#1C1D43] text-white">
             <div className="flex justify-between gap-3">
