@@ -41,7 +41,7 @@ const Contact = () => {
               <p>Feel free to reach out to us for any inquiries, support, or travel-related assistance. Our dedicated team is committed to ensuring your travel experience is seamless and enjoyable. Whether you have questions about bookings, need assistance with your itinerary, or have feedback to share, we&apos;re here to help. Simply fill out the form below, and we&apos;ll get back to you as soon as possible. Your journey begins with us, and we&apos;re here to make it extraordinary.</p>
               <h1 className='font-bold text-[19px] border-b-2 pb-3'>Opening Hours</h1>
 
-              <div className='flex gap-10 pb-3 border-b-2 text-[16px]'>
+              <div className='flex flex-col md:flex-row md:gap-10 pb-3 border-b-2 text-[16px] gap-4'>
                 <span>Monday - Saturday</span>
                 <span>08:00am - 07:00pm</span>
               </div>
@@ -52,7 +52,7 @@ const Contact = () => {
                 </div>
                 <div className='flex flex-col gap-3'>
                   <span className='text-[16px]'>Visit Us</span>
-                  <span className='text-[19px] font-bold'>99 Roving St., Big City, Pku 234</span>
+                  <span className='md:text-[19px] font-bold text-[16px]'>99 Roving St., Big City, Pku 234</span>
                 </div>
               </div>
 
@@ -62,7 +62,7 @@ const Contact = () => {
                 </div>
                 <div className='flex flex-col gap-3'>
                   <span className='text-[16px]'>Email Address</span>
-                  <span className='text-[19px] font-bold'>thecapitallanka@gmail.com</span>
+                  <span className='md:text-[19px] font-bold text-[16px]'>thecapitallanka@gmail.com</span>
                 </div>
               </div>
 
@@ -72,7 +72,7 @@ const Contact = () => {
                 </div>
                 <div className='flex flex-col gap-3'>
                   <span className='text-[16px]'>Phone</span>
-                  <span className='text-[19px] font-bold'>+94776973331</span>
+                  <span className='md:text-[19px] font-bold text-[16px]'>+94776973331</span>
                 </div>
               </div>
 
@@ -80,7 +80,7 @@ const Contact = () => {
 
             {/* form */}
             <Fade> 
-            <div className='bg-[#35367F] p-[48px] flex flex-col text-white gap-6'>
+            <div className='bg-[#35367F] md:p-[48px] flex flex-col text-white gap-6 p-[24px]'>
               <span className='text-[16px]'>Fill the form</span>
               <h1 className='text-[40px] font-bold'>Get In Touch</h1>
               <input type='text' className='w-full p-3 text-black bg-white border-none rounded-md outline-none' placeholder='Enter your name here' />

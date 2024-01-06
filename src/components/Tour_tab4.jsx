@@ -15,7 +15,7 @@ const Tour_tab4 = () => {
 
       <Fade>
         <div className='flex flex-col gap-6 px-3 lg:px-28 md:px-10'>
-          <h1 className='text-2xl font-bold'>Sri Lanka Tour Package 3 Days Private Tour - Summery</h1>
+          <h1 className='text-2xl font-bold text-[#262626]'>Sri Lanka Tour Package 3 Days Private Tour - Summery</h1>
 
           <div className='flex flex-col gap-3'>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -57,7 +57,7 @@ const Tour_tab4 = () => {
           <div className='grid w-full grid-cols-1 gap-10 md:gap-5 md:grid-cols-2'>
             <div className='flex flex-col gap-3 md:gap-5'>
 
-              <h1 className='text-2xl font-bold'>Activities Covered</h1>
+              <h1 className='text-2xl font-bold text-[#262626]'>Activities Covered</h1>
 
               <div className='flex items-center gap-3'>
                 <Image src={Check_green} alt='/' />
@@ -82,7 +82,7 @@ const Tour_tab4 = () => {
             </div>
             <div className='flex flex-col gap-3 md:gap-5'>
 
-              <h1 className='text-2xl font-bold'>Locations Covered</h1>
+              <h1 className='text-2xl font-bold text-[#262626]'>Locations Covered</h1>
 
               <div className='flex items-center gap-3'>
                 <Image src={Check_green} alt='/' />

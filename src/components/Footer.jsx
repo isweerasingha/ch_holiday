@@ -10,7 +10,7 @@ import Footer_image from '../assets/foote_bg_vector.png';
 
 const Footer = () => {
     return (
-        <div className='flex flex-col w-full text-white'>
+        <div className='flex flex-col w-full pt-10 text-white lg:pt-0'>
             <Image src={Footer_image} alt="/" className='w-full'/>
             <div className=' h-full w-full flex flex-col lg:flex-row bg-[#262626] px-3 py-10  lg:px-28 md:px-5 gap-10 lg:gap-6  items-center'>
                 <div className='flex flex-col w-full gap-5 pr-3 md:pr-12 xl: lg:w-2/6'>

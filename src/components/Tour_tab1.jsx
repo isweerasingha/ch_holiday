@@ -32,7 +32,7 @@ import Vehicle from '../assets/vehicle.png';
 import Pinnawala from '../assets/pinnawala.png';
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Pagination, Autoplay, Navigation } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
@@ -41,7 +41,64 @@ import "swiper/css/pagination";
 // // import required modules
 // import { Pagination, Autoplay } from "swiper/modules";
 
+const highlightsData = [
+    {
+        id: 1,
+        img: Check,
+        description: "Discover the best of Sri Lanka by car",
+    },
+    {
+        id: 2,
+        img: Check,
+        description: "Relax on beautiful Sri Lanka beaches",
+    },
+    {
+        id: 3,
+        img: Check,
+        description: "Visit the Dambulla Cave Temple and Matale spice garden",
+    },
+    {
+        id: 4,
+        img: Check,
+        description: "Savour traditional food and try fresh ceylon team",
+    },
+    {
+        id: 5,
+        img: Check,
+        description: "Sunbathe, dive and snorkel in Benthota",
+    },
+    {
+        id: 6,
+        img: Check,
+        description: "Discover the best of Sri Lanka by car",
+    },
+    {
+        id: 7,
+        img: Check,
+        description: "Relax on beautiful Sri Lanka beaches",
+    },
+    {
+        id: 8,
+        img: Check,
+        description: "Visit the Dambulla Cave Temple and Matale spice garden",
+    },
+    {
+        id: 9,
+        img: Check,
+        description: "Savour traditional food and try fresh ceylon team",
+    },
+    {
+        id: 10,
+        img: Check,
+        description: "Sunbathe, dive and snorkel in Benthota",
+    },
+
+];
+
+
 const Tour_tab1 = () => {
+
+    const [highlights, setHighlights] = useState(highlightsData);
 
     const [opened1, setOpened1] = useState(false);
     const handleOpened1 = () => {
@@ -81,7 +138,7 @@ const Tour_tab1 = () => {
                     <Image src={Img1} alt='/' />
                     <div className='flex items-center justify-center py-6 md:py-0 lg:px-20 md:px-6'>
                         <div className='flex flex-col w-full gap-3 lg:gap-5'>
-                            <h1 className='text-2xl font-bold lg:text-4xl'>Lifetime Experience In Sri Lanka</h1>
+                            <h1 className='text-2xl font-bold lg:text-4xl text-[#262626]'>Lifetime Experience In Sri Lanka</h1>
                             <div className='flex items-center gap-3'>
                                 <h1 className='text-lg font-bold'>8 Days</h1>
                                 <span>5.0 (15)</span>
@@ -134,7 +191,7 @@ const Tour_tab1 = () => {
                 </div>
 
                 <div className='px-3 py-10 text-center lg:px-28 md:px-10 lg:py-20'>
-                    <h1 className='text-2xl font-bold'>Locations You&apos;ll View</h1>
+                    <h1 className='text-2xl font-bold text-[#262626]'>Locations You&apos;ll View</h1>
                     <p className='pt-10'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                         dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
                     <div className='w-full pt-10'>
@@ -150,13 +207,29 @@ const Tour_tab1 = () => {
                     </div>
 
                     {/* lg */}
-                    <div className='hidden pt-10 lg:flex'>
+                    <div className='pt-10'>
                         <Swiper
-                            modules={[Navigation]}
                             navigation={{
                                 nextEl: ".swiper-button-next",
                                 prevEl: ".swiper-button-prev",
                             }}
+                            autoplay={{
+                                delay: 2500,
+                                disableOnInteraction: false,
+                            }}
+                            breakpoints={{
+                                480: {
+                                    slidesPerView: 1,
+                                },
+                                768: {
+                                    slidesPerView: 2,
+                                },
+                                1024: {
+                                    slidesPerView: 3,
+                                }
+                            }}
+                            modules={[Pagination, Autoplay, Navigation]}
+                            loop={true}
                             spaceBetween={20}
                             slidesPerView={3}
                         >
@@ -216,188 +289,35 @@ const Tour_tab1 = () => {
                         </Swiper>
                     </div>
 
-                    {/* md */}
-                    <div className='hidden pt-10 md:flex lg:hidden'>
-                        <Swiper
-                            modules={[Navigation]}
-                            navigation={{
-                                nextEl: ".swiper-button-next",
-                                prevEl: ".swiper-button-prev",
-                            }}
-                            spaceBetween={20}
-                            slidesPerView={2}
-                        >
 
-                            <SwiperSlide>
-                                <div className='relative'>
-                                    <Image src={Ella} alt='/' className='w-full' />
-                                    <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end'>
-                                        <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
-                                            <h1 className='text-2xl font-bold'>Ella</h1>
-                                            <p>Nestled hills, tea plantations, waterfalls,
-                                                and Nine Arch Bridge.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-
-                            <SwiperSlide>
-                                <div className='relative'>
-                                    <Image src={Kandy} alt='/' className='w-full' />
-                                    <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end'>
-                                        <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
-                                            <h1 className='text-2xl font-bold'>Kandy</h1>
-                                            <p>Cultural capital, Temple of the Tooth,
-                                                Kandy Lake, and cultural performances.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-
-                            <SwiperSlide>
-                                <div className='relative'>
-                                    <Image src={Sigiriya} alt='/' className='w-full' />
-                                    <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end'>
-                                        <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
-                                            <h1 className='text-2xl font-bold'>Sigiriya</h1>
-                                            <p>UNESCO site, Sigiriya Rock Fortress,
-                                                ancient city, and mesmerizing frescoes.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-
-                            <SwiperSlide>
-                                <div className='relative'>
-                                    <Image src={Sigiriya} alt='/' className='w-full' />
-                                    <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end'>
-                                        <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
-                                            <h1 className='text-2xl font-bold'>Sigiriya</h1>
-                                            <p>UNESCO site, Sigiriya Rock Fortress,
-                                                ancient city, and mesmerizing frescoes.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-
-                        </Swiper>
-                    </div>
-
-                    {/* sm */}
-                    <div className='pt-10 md:hidden'>
-                        <Swiper
-                            modules={[Navigation]}
-                            navigation={{
-                                nextEl: ".swiper-button-next",
-                                prevEl: ".swiper-button-prev",
-                            }}
-                            spaceBetween={20}
-                            slidesPerView={1}
-                        >
-
-                            <SwiperSlide>
-                                <div className='relative'>
-                                    <Image src={Ella} alt='/' className='w-full' />
-                                    <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end'>
-                                        <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
-                                            <h1 className='text-2xl font-bold'>Ella</h1>
-                                            <p>Nestled hills, tea plantations, waterfalls,
-                                                and Nine Arch Bridge.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-
-                            <SwiperSlide>
-                                <div className='relative'>
-                                    <Image src={Kandy} alt='/' className='w-full' />
-                                    <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end'>
-                                        <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
-                                            <h1 className='text-2xl font-bold'>Kandy</h1>
-                                            <p>Cultural capital, Temple of the Tooth,
-                                                Kandy Lake, and cultural performances.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-
-                            <SwiperSlide>
-                                <div className='relative'>
-                                    <Image src={Sigiriya} alt='/' className='w-full' />
-                                    <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end'>
-                                        <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
-                                            <h1 className='text-2xl font-bold'>Sigiriya</h1>
-                                            <p>UNESCO site, Sigiriya Rock Fortress,
-                                                ancient city, and mesmerizing frescoes.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-
-                        </Swiper>
-                    </div>
 
                 </div>
 
                 <div className='flex flex-col px-3 lg:px-28 md:px-10'>
-                    <h1 className='text-2xl font-bold'>Highlights</h1>
+                    <h1 className='text-2xl font-bold text-[#262626]'>Highlights</h1>
                     <div className='grid w-full grid-cols-1 gap-3 pt-6 md:gap-5 lg:pt-10 md:grid-cols-2'>
-                        <div className='flex flex-col gap-3 md:gap-5'>
+
+                        {highlights.map((highlight) => (
                             <div className='flex items-center gap-3'>
-                                <Image src={Check} alt='/' />
-                                <span>Discover the best of Sri Lanka by car</span>
+                                <Image src={highlight.img} alt='/' />
+                                <span>{highlight.description}</span>
                             </div>
-                            <div className='flex items-center gap-3'>
-                                <Image src={Check} alt='/' />
-                                <span>Relax on beautiful Sri Lanka beaches</span>
-                            </div>
-                            <div className='flex items-center gap-3'>
-                                <Image src={Check} alt='/' />
-                                <span>Visit the Dambulla Cave Temple and Matale spice garden</span>
-                            </div>
-                            <div className='flex items-center gap-3'>
-                                <Image src={Check} alt='/' />
-                                <span>Savour traditional food and try fresh ceylon team</span>
-                            </div>
-                            <div className='flex items-center gap-3'>
-                                <Image src={Check} alt='/' />
-                                <span>Sunbathe, dive and snorkel in Benthota</span>
-                            </div>
-                        </div>
-                        <div className='flex flex-col gap-3 md:gap-5'>
-                            <div className='flex items-center gap-3'>
-                                <Image src={Check} alt='/' />
-                                <span>Discover the best of Sri Lanka by car</span>
-                            </div>
-                            <div className='flex items-center gap-3'>
-                                <Image src={Check} alt='/' />
-                                <span>Relax on beautiful Sri Lanka beaches</span>
-                            </div>
-                            <div className='flex items-center gap-3'>
-                                <Image src={Check} alt='/' />
-                                <span>Visit the Dambulla Cave Temple and Matale spice garden</span>
-                            </div>
-                            <div className='flex items-center gap-3'>
-                                <Image src={Check} alt='/' />
-                                <span>Savour traditional food and try fresh ceylon team</span>
-                            </div>
-                            <div className='flex items-center gap-3'>
-                                <Image src={Check} alt='/' />
-                                <span>Sunbathe, dive and snorkel in Benthota</span>
-                            </div>
-                        </div>
+                        ))}
+
+          
+                       
                     </div>
                 </div>
 
                 <div className='flex flex-col px-3 pt-10 lg:pt-20 lg:px-28 md:px-10'>
-                    <h1 className='text-2xl font-bold'>The Schedule</h1>
+                    <h1 className='text-2xl font-bold text-[#262626]'>The Schedule</h1>
                     <p className='pt-6 lg:pt-10'>Begin and conclude in Colombo! You have an 8-day tour package with the In-depth Cultural tour Lifetime Experience in Sri Lanka that includes travel to Negombo, Sri Lanka, as well as 12 other locations. A hotel stay, a professional guide, meals, transportation, and other amenities are all included in the
                         Lifetime Experience in Sri Lanka.
                     </p>
                 </div>
 
                 <div className='flex flex-col px-3 pt-10 lg:pt-20 lg:px-28 md:px-10'>
-                    <h1 className='text-2xl font-bold'>Introduction</h1>
+                    <h1 className='text-2xl font-bold text-[#262626]'>Introduction</h1>
                     <p className='pt-6 lg:pt-10'>This exclusive 8-day tour is thoughtfully planned to include both beach and city time, as well as nature and wildlife, history and culture. The cozy hotels and resorts in Sri Lanka will provide you with the warm hospitality of the country. Sri Lanka is well-known for being a complete travel destination because it has everything a traveler could possibly want, including beaches, mountains, historical sites, wildlife, and a vibrant local culture. Your tour guide, who speaks multiple languages and is well-versed in every facet of this amazing nation, will show you around a lot of intriguing locations and impart his wisdom on Sri Lankan history and customs. We are therefore confident that you will have a fantastic, fulfilling vacation and treasured memories that will last a lifetime.
                     </p>
                 </div>
@@ -408,7 +328,7 @@ const Tour_tab1 = () => {
                             <div className='flex items-center justify-between w-full' onClick={handleOpened1}>
                                 <div className='flex items-center gap-5'>
                                     <Image src={Collaps_icon} alt='/' className='w-12 md:w-16' />
-                                    <h1 className='text-xl font-bold'>Day 01</h1>
+                                    <h1 className='text-xl font-bold text-[#262626]'>Day 01</h1>
                                     <span className='hidden md:block'>Airport or hotel pick-up / Welcome to Sri Lanka!</span>
                                 </div>
 
@@ -432,7 +352,7 @@ const Tour_tab1 = () => {
                             <div className='flex items-center justify-between w-full' onClick={handleOpened2}>
                                 <div className='flex items-center gap-5'>
                                     <Image src={Collaps_icon} alt='/' className='w-12 md:w-16' />
-                                    <h1 className='text-xl font-bold'>Day 02</h1>
+                                    <h1 className='text-xl font-bold text-[#262626]'>Day 02</h1>
                                     <span className='hidden md:block'>Pinnawala Elephant Orphanage</span>
                                 </div>
 
@@ -493,7 +413,7 @@ const Tour_tab1 = () => {
                             <div className='flex items-center justify-between w-full' onClick={handleOpened3}>
                                 <div className='flex items-center gap-5'>
                                     <Image src={Collaps_icon} alt='/' className='w-12 md:w-16' />
-                                    <h1 className='text-xl font-bold'>Day 03</h1>
+                                    <h1 className='text-xl font-bold text-[#262626]'>Day 03</h1>
                                     <span className='hidden md:block'>Kandy City Tour  </span>
                                 </div>
 
@@ -517,7 +437,7 @@ const Tour_tab1 = () => {
                             <div className='flex items-center justify-between w-full' onClick={handleOpened4}>
                                 <div className='flex items-center gap-5'>
                                     <Image src={Collaps_icon} alt='/' className='w-12 md:w-16' />
-                                    <h1 className='text-xl font-bold'>Day 04</h1>
+                                    <h1 className='text-xl font-bold text-[#262626]'>Day 04</h1>
                                     <span className='hidden md:block'>Spice Garden</span>
                                 </div>
 
@@ -541,7 +461,7 @@ const Tour_tab1 = () => {
                             <div className='flex items-center justify-between w-full' onClick={handleOpened5}>
                                 <div className='flex items-center gap-5'>
                                     <Image src={Collaps_icon} alt='/' className='w-12 md:w-16' />
-                                    <h1 className='text-xl font-bold'>Day 05</h1>
+                                    <h1 className='text-xl font-bold text-[#262626]'>Day 05</h1>
                                     <span className='hidden md:block'>Madhu River with Safari</span>
                                 </div>
 
@@ -563,7 +483,7 @@ const Tour_tab1 = () => {
                     <Box   >
                         <Group justify="between" mb={5}>
                             <div className='flex items-center justify-between w-full' onClick={handleOpened6}>
-                                <div className='flex items-center gap-5'>
+                                <div className='flex items-center gap-5 text-[#262626]'>
                                     <Image src={Collaps_icon} alt='/' className='w-12 md:w-16' />
                                     <h1 className='text-xl font-bold'>Day 06</h1>
                                     <span className='hidden md:block'>Colombo City Tour / Airport or Hotel Drop-Off</span>

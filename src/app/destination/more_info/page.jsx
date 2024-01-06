@@ -9,7 +9,7 @@ import Footer from '@/components/Footer';
 
 import Arrow from '../../../assets/arrow_back_ios_new.png';
 
-import { Swiper, SwiperSlide } from 'swiper/react';
+ 
 
 // Import Swiper styles
 import 'swiper/css';
@@ -17,7 +17,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 // import required modules
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay,Navigation } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
@@ -176,7 +177,7 @@ const DestinationMoreInfo = () => {
                     </div>
 
                     <div className='flex flex-col w-full gap-10 py-10 text-center'>
-                        <h1 className='text-[33px] font-bold'>Highlights</h1>
+                        <h1 className='text-[33px] font-bold text-[#262626]'>Highlights</h1>
 
                         <div className='grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3'>
 
@@ -242,7 +243,7 @@ const DestinationMoreInfo = () => {
 
                     <div className='grid w-full grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-0'>
                         <div className='flex flex-col justify-center gap-5 lg:gap-10'>
-                            <h1 className='font-bold text-[33px]'>About The Greece</h1>
+                            <h1 className='font-bold text-[33px] text-[#262626]'>About The Greece</h1>
                             <p className='text-justify'>Welcome to Greece, a captivating destination that seamlessly blends ancient history with breathtaking natural beauty. Nestled in southeastern Europe, Greece is renowned for its rich cultural heritage, spanning thousands of years. From the iconic white-washed buildings overlooking the azure Aegean Sea to the ancient ruins that whisper tales of gods and heroes, Greece offers a truly enchanting experience. Immerse yourself in the warmth of Greek hospitality, savor delectable Mediterranean cuisine, and explore a landscape that ranges from idyllic beaches to rugged mountains. Whether you&apos;re drawn to the historical wonders of Athens, the idyllic islands of Santorini and Mykonos, or the tranquil villages of Crete, Greece beckons with a tapestry of experiences waiting to be discovered. Join us on a journey to a land where myth and reality intertwine, and every corner reveals a piece of a timeless and extraordinary story.</p>
                         </div>
                         <div className='flex items-center justify-center w-full lg:justify-end lg:pl-10 xl:pl-0'>
@@ -253,7 +254,7 @@ const DestinationMoreInfo = () => {
                 </div>
 
                 <div className='flex flex-col w-full gap-10 px-3 py-10 lg:py-20 lg:px-28 md:px-10 bg-[#f5f5f5] text-center'>
-                    <h1 className='font-bold text-[33px]'>Travel Essentials</h1>
+                    <h1 className='font-bold text-[33px] text-[#262626]'>Travel Essentials</h1>
 
                     <div className='flex flex-col gap-6'>
 
@@ -261,7 +262,7 @@ const DestinationMoreInfo = () => {
                         <div className='flex flex-col gap-3'>
                             <div className='flex items-center gap-3'>
                                 <Image src={Check} alt="/" className='' />
-                                <h1 className='xl:text-[23px] text-[19px] font-bold'>Weather Information :</h1>
+                                <h1 className='xl:text-[23px] text-[19px] font-bold text-[#262626]'>Weather Information :</h1>
                             </div>
                             <p className='text-[16px] text-justify'>Greece enjoys a Mediterranean climate, characterized by hot, dry summers and mild, wet winters. Summers (June to August) boast temperatures ranging from 25°C to 35°C (77°F to 95°F), making it ideal for beach vacations. Winters (December to February) are milder, with temperatures ranging from 5°C to 15°C (41°F to 59°F). Be sure to check the specific weather conditions for your chosen travel dates and pack accordingly.</p>
                         </div>
@@ -270,7 +271,7 @@ const DestinationMoreInfo = () => {
                         <div className='flex flex-col gap-3'>
                             <div className='flex items-center gap-3'>
                                 <Image src={Check} alt="/" className='' />
-                                <h1 className='xl:text-[23px] text-[19px] font-bold'>Time Zone:</h1>
+                                <h1 className='xl:text-[23px] text-[19px] font-bold text-[#262626]'>Time Zone:</h1>
                             </div>
                             <p className='text-[16px] text-justify'>Greece operates on Eastern European Time (EET), which is UTC+2 during Standard Time and UTC+3 during Daylight Saving Time (from the last Sunday in March to the last Sunday in October).</p>
                         </div>
@@ -279,7 +280,7 @@ const DestinationMoreInfo = () => {
                         <div className='flex flex-col gap-3'>
                             <div className='flex items-center gap-3'>
                                 <Image src={Check} alt="/" className='' />
-                                <h1 className='xl:text-[23px] text-[19px] font-bold'>Visa and Entry Requirements:</h1>
+                                <h1 className='xl:text-[23px] text-[19px] font-bold text-[#262626]'>Visa and Entry Requirements:</h1>
                             </div>
                             <p className='text-[16px] text-justify'>Most visitors to Greece, including citizens of the EU, the USA, Canada, Australia, and many other countries, can enter for short stays (up to 90 days) without a visa. However, it&apos;s essential to check the specific entry requirements based on your nationality before traveling.</p>
                         </div>
@@ -288,7 +289,7 @@ const DestinationMoreInfo = () => {
                         <div className='flex flex-col gap-3'>
                             <div className='flex items-center gap-3'>
                                 <Image src={Check} alt="/" className='' />
-                                <h1 className='xl:text-[23px] text-[19px] font-bold'>Currency Exchange:</h1>
+                                <h1 className='xl:text-[23px] text-[19px] font-bold text-[#262626]'>Currency Exchange:</h1>
                             </div>
                             <p className='text-[16px] text-justify'>The official currency is the Euro (EUR). Currency exchange services are widely available, and credit cards are widely accepted. ATMs are also easily accessible in major cities and tourist areas. Ensure you have travel insurance that covers medical expenses and potential travel disruptions. Additionally, carry essential documents, including a valid passport, any required visas, and contact information for your country&apos;s embassy or consulate in Greece. Feel free to reach out to our customer support for any additional information or assistance with your travel essentials. Your journey to Greece awaits</p>
                         </div>
@@ -301,9 +302,9 @@ const DestinationMoreInfo = () => {
                     <div className='flex flex-col gap-5 text-start'>
 
                         <div className='w-full text-center'>
-                            <h1 className='font-bold text-[33px] text-center'>Local Cuisine</h1>
+                            <h1 className='font-bold text-[33px] text-center text-[#262626]'>Local Cuisine</h1>
                         </div>
-                        <h1 className='xl:text-[23px] text-[19px] font-bold'>Culinary Delights of Greece:</h1>
+                        <h1 className='xl:text-[23px] text-[19px] font-bold text-[#262626]'>Culinary Delights of Greece:</h1>
                         <p className='text-[16px] text-justify'>Indulge your taste buds in the culinary wonders of Greece, where traditional flavors and fresh ingredients take center stage. Savor iconic dishes such as moussaka, aubergine-based and layered with minced meat, and souvlaki, skewered and grilled meat often served with pita. Don&apos;t miss the chance to enjoy a Greek salad with feta cheese, olives, and olive oil. Seafood lovers can relish the catch of the day in coastal towns, and be sure to try baklava for a sweet finale. Pair your meals with local wines or ouzo, an anise-flavored aperitif, for a truly authentic dining experience.</p>
                     </div>
 
@@ -322,15 +323,31 @@ const DestinationMoreInfo = () => {
                         </div>
 
                         {/* lg */}
-                        <div className='hidden pt-10 lg:flex'>
+                        <div className='pt-10'>
                             <Swiper
-                                modules={[Navigation]}
                                 navigation={{
                                     nextEl: ".swiper-button-next-Local-Cuisine",
                                     prevEl: ".swiper-button-prev-Local-Cuisine",
                                 }}
-                                spaceBetween={20}
-                                slidesPerView={3}
+                                autoplay={{
+                                    delay: 2500,
+                                    disableOnInteraction: false,
+                                  }}
+                                  breakpoints={{
+                                    480: {
+                                      slidesPerView: 1,
+                                    },
+                                    768: {
+                                      slidesPerView: 2,
+                                    },
+                                    1024: {
+                                      slidesPerView: 3,
+                                    }
+                                  }}
+                                  modules={[Pagination, Autoplay,Navigation]}
+                                  loop={true}
+                                  spaceBetween={20}
+                                  slidesPerView={3}
                             >
 
                                 <SwiperSlide>
@@ -380,124 +397,7 @@ const DestinationMoreInfo = () => {
                             </Swiper>
                         </div>
 
-                        {/* md */}
-                        <div className='hidden pt-10 md:flex lg:hidden'>
-                            <Swiper
-                                modules={[Navigation]}
-                                navigation={{
-                                    nextEl: ".swiper-button-next-Local-Cuisine",
-                                    prevEl: ".swiper-button-prev-Local-Cuisine",
-                                }}
-                                spaceBetween={20}
-                                slidesPerView={2}
-                            >
-
-                                <SwiperSlide>
-                                    <div className='relative overflow-hidden group'>
-                                        <Image src={food1} alt='/' className='w-full' />
-                                        <div className='absolute -bottom-full w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end group-hover:top-0 group-hover:left-0 duration-500'>
-                                            <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
-                                                <h1 className='xl:text-[23px] text-[19px] font-bold'>Greek Yogurt</h1>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-
-                                <SwiperSlide>
-                                    <div className='relative overflow-hidden group'>
-                                        <Image src={food2} alt='/' className='w-full' />
-                                        <div className='absolute -bottom-full w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end group-hover:top-0 group-hover:left-0 duration-500'>
-                                            <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
-                                                <h1 className='xl:text-[23px] text-[19px] font-bold'>Greek Yogurt</h1>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-
-                                <SwiperSlide>
-                                    <div className='relative overflow-hidden group'>
-                                        <Image src={food3} alt='/' className='w-full' />
-                                        <div className='absolute -bottom-full w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end group-hover:top-0 group-hover:left-0 duration-500'>
-                                            <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
-                                                <h1 className='xl:text-[23px] text-[19px] font-bold'>Greek Yogurt</h1>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-
-                                <SwiperSlide>
-                                    <div className='relative overflow-hidden group'>
-                                        <Image src={food3} alt='/' className='w-full' />
-                                        <div className='absolute -bottom-full w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end group-hover:top-0 group-hover:left-0 duration-500'>
-                                            <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
-                                                <h1 className='xl:text-[23px] text-[19px] font-bold'>Greek Yogurt</h1>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-
-                            </Swiper>
-                        </div>
-
-                        {/* sm */}
-                        <div className='pt-10 md:hidden'>
-                            <Swiper
-                                modules={[Navigation]}
-                                navigation={{
-                                    nextEl: ".swiper-button-next-Local-Cuisine",
-                                    prevEl: ".swiper-button-prev-Local-Cuisine",
-                                }}
-                                spaceBetween={20}
-                                slidesPerView={1}
-                            >
-
-                                <SwiperSlide>
-                                    <div className='relative overflow-hidden group'>
-                                        <Image src={food1} alt='/' className='w-full' />
-                                        <div className='absolute -bottom-full w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end group-hover:top-0 group-hover:left-0 duration-500'>
-                                            <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
-                                                <h1 className='xl:text-[23px] text-[19px] font-bold'>Greek Yogurt</h1>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-
-                                <SwiperSlide>
-                                    <div className='relative overflow-hidden group'>
-                                        <Image src={food2} alt='/' className='w-full' />
-                                        <div className='absolute -bottom-full w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end group-hover:top-0 group-hover:left-0 duration-500'>
-                                            <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
-                                                <h1 className='xl:text-[23px] text-[19px] font-bold'>Greek Yogurt</h1>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-
-                                <SwiperSlide>
-                                    <div className='relative overflow-hidden group'>
-                                        <Image src={food3} alt='/' className='w-full' />
-                                        <div className='absolute -bottom-full w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end group-hover:top-0 group-hover:left-0 duration-500'>
-                                            <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
-                                                <h1 className='xl:text-[23px] text-[19px] font-bold'>Greek Yogurt</h1>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-
-                                <SwiperSlide>
-                                    <div className='relative overflow-hidden group'>
-                                        <Image src={food3} alt='/' className='w-full' />
-                                        <div className='absolute -bottom-full w-full h-full bg-gradient-to-t from-[#000000be] to-transparent flex justify-center items-end group-hover:top-0 group-hover:left-0 duration-500'>
-                                            <div className='flex flex-col gap-2 px-10 pb-10 text-center text-white md:px-3 lg:px-10'>
-                                                <h1 className='xl:text-[23px] text-[19px] font-bold'>Greek Yogurt</h1>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-
-                            </Swiper>
-                        </div>
-
+ 
                     </div>
                 </div>
 
@@ -512,7 +412,7 @@ const DestinationMoreInfo = () => {
                 <div className='flex flex-col w-full gap-10 px-3 py-10 lg:gap-20 lg:py-20 lg:px-28 md:px-10'>
 
                     <div className='flex flex-col w-full gap-5 py-10 text-center'>
-                        <h1 className='text-[33px] font-bold'>Transportation</h1>
+                        <h1 className='text-[33px] font-bold text-[#262626]'>Transportation</h1>
 
                         <div className='flex justify-center w-full'>
                             <div className='w-full lg:w-2/3'>
@@ -586,7 +486,7 @@ const DestinationMoreInfo = () => {
 
                 <div className='flex flex-col w-full gap-10 px-3 py-10 lg:py-20 lg:px-28 md:px-10 bg-[#f5f5f5] text-center'>
 
-                    <h1 className='text-[33px] font-bold'>Accommodations</h1>
+                    <h1 className='text-[33px] font-bold text-[#262626]'>Accommodations</h1>
 
                     <div className='flex justify-center w-full'>
                         <div className='w-full lg:w-2/3'>
@@ -610,15 +510,31 @@ const DestinationMoreInfo = () => {
                         </div>
 
                         {/* lg */}
-                        <div className='hidden pt-10 lg:flex'>
+                        <div className='pt-10'>
                             <Swiper
-                                modules={[Navigation]}
                                 navigation={{
                                     nextEl: ".swiper-button-next-Accommodations",
                                     prevEl: ".swiper-button-prev-Accommodations",
                                 }}
-                                spaceBetween={20}
-                                slidesPerView={3}
+                                autoplay={{
+                                    delay: 2500,
+                                    disableOnInteraction: false,
+                                  }}
+                                  breakpoints={{
+                                    480: {
+                                      slidesPerView: 1,
+                                    },
+                                    768: {
+                                      slidesPerView: 2,
+                                    },
+                                    1024: {
+                                      slidesPerView: 3,
+                                    }
+                                  }}
+                                  modules={[Pagination, Autoplay,Navigation]}
+                                  loop={true}
+                                  spaceBetween={20}
+                                  slidesPerView={3}
                             >
                                 <SwiperSlide>
                                     <div className='relative overflow-hidden group'>
@@ -663,116 +579,7 @@ const DestinationMoreInfo = () => {
                             </Swiper>
 
                         </div>
-
-                        {/* md */}
-                        <div className='hidden pt-10 md:flex lg:hidden'>
-                            <Swiper
-                                modules={[Navigation]}
-                                navigation={{
-                                    nextEl: ".swiper-button-next-Accommodations",
-                                    prevEl: ".swiper-button-prev-Accommodations",
-                                }}
-                                spaceBetween={20}
-                                slidesPerView={2}
-                            >
-                                <SwiperSlide>
-                                    <div className='relative overflow-hidden group'>
-                                        <Image src={hotel1} alt='/' className='w-full' />
-                                        <div className='flex flex-col w-full h-48 gap-3 p-3 text-center bg-white lg:p-6 md:h-64 lg:h-52'>
-                                            <h1 className='xl:text-[23px] text-[19px] font-bold'>Luxurious Resorts</h1>
-                                            <p className='text-[16px] text-center'>Experience opulence in seaside resorts with stunning views, private beaches, and world-class amenities. Ideal for a relaxing getaway.</p>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-
-                                <SwiperSlide>
-                                    <div className='relative overflow-hidden group'>
-                                        <Image src={hotel2} alt='/' className='w-full' />
-                                        <div className='flex flex-col w-full h-48 gap-3 p-3 text-center bg-white lg:p-6 md:h-64 lg:h-52'>
-                                            <h1 className='xl:text-[23px] text-[19px] font-bold'>Charming Villas</h1>
-                                            <p className='text-[16px] text-center'>Explore the rustic charm of Greece by staying in traditional villas. Enjoy the comfort of a home away from home while immersing yourself in local culture.</p>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-
-                                <SwiperSlide>
-                                    <div className='relative overflow-hidden group'>
-                                        <Image src={hotel3} alt='/' className='w-full' />
-                                        <div className='flex flex-col w-full h-48 gap-3 p-3 text-center bg-white lg:p-6 md:h-64 lg:h-52'>
-                                            <h1 className='xl:text-[23px] text-[19px] font-bold'>Budget-Friendly Options</h1>
-                                            <p className='text-[16px] text-center'>Hostels and budget hotels are available, especially in popular tourist areas, providing economical choices without compromising on comfort.</p>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-
-                                <SwiperSlide>
-                                    <div className='relative overflow-hidden group'>
-                                        <Image src={hotel3} alt='/' className='w-full' />
-                                        <div className='flex flex-col w-full h-48 gap-3 p-3 text-center bg-white lg:p-6 md:h-64 lg:h-52'>
-                                            <h1 className='xl:text-[23px] text-[19px] font-bold'>Budget-Friendly Options</h1>
-                                            <p className='text-[16px] text-center'>Hostels and budget hotels are available, especially in popular tourist areas, providing economical choices without compromising on comfort.</p>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-
-                            </Swiper>
-
-                        </div>
-
-                        {/* sm */}
-                        <div className='pt-10 md:hidden'>
-                            <Swiper
-                                modules={[Navigation]}
-                                navigation={{
-                                    nextEl: ".swiper-button-next-Accommodations",
-                                    prevEl: ".swiper-button-prev-Accommodations",
-                                }}
-                                spaceBetween={20}
-                                slidesPerView={1}
-                            >
-                                <SwiperSlide>
-                                    <div className='relative overflow-hidden group'>
-                                        <Image src={hotel1} alt='/' className='w-full' />
-                                        <div className='flex flex-col w-full h-48 gap-3 p-3 text-center bg-white lg:p-6 md:h-64 lg:h-52'>
-                                            <h1 className='xl:text-[23px] text-[19px] font-bold'>Luxurious Resorts</h1>
-                                            <p className='text-[16px] text-center'>Experience opulence in seaside resorts with stunning views, private beaches, and world-class amenities. Ideal for a relaxing getaway.</p>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-
-                                <SwiperSlide>
-                                    <div className='relative overflow-hidden group'>
-                                        <Image src={hotel2} alt='/' className='w-full' />
-                                        <div className='flex flex-col w-full h-48 gap-3 p-3 text-center bg-white lg:p-6 md:h-64 lg:h-52'>
-                                            <h1 className='xl:text-[23px] text-[19px] font-bold'>Charming Villas</h1>
-                                            <p className='text-[16px] text-center'>Explore the rustic charm of Greece by staying in traditional villas. Enjoy the comfort of a home away from home while immersing yourself in local culture.</p>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-
-                                <SwiperSlide>
-                                    <div className='relative overflow-hidden group'>
-                                        <Image src={hotel3} alt='/' className='w-full' />
-                                        <div className='flex flex-col w-full h-48 gap-3 p-3 text-center bg-white lg:p-6 md:h-64 lg:h-52'>
-                                            <h1 className='xl:text-[23px] text-[19px] font-bold'>Budget-Friendly Options</h1>
-                                            <p className='text-[16px] text-center'>Hostels and budget hotels are available, especially in popular tourist areas, providing economical choices without compromising on comfort.</p>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-
-                                <SwiperSlide>
-                                    <div className='relative overflow-hidden group'>
-                                        <Image src={hotel3} alt='/' className='w-full' />
-                                        <div className='flex flex-col w-full h-48 gap-3 p-3 text-center bg-white lg:p-6 md:h-64 lg:h-52'>
-                                            <h1 className='xl:text-[23px] text-[19px] font-bold'>Budget-Friendly Options</h1>
-                                            <p className='text-[16px] text-center'>Hostels and budget hotels are available, especially in popular tourist areas, providing economical choices without compromising on comfort.</p>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-
-                            </Swiper>
-
-                        </div>
+ 
 
                     </div>
 
@@ -780,7 +587,7 @@ const DestinationMoreInfo = () => {
 
                 <div className='flex flex-col items-center w-full gap-10 px-3 py-10 lg:px-28 md:px-10 lg:py-20'>
                     <div className='flex flex-col items-center w-full gap-4 lg:w-2/3 '>
-                        <h1 className='text-[33px] font-bold'>Travel Tips</h1>
+                        <h1 className='text-[33px] font-bold text-[#262626]'>Travel Tips</h1>
                         <p className='text-[16px] text-center'>Make the Most of Your Greek Adventure with These Tips</p>
                     </div>
 
@@ -795,7 +602,7 @@ const DestinationMoreInfo = () => {
                                         <div className='flex items-center justify-between w-full' onClick={handleOpened1}>
                                             <div className='flex items-center gap-5'>
 
-                                                <h1 className='font-bold text-[23px]'>Respect Local Customs</h1>
+                                                <h1 className='font-bold text-[23px] text-[#262626]'>Respect Local Customs</h1>
 
                                             </div>
 
@@ -823,7 +630,7 @@ const DestinationMoreInfo = () => {
                                         <div className='flex items-center justify-between w-full' onClick={handleOpened2}>
                                             <div className='flex items-center gap-5'>
 
-                                                <h1 className='font-bold text-[23px]'>Cash and Cards</h1>
+                                                <h1 className='font-bold text-[23px] text-[#262626]'>Cash and Cards</h1>
 
                                             </div>
 
@@ -851,7 +658,7 @@ const DestinationMoreInfo = () => {
                                         <div className='flex items-center justify-between w-full' onClick={handleOpened3}>
                                             <div className='flex items-center gap-5'>
 
-                                                <h1 className='font-bold text-[23px]'>Hydrate and Stay Cool</h1>
+                                                <h1 className='font-bold text-[23px] text-[#262626]'>Hydrate and Stay Cool</h1>
 
                                             </div>
 
@@ -879,7 +686,7 @@ const DestinationMoreInfo = () => {
                                         <div className='flex items-center justify-between w-full' onClick={handleOpened4}>
                                             <div className='flex items-center gap-5'>
 
-                                                <h1 className='font-bold text-[23px]'>Emergency Contacts</h1>
+                                                <h1 className='font-bold text-[23px] text-[#262626]'>Emergency Contacts</h1>
 
                                             </div>
 
@@ -910,7 +717,7 @@ const DestinationMoreInfo = () => {
                                         <div className='flex items-center justify-between w-full' onClick={handleOpened7}>
                                             <div className='flex items-center gap-5'>
 
-                                                <h1 className='font-bold text-[23px]'>Sun Protection</h1>
+                                                <h1 className='font-bold text-[23px] text-[#262626]'>Sun Protection</h1>
 
                                             </div>
 
@@ -938,7 +745,7 @@ const DestinationMoreInfo = () => {
                                         <div className='flex items-center justify-between w-full' onClick={handleOpened8}>
                                             <div className='flex items-center gap-5'>
 
-                                                <h1 className='font-bold text-[23px]'>Island-Hopping Planning</h1>
+                                                <h1 className='font-bold text-[23px] text-[#262626]'>Island-Hopping Planning</h1>
 
                                             </div>
 
@@ -968,7 +775,7 @@ const DestinationMoreInfo = () => {
                                         <div className='flex items-center justify-between w-full' onClick={handleOpened9}>
                                             <div className='flex items-center gap-5'>
 
-                                                <h1 className='font-bold text-[23px]'>Local Cuisine Exploration</h1>
+                                                <h1 className='font-bold text-[23px] text-[#262626]'>Local Cuisine Exploration</h1>
 
                                             </div>
 
@@ -996,7 +803,7 @@ const DestinationMoreInfo = () => {
                                         <div className='flex items-center justify-between w-full' onClick={handleOpened10}>
                                             <div className='flex items-center gap-5'>
 
-                                                <h1 className='font-bold text-[23px]'>Footwear for Exploration</h1>
+                                                <h1 className='font-bold text-[23px] text-[#262626]'>Footwear for Exploration</h1>
 
                                             </div>
 

@@ -31,7 +31,7 @@ import Person from "../assets/person.png";
 import Footer from "@/components/Footer";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation,Autoplay } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
@@ -52,9 +52,9 @@ export default function Home() {
             SINCE 2020
           </span>
           <div className="flex flex-col">
-            <h1 className="text-[40px] font-bold md:text-[44px] lg:text-[48px] leading-tight">
+            <h1 className="text-[40px] font-bold md:text-[44px] lg:text-[48px] leading-tight text-[#262626]">
               Planning your next perfect
-              <br/>
+              <br />
               island trip is now hurdle-free
             </h1>
           </div>
@@ -71,7 +71,7 @@ export default function Home() {
                   </div>
                   <div className="back face">
                     <div className="flex flex-col items-center justify-center w-full h-full gap-3 text-xl font-bold text-white">
-                    <Image src={earth_icon} alt="/" />
+                      <Image src={earth_icon} alt="/" />
                       <span className="text-[16px] md:text-[13px] xl:text-[13px] 2xl:text-[16px]">24/7 Availability</span>
                     </div>
                   </div>
@@ -91,7 +91,7 @@ export default function Home() {
                   </div>
                   <div className="back face">
                     <div className="flex flex-col items-center justify-center w-full h-full gap-3 text-xl font-bold text-white">
-                    <Image src={money_icon} alt="/" />
+                      <Image src={money_icon} alt="/" />
                       <span className="text-[16px] md:text-[13px] xl:text-[13px] 2xl:text-[16px]">Affordable Prices</span>
                     </div>
                   </div>
@@ -111,7 +111,7 @@ export default function Home() {
                   </div>
                   <div className="back face">
                     <div className="flex flex-col items-center justify-center w-full h-full gap-3 text-xl font-bold text-white">
-                    <Image src={quality_icon} alt="/" />
+                      <Image src={quality_icon} alt="/" />
                       <span className="text-[16px] md:text-[13px] xl:text-[13px] 2xl:text-[16px]">Quality Services</span>
                     </div>
                   </div>
@@ -131,7 +131,7 @@ export default function Home() {
                   </div>
                   <div className="back face">
                     <div className="flex flex-col items-center justify-center w-full h-full gap-3 text-xl font-bold text-white">
-                    <Image src={paper_icon} alt="/" />
+                      <Image src={paper_icon} alt="/" />
                       <span className="text-[16px] md:text-[13px] xl:text-[13px] 2xl:text-[16px]">Easy to reach</span>
                     </div>
                   </div>
@@ -151,7 +151,7 @@ export default function Home() {
                   </div>
                   <div className="back face">
                     <div className="flex flex-col items-center justify-center w-full h-full gap-3 text-xl font-bold text-white">
-                    <Image src={guide_icon} alt="/" />
+                      <Image src={guide_icon} alt="/" />
                       <span className="text-[16px] md:text-[13px] xl:text-[13px] 2xl:text-[16px]">City Guide</span>
                     </div>
                   </div>
@@ -170,9 +170,10 @@ export default function Home() {
             />
           </div>
           <div className="flex flex-col justify-center gap-[34px] lg:py-16 md:py-10 py-5 text-white lg:pl-10">
-            <div className="flex flex-col text-[28px] font-medium">
-              <h1>Them Best Great</h1>
-              <h1>Tourism is right here</h1>
+            <div className="flex flex-col text-[28px] font-bold leading-tight ">
+              <h1>Them Best Great
+                <br/>
+                Tourism is right here</h1>
             </div>
 
             <hr className="w-32 border" />
@@ -201,10 +202,9 @@ export default function Home() {
 
         <div className="w-full px-3 py-10 lg:px-28 md:px-5 md:py-20">
           <div className="flex flex-col w-full gap-3 text-center">
-            <h1 className="text-[40px] font-bold md:text-[44px] lg:text-[48px]">
+            <h1 className="text-[40px] font-bold md:text-[44px] lg:text-[48px] text-[#262626] leading-tight">
               Uncover the Mesmerizing
-            </h1>
-            <h1 className="text-[40px] font-bold md:text-[44px] lg:text-[48px]">
+            <br/>
               Sri Lanka tour packages
             </h1>
             <span className="mt-4 text-[16px]">
@@ -281,7 +281,7 @@ export default function Home() {
                 delay: 2500,
                 disableOnInteraction: false,
               }}
-              modules={[Autoplay,Navigation]}
+              modules={[Autoplay, Navigation]}
               loop={true}
               navigation={{
                 nextEl: ".swiper-button-next",
@@ -290,7 +290,7 @@ export default function Home() {
               spaceBetween={20}
               slidesPerView={3}
               breakpoints={{
-                480: {
+                300: {
                   slidesPerView: 1,
                 },
                 768: {
@@ -344,7 +344,7 @@ export default function Home() {
           </div>
 
           <div className="flex justify-center w-full pt-12">
-            <button className="bg-[#3E4095] lg:py-[17px] lg:px-[55px]  py-[10px] px-[20px] uppercase text-white hover:bg-[#35367F] font-medium text-[16px]">
+            <button className="bg-[#3E4095]  py-[17px]  px-[55px] uppercase text-white hover:bg-[#35367F] font-medium text-[16px]">
               View More Packages
             </button>
           </div>
@@ -539,9 +539,8 @@ export default function Home() {
         <div className="w-full px-3 py-10 lg:px-28 md:px-5 poppin_font lg:py-20">
           <div className="grid w-full grid-cols-1 lg:grid-cols-2">
             <div className="flex flex-col justify-center gap-[34px] lg:py-20 md:py-10 py-5 lg:pr-14 bg-logo">
-              <div className="flex flex-col text-[40px] font-bold md:text-[44px] lg:text-[48px]">
-                <h1>We make your Journey</h1>
-                <h1>Worth Remembering!</h1>
+              <div className="flex flex-col text-[40px] font-bold md:text-[44px] lg:text-[48px] text-[#262626] leading-tight">
+                <h1>We make your Journey<br/>Worth Remembering!</h1>
               </div>
               <p className="text-[16px] text-justify">
                 Crack the myths, unearth the secrets and explore the beauty of
@@ -595,7 +594,7 @@ export default function Home() {
                     delay: 2500,
                     disableOnInteraction: false,
                   }}
-                  modules={[ Autoplay,Navigation]}
+                  modules={[Autoplay, Navigation]}
                   loop={true}
                   navigation={{
                     nextEl: ".swiper-button-next-review",
@@ -627,12 +626,12 @@ export default function Home() {
                             <Image src={Person} alt="/" className="w-full h-full" />
                           </div>
                           <div className="flex flex-col items-start justify-center gap-3">
-                            <h1 className="text-[23px] font-bold ">Kumto Warming</h1>
+                            <h1 className="text-[23px] font-bold text-[#262626] ">Kumto Warming</h1>
                             <span className="text-[16px]">Designation</span>
                           </div>
                         </div>
                         <div className="justify-center hidden md:flex">
-                        <Image src={review_vector_icon} alt="/" />
+                          <Image src={review_vector_icon} alt="/" />
                         </div>
                       </div>
                     </div>
@@ -660,12 +659,12 @@ export default function Home() {
                             <Image src={Person} alt="/" className="w-full h-full" />
                           </div>
                           <div className="flex flex-col items-start justify-center gap-3">
-                            <h1 className="text-[23px] font-bold ">Kumto Warming</h1>
+                            <h1 className="text-[23px] font-bold text-[#262626]">Kumto Warming</h1>
                             <span className="text-[16px]">Designation</span>
                           </div>
                         </div>
                         <div className="justify-center hidden md:flex">
-                        <Image src={review_vector_icon} alt="/" />
+                          <Image src={review_vector_icon} alt="/" />
                         </div>
                       </div>
                     </div>

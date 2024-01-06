@@ -111,7 +111,7 @@ const HomeCarousel = () => {
 
         <div className="lg:w-[50%] md:w-[70%] w-[100%] lg:h-[100vh] absolute   top-0 z-30  flex text-white">
           <div className="flex flex-col justify-center gap-6 px-3 md:gap-10 lg:px-28 md:px-10">
-            <h1 className="mt-10  font-bold md:mt-16 lg:mt-0 text-[40px]">
+            <h1 className="mt-10  font-bold md:mt-16 lg:mt-0 text-[40px] lg:text-[90px] leading-tight">
               Explore the Unexplored!
             </h1>
             <span className="text-[16px]">
@@ -225,7 +225,7 @@ const HomeCarousel = () => {
                 <Image src={GREECE} alt="/" className="w-full" />
                 <div className="absolute w-full h-full bg-transparent top-0 hover:bg-[#000000a5] duration-500 p-5 flex flex-col items-center">
                   <div className="flex justify-start w-full">
-                    <span className=" text-white text-[23px]">GREECE</span>
+                    <span className=" text-white text-[23px] font-medium">GREECE</span>
                   </div>
 
                   <Link
@@ -247,7 +247,7 @@ const HomeCarousel = () => {
                 <Image src={AFRICA} alt="/" className="w-full" />
                 <div className="absolute w-full h-full bg-transparent top-0 hover:bg-[#000000a5] duration-500 p-5 flex flex-col items-center">
                   <div className="flex justify-start w-full">
-                    <span className=" text-white text-[23px]">AFRICA</span>
+                    <span className=" text-white text-[23px] font-medium">AFRICA</span>
                   </div>
 
                   <Link
@@ -269,7 +269,7 @@ const HomeCarousel = () => {
                 <Image src={FRANCE} alt="/" className="w-full" />
                 <div className="absolute w-full h-full bg-transparent top-0 hover:bg-[#000000a5] duration-500 p-5 flex flex-col items-center">
                   <div className="flex justify-start w-full">
-                    <span className=" text-white text-[23px]">FRENCH</span>
+                    <span className=" text-white text-[23px] font-medium">FRENCH</span>
                   </div>
                   
                   <Link
@@ -292,7 +292,7 @@ const HomeCarousel = () => {
                 <Image src={FRANCE} alt="/" className="w-full" />
                 <div className="absolute w-full h-full bg-transparent top-0 hover:bg-[#000000a5] duration-500 p-5 flex flex-col items-center">
                   <div className="flex justify-start w-full">
-                    <span className=" text-white text-[23px]">FRENCH2</span>
+                    <span className=" text-white text-[23px] font-medium">FRENCH2</span>
                   </div>
 
                   <Link

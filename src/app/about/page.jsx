@@ -14,14 +14,15 @@ import About_img2 from "../../assets/About_img2.png";
 
 import Bridge from "../../assets/nine_arch_bridge.svg";
 
-import { Swiper, SwiperSlide } from "swiper/react";
+
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay, Navigation } from "swiper/modules";
 
 import boy1 from "../../assets/boy1.svg";
 import girl from "../../assets/girl.svg";
@@ -207,11 +208,11 @@ const About = () => {
               </div>
 
               <div className="grid grid-cols-1 lg:grid-cols-2">
-                
+
                 <div className="flex flex-col items-center gap-5 p-5 text-center border-b lg:border-e">
-                  
+
                   <Image src={Apart_imag1} alt="/" className="" />
-                  
+
                   <h1 className="text-[23px] font-bold ">
                     Tailored Sri Lankan Adventures
                   </h1>
@@ -262,7 +263,7 @@ const About = () => {
                     luxury to your overall travel experience.
                   </p>
                 </div>
-                
+
               </div>
             </div>
           </Fade>
@@ -281,15 +282,27 @@ const About = () => {
               </div>
 
               {/* lg */}
-              <div className="hidden w-full lg:flex">
+              <div className="w-full">
                 <Swiper
+                  autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                  }}
+                  breakpoints={{
+                    480: {
+                      slidesPerView: 1,
+                    },
+                    768: {
+                      slidesPerView: 2,
+                    },
+                    1024: {
+                      slidesPerView: 3,
+                    }
+                  }}
+                  modules={[Pagination, Autoplay, Navigation]}
+                  loop={true}
+                  spaceBetween={20}
                   slidesPerView={3}
-                  spaceBetween={30}
-                  pagination={{
-                    clickable: true,
-                  }}
-                  modules={[Pagination]}
-                  className="grid grid-cols-3 mySwiper"
                 >
                   <SwiperSlide>
                     <div className="relative">
@@ -344,6 +357,28 @@ const About = () => {
                           <span className="text-sm">
                             Customer Experience Manager
                           </span>
+                          <div className="flex justify-between w-1/2 pt-2">
+                            <div className="">
+                              <Image src={FB} alt="/" className="w-6" />
+                            </div>
+                            <div className="">
+                              <Image src={Linkedin} alt="/" className="" />
+                            </div>
+                            <div className="">
+                              <Image src={Insta} alt="/" className="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="relative">
+                      <Image src={girl} alt="/" className="" />
+                      <div className="absolute top-0 left-0 flex items-end w-full h-full px-3 ">
+                        <div className="flex flex-col items-center w-full gap-2 p-3 bg-[#3E4095] text-white">
+                          <h1 className="font-bold ">Ms. Emerson Jane</h1>
+                          <span className="text-sm">Lead Travel Consultant</span>
                           <div className="flex justify-between w-1/2 pt-2">
                             <div className="">
                               <Image src={FB} alt="/" className="w-6" />
@@ -384,220 +419,14 @@ const About = () => {
                 </Swiper>
               </div>
 
-              {/* md */}
-              <div className="hidden w-full md:flex lg:hidden">
-                <Swiper
-                  slidesPerView={2}
-                  spaceBetween={30}
-                  pagination={{
-                    clickable: true,
-                  }}
-                  modules={[Pagination]}
-                  className="grid grid-cols-3 mySwiper"
-                >
-                  <SwiperSlide>
-                    <div className="relative">
-                      <Image src={boy1} alt="/" className="" />
-                      <div className="absolute top-0 left-0 flex items-end w-full h-full px-3 ">
-                        <div className="flex flex-col items-center w-full gap-2 p-3 bg-[#3E4095] text-white">
-                          <h1 className="font-bold ">Mr. Alexander Turner</h1>
-                          <span className="text-sm">Founder & CEO</span>
-                          <div className="flex justify-between w-1/2 pt-2">
-                            <div className="">
-                              <Image src={FB} alt="/" className="w-6" />
-                            </div>
-                            <div className="">
-                              <Image src={Linkedin} alt="/" className="" />
-                            </div>
-                            <div className="">
-                              <Image src={Insta} alt="/" className="" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="relative">
-                      <Image src={girl} alt="/" className="" />
-                      <div className="absolute top-0 left-0 flex items-end w-full h-full px-3 ">
-                        <div className="flex flex-col items-center w-full gap-2 p-3 bg-[#3E4095] text-white">
-                          <h1 className="font-bold ">Ms. Emerson Jane</h1>
-                          <span className="text-sm">Lead Travel Consultant</span>
-                          <div className="flex justify-between w-1/2 pt-2">
-                            <div className="">
-                              <Image src={FB} alt="/" className="w-6" />
-                            </div>
-                            <div className="">
-                              <Image src={Linkedin} alt="/" className="" />
-                            </div>
-                            <div className="">
-                              <Image src={Insta} alt="/" className="" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="relative">
-                      <Image src={boy2} alt="/" className="" />
-                      <div className="absolute top-0 left-0 flex items-end w-full h-full px-3 ">
-                        <div className="flex flex-col items-center w-full gap-2 p-3 bg-[#3E4095] text-white">
-                          <h1 className="font-bold ">Mr. Rahul Patel </h1>
-                          <span className="text-sm">
-                            Customer Experience Manager
-                          </span>
-                          <div className="flex justify-between w-1/2 pt-2">
-                            <div className="">
-                              <Image src={FB} alt="/" className="w-6" />
-                            </div>
-                            <div className="">
-                              <Image src={Linkedin} alt="/" className="" />
-                            </div>
-                            <div className="">
-                              <Image src={Insta} alt="/" className="" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="relative">
-                      <Image src={girl} alt="/" className="" />
-                      <div className="absolute top-0 left-0 flex items-end w-full h-full px-3 ">
-                        <div className="flex flex-col items-center w-full gap-2 p-3 bg-[#3E4095] text-white">
-                          <h1 className="font-bold ">Ms. Emerson Jane</h1>
-                          <span className="text-sm">Lead Travel Consultant</span>
-                          <div className="flex justify-between w-1/2 pt-2">
-                            <div className="">
-                              <Image src={FB} alt="/" className="w-6" />
-                            </div>
-                            <div className="">
-                              <Image src={Linkedin} alt="/" className="" />
-                            </div>
-                            <div className="">
-                              <Image src={Insta} alt="/" className="" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                </Swiper>
-              </div>
 
-              {/* sm */}
-              <div className="flex w-full md:hidden">
-                <Swiper
-                  slidesPerView={1}
-                  spaceBetween={30}
-                  pagination={{
-                    clickable: true,
-                  }}
-                  modules={[Pagination]}
-                  className="grid grid-cols-3 mySwiper md:hidden"
-                >
-                  <SwiperSlide>
-                    <div className="relative">
-                      <Image src={boy1} alt="/" className="" />
-                      <div className="absolute top-0 left-0 flex items-end w-full h-full px-3 ">
-                        <div className="flex flex-col items-center w-full gap-2 p-3 bg-[#3E4095] text-white">
-                          <h1 className="font-bold ">Mr. Alexander Turner</h1>
-                          <span className="text-sm">Founder & CEO</span>
-                          <div className="flex justify-between w-1/2 pt-2">
-                            <div className="">
-                              <Image src={FB} alt="/" className="w-6" />
-                            </div>
-                            <div className="">
-                              <Image src={Linkedin} alt="/" className="" />
-                            </div>
-                            <div className="">
-                              <Image src={Insta} alt="/" className="" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="relative">
-                      <Image src={girl} alt="/" className="" />
-                      <div className="absolute top-0 left-0 flex items-end w-full h-full px-3 ">
-                        <div className="flex flex-col items-center w-full gap-2 p-3 bg-[#3E4095] text-white">
-                          <h1 className="font-bold ">Ms. Emerson Jane</h1>
-                          <span className="text-sm">Lead Travel Consultant</span>
-                          <div className="flex justify-between w-1/2 pt-2">
-                            <div className="">
-                              <Image src={FB} alt="/" className="w-6" />
-                            </div>
-                            <div className="">
-                              <Image src={Linkedin} alt="/" className="" />
-                            </div>
-                            <div className="">
-                              <Image src={Insta} alt="/" className="" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="relative">
-                      <Image src={boy2} alt="/" className="" />
-                      <div className="absolute top-0 left-0 flex items-end w-full h-full px-3 ">
-                        <div className="flex flex-col items-center w-full gap-2 p-3 bg-[#3E4095] text-white">
-                          <h1 className="font-bold ">Mr. Rahul Patel </h1>
-                          <span className="text-sm">
-                            Customer Experience Manager
-                          </span>
-                          <div className="flex justify-between w-1/2 pt-2">
-                            <div className="">
-                              <Image src={FB} alt="/" className="w-6" />
-                            </div>
-                            <div className="">
-                              <Image src={Linkedin} alt="/" className="" />
-                            </div>
-                            <div className="">
-                              <Image src={Insta} alt="/" className="" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="relative">
-                      <Image src={girl} alt="/" className="" />
-                      <div className="absolute top-0 left-0 flex items-end w-full h-full px-3 ">
-                        <div className="flex flex-col items-center w-full gap-2 p-3 bg-[#3E4095] text-white">
-                          <h1 className="font-bold ">Ms. Emerson Jane</h1>
-                          <span className="text-sm">Lead Travel Consultant</span>
-                          <div className="flex justify-between w-1/2 pt-2">
-                            <div className="">
-                              <Image src={FB} alt="/" className="w-6" />
-                            </div>
-                            <div className="">
-                              <Image src={Linkedin} alt="/" className="" />
-                            </div>
-                            <div className="">
-                              <Image src={Insta} alt="/" className="" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                </Swiper>
-              </div>
             </div>
           </Fade>
 
           <Fade>
             <div className="flex flex-col items-center w-full gap-10 px-3 lg:px-28 md:px-10">
               <div className="flex flex-col items-center w-full gap-4 lg:w-2/3 ">
-                <h1 className="text-[33px] font-bold">
+                <h1 className="text-[33px] font-bold text-[#262626]">
                   Frequently Asked Questions (FAQ)
                 </h1>
                 <p className="text-[16px] text-center">
