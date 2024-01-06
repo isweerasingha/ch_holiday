@@ -5,7 +5,7 @@ const routes = {
 
     //tours
     ALL_TOUR_PACKAGES: "/tours",
-    TOUR_PACKAGE_MORE_INFO: "/tours/more_info",
+    TOUR_PACKAGE_MORE_INFO: "/tours/more_info/",
 
     //destinations
     ALL_DESTINATIONS: "/destination",

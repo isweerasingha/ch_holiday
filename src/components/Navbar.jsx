@@ -51,7 +51,11 @@ const Navbar = () => {
                 fill="white"
               />
             </svg>
-            <label className="text-[13px]">+94 78 875 5092</label>
+            <label className="text-[13px]">
+              <Link href="tel:+94788755092">
+              +94 78 875 5092
+              </Link>
+            </label>
           </div>
           |
           <div className="flex items-center gap-2 md:gap-3">
@@ -67,7 +71,11 @@ const Navbar = () => {
                 fill="white"
               />
             </svg>
-            <label className="text-[13px]">thecapitallanka@gmail.com</label>
+            <label className="text-[13px]">
+              <Link href="maitlto:thecapitallanka@gmail.com">
+              thecapitallanka@gmail.com
+              </Link>
+            </label>
           </div>
         </div>
         <div className="hidden gap-3 md:flex">

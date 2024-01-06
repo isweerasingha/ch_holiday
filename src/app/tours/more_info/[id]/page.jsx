@@ -2,12 +2,12 @@
 import { Fade } from "react-awesome-reveal";
 
 import Navbar from "@/components/Navbar";
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
-import hero from "../../../assets/tours_moreinfo_hero.png";
+import hero from "../../../../assets/tours_moreinfo_hero.png";
 import Footer from "@/components/Footer";
 
-import Arrow from "../../../assets/arrow_back_ios_new.png";
+import Arrow from "../../../../assets/arrow_back_ios_new.png";
 
 import { Tabs, rem } from "@mantine/core";
 
@@ -17,20 +17,15 @@ import { FaSackDollar } from "react-icons/fa6";
 import { MdSummarize } from "react-icons/md";
 import Tour_tab1 from "@/components/Tour_tab1";
 import Tour_tab2 from "@/components/Tour_tab2";
-import Tour_tab4 from "../../../components/Tour_tab4";
+import Tour_tab4 from "../../../../components/Tour_tab4";
 import Tour_tab3 from "@/components/Tour_tab3";
-
- 
-
 
 const TourMoreInfo = () => {
   const iconStyle = { width: rem(20), height: rem(20) };
 
   return (
     <div>
-
       <Navbar />
-
 
       <Fade>
         <div className="relative w-full">
@@ -114,7 +109,6 @@ const TourMoreInfo = () => {
 
         <Footer />
       </Fade>
-
     </div>
   );
 };

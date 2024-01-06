@@ -6,13 +6,6 @@ import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Couple from "../assets/couple.png";
 
-
-import PopularPackImg1 from "../assets/popularPack_img1.png";
-import PopularPackImg2 from "../assets/popularPack_img2.png";
-import PopularPackImg3 from "../assets/popularPack_img3.png";
-
-import PopularPackCard from "@/components/PopularPackCard";
-
 import Couple2 from "../assets/couple2.png";
 import LightHouse from "../assets/light_house.png";
 
@@ -32,11 +25,14 @@ import Footer from "@/components/Footer";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
+import Link from 'next/link';
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
+import routes from "@/constants/routes";
+import HomePopularPackages from "@/components/server/HomePopularPackages";
 
 // // import required modules
 
@@ -220,7 +216,7 @@ export default function Home() {
             </div>
 
             <div className="flex gap-4">
-              <button className="swiper-button-prev bg-[#3E4095] hover:bg-[#35367F] hover:cursor-pointer active:scale-105">
+              <button className="swiper-button-prev-home-packages bg-[#3E4095] hover:bg-[#35367F] hover:cursor-pointer active:scale-105">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="46"
@@ -246,7 +242,7 @@ export default function Home() {
                   </defs>
                 </svg>
               </button>
-              <button className="swiper-button-next bg-[#EB268F] hover:bg-[#C8207A] hover:cursor-pointer active:scale-105">
+              <button className="swiper-button-next-home-packages bg-[#EB268F] hover:bg-[#C8207A] hover:cursor-pointer active:scale-105">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="46"
@@ -275,75 +271,14 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex">
-            <Swiper
-              autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
-              }}
-              modules={[Autoplay, Navigation]}
-              loop={true}
-              navigation={{
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-              }}
-              slidesPerView={1}
-              spaceBetween={20}
-              breakpoints={{
-                768: {
-                  slidesPerView: 2,
-                },
-                1024: {
-                  slidesPerView: 3,
-                },
-              }}
-            >
-
-              <SwiperSlide>
-                <PopularPackCard
-                  Img={PopularPackImg1}
-                  Days={"3"}
-                  Location={"Galle, Sri Lanka"}
-                  Price={"$136"}
-                  Rate={"4.0 (24)"}
-                />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <PopularPackCard
-                  Img={PopularPackImg2}
-                  Days={"5"}
-                  Location={"Kandy, Sri Lanka"}
-                  Price={"$525"}
-                  Rate={"4.0 (24)"}
-                />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <PopularPackCard
-                  Img={PopularPackImg3}
-                  Days={"7"}
-                  Location={"Colombo, Sri Lanka"}
-                  Price={"$850"}
-                  Rate={"3.5 (18)"}
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <PopularPackCard
-                  Img={PopularPackImg3}
-                  Days={"7"}
-                  Location={"Colombo, Sri Lanka"}
-                  Price={"$850"}
-                  Rate={"3.5 (18)"}
-                />
-              </SwiperSlide>
-            </Swiper>
-          </div>
+          <HomePopularPackages/>
 
           <div className="flex justify-center w-full pt-12">
+            <Link href={routes.ALL_TOUR_PACKAGES}>
             <button className="bg-[#3E4095]  py-[17px]  px-[55px] uppercase text-white hover:bg-[#35367F] font-medium text-[16px]">
               View More Packages
             </button>
+            </Link>
           </div>
         </div>
 
@@ -550,9 +485,11 @@ export default function Home() {
                 Lanka the perfect one!
               </p>
               <div className="flex justify-start w-full ">
+              <Link href={routes.ALL_DESTINATIONS}>
                 <button className="bg-[#3E4095] lg:py-[17px] lg:px-[55px]  py-[10px] px-[20px] uppercase text-white hover:bg-[#35367F] font-medium text-[16px]">
                   View DESTINATIONS
                 </button>
+                </Link>
               </div>
             </div>
             <div className="flex items-center justify-center py-10 lg:py-0">
@@ -579,9 +516,11 @@ export default function Home() {
                   Pellentesque habitant morbi tristique senectus et netus.
                 </p>
                 <div>
+                <Link href={routes.CONTACT_US}>
                   <button className="bg-white lg:py-[17px] lg:px-[55px] font-bold py-[10px] px-[20px] text-[#3E4095] hover:bg-[#e6e6e6]  text-[16px] uppercase">
                     Contact Us
                   </button>
+                  </Link>
                 </div>
               </div>
               <div className="bg-[#ececf4] flex flex-col md:p-8 lg:p-16 p-6 justify-between">
