@@ -110,7 +110,7 @@ const HomeCarousel = () => {
 
         <div className="lg:w-[50%] md:w-[70%] w-[100%] lg:h-[100vh] absolute   top-0 z-30  flex text-white">
           <div className="flex flex-col justify-center gap-6 px-3 md:gap-10 lg:px-28 md:px-10">
-            <h1 className="mt-10  font-bold md:mt-16 lg:mt-0 text-[40px] lg:text-[90px] leading-tight">
+            <h1 className="mt-10 font-bold md:mt-16 lg:mt-0 text-[40px] lg:text-[65px] xl:text-[70px] 2xl:text-[90px] leading-tight">
               Explore the Unexplored!
             </h1>
             <span className="text-[16px]">
