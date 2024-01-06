@@ -333,21 +333,18 @@ const DestinationMoreInfo = () => {
                                     delay: 2500,
                                     disableOnInteraction: false,
                                   }}
+                                  slidesPerView={1}
+                                  spaceBetween={20}
                                   breakpoints={{
-                                    480: {
-                                      slidesPerView: 1,
-                                    },
                                     768: {
                                       slidesPerView: 2,
                                     },
                                     1024: {
                                       slidesPerView: 3,
-                                    }
+                                    },
                                   }}
                                   modules={[Pagination, Autoplay,Navigation]}
                                   loop={true}
-                                  spaceBetween={20}
-                                  slidesPerView={3}
                             >
 
                                 <SwiperSlide>
@@ -520,21 +517,18 @@ const DestinationMoreInfo = () => {
                                     delay: 2500,
                                     disableOnInteraction: false,
                                   }}
+                                  slidesPerView={1}
+                                  spaceBetween={20}
                                   breakpoints={{
-                                    480: {
-                                      slidesPerView: 1,
-                                    },
                                     768: {
                                       slidesPerView: 2,
                                     },
                                     1024: {
                                       slidesPerView: 3,
-                                    }
+                                    },
                                   }}
                                   modules={[Pagination, Autoplay,Navigation]}
                                   loop={true}
-                                  spaceBetween={20}
-                                  slidesPerView={3}
                             >
                                 <SwiperSlide>
                                     <div className='relative overflow-hidden group'>

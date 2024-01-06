@@ -287,18 +287,15 @@ export default function Home() {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
               }}
+              slidesPerView={1}
               spaceBetween={20}
-              slidesPerView={3}
               breakpoints={{
-                300: {
-                  slidesPerView: 1,
-                },
                 768: {
                   slidesPerView: 2,
                 },
                 1024: {
                   slidesPerView: 3,
-                }
+                },
               }}
             >
 

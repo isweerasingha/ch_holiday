@@ -14,9 +14,8 @@ import GREECE from "../../src/assets/greece.png";
 import AFRICA from "../../src/assets/africa.png";
 import FRANCE from "../../src/assets/france.png";
 
-
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay,Navigation } from "swiper/modules";
+import { Pagination, Autoplay, Navigation } from "swiper/modules";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -204,40 +203,38 @@ const HomeCarousel = () => {
               delay: 2500,
               disableOnInteraction: false,
             }}
+            slidesPerView={1}
+            spaceBetween={20}
             breakpoints={{
-              480: {
-                slidesPerView: 1,
-              },
               768: {
                 slidesPerView: 2,
               },
               1024: {
                 slidesPerView: 3,
-              }
+              },
             }}
-            modules={[Pagination, Autoplay,Navigation]}
+            modules={[Pagination, Autoplay, Navigation]}
             loop={true}
-            spaceBetween={20}
-            slidesPerView={3}
           >
             <SwiperSlide>
               <div className="relative flex justify-center overflow-hidden group">
                 <Image src={GREECE} alt="/" className="w-full" />
                 <div className="absolute w-full h-full bg-transparent top-0 hover:bg-[#000000a5] duration-500 p-5 flex flex-col items-center">
                   <div className="flex justify-start w-full">
-                    <span className=" text-white text-[23px] font-medium">GREECE</span>
+                    <span className=" text-white text-[23px] font-medium">
+                      GREECE
+                    </span>
                   </div>
 
                   <Link
-                  className="absolute flex justify-center w-full font-medium duration-300 -bottom-full group-hover:bottom-1"
-                  href={routes.DESTINATION_MORE_INFO}
-                >
-                  <button className="bg-transparent border-2 border-white w-[80%] lg:py-[17px] lg:px-[10px] py-[10px] px-[20px] uppercase text-white hover:bg-white hover:text-[#EB268F] font-medium absolute text-[13px] xl:text-[16px] -bottom-full group-hover:bottom-6 duration-300">
-                    VIEW DESTINATION
-                  </button>
-                </Link>
+                    className="absolute flex justify-center w-full font-medium duration-300 -bottom-full group-hover:bottom-1"
+                    href={routes.DESTINATION_MORE_INFO}
+                  >
+                    <button className="bg-transparent border-2 border-white w-[80%] lg:py-[17px] lg:px-[10px] py-[10px] px-[20px] uppercase text-white hover:bg-white hover:text-[#EB268F] font-medium absolute text-[13px] xl:text-[16px] -bottom-full group-hover:bottom-6 duration-300">
+                      VIEW DESTINATION
+                    </button>
+                  </Link>
                 </div>
- 
               </div>
             </SwiperSlide>
 
@@ -247,19 +244,20 @@ const HomeCarousel = () => {
                 <Image src={AFRICA} alt="/" className="w-full" />
                 <div className="absolute w-full h-full bg-transparent top-0 hover:bg-[#000000a5] duration-500 p-5 flex flex-col items-center">
                   <div className="flex justify-start w-full">
-                    <span className=" text-white text-[23px] font-medium">AFRICA</span>
+                    <span className=" text-white text-[23px] font-medium">
+                      AFRICA
+                    </span>
                   </div>
 
                   <Link
-                  className="absolute flex justify-center w-full font-medium duration-300 -bottom-full group-hover:bottom-1"
-                  href={routes.DESTINATION_MORE_INFO}
-                >
-                  <button className="bg-transparent border-2 border-white w-[80%] lg:py-[17px] lg:px-[10px] py-[10px] px-[20px] uppercase text-white hover:bg-white hover:text-[#EB268F] font-medium absolute text-[13px] xl:text-[16px] -bottom-full group-hover:bottom-6 duration-300">
-                    VIEW DESTINATION
-                  </button>
-                </Link>
+                    className="absolute flex justify-center w-full font-medium duration-300 -bottom-full group-hover:bottom-1"
+                    href={routes.DESTINATION_MORE_INFO}
+                  >
+                    <button className="bg-transparent border-2 border-white w-[80%] lg:py-[17px] lg:px-[10px] py-[10px] px-[20px] uppercase text-white hover:bg-white hover:text-[#EB268F] font-medium absolute text-[13px] xl:text-[16px] -bottom-full group-hover:bottom-6 duration-300">
+                      VIEW DESTINATION
+                    </button>
+                  </Link>
                 </div>
-
               </div>
             </SwiperSlide>
 
@@ -269,20 +267,20 @@ const HomeCarousel = () => {
                 <Image src={FRANCE} alt="/" className="w-full" />
                 <div className="absolute w-full h-full bg-transparent top-0 hover:bg-[#000000a5] duration-500 p-5 flex flex-col items-center">
                   <div className="flex justify-start w-full">
-                    <span className=" text-white text-[23px] font-medium">FRENCH</span>
+                    <span className=" text-white text-[23px] font-medium">
+                      FRENCH
+                    </span>
                   </div>
-                  
+
                   <Link
-                  className="absolute flex justify-center w-full font-medium duration-300 -bottom-full group-hover:bottom-1"
-                  href={routes.DESTINATION_MORE_INFO}
-                >
-                  <button className="bg-transparent border-2 border-white w-[80%] lg:py-[17px] lg:px-[10px] py-[10px] px-[20px] uppercase text-white hover:bg-white hover:text-[#EB268F] font-medium absolute text-[13px] xl:text-[16px] -bottom-full group-hover:bottom-6 duration-300">
-                    VIEW DESTINATION
-                  </button>
-                </Link>
-                
+                    className="absolute flex justify-center w-full font-medium duration-300 -bottom-full group-hover:bottom-1"
+                    href={routes.DESTINATION_MORE_INFO}
+                  >
+                    <button className="bg-transparent border-2 border-white w-[80%] lg:py-[17px] lg:px-[10px] py-[10px] px-[20px] uppercase text-white hover:bg-white hover:text-[#EB268F] font-medium absolute text-[13px] xl:text-[16px] -bottom-full group-hover:bottom-6 duration-300">
+                      VIEW DESTINATION
+                    </button>
+                  </Link>
                 </div>
-                
               </div>
             </SwiperSlide>
 
@@ -292,25 +290,24 @@ const HomeCarousel = () => {
                 <Image src={FRANCE} alt="/" className="w-full" />
                 <div className="absolute w-full h-full bg-transparent top-0 hover:bg-[#000000a5] duration-500 p-5 flex flex-col items-center">
                   <div className="flex justify-start w-full">
-                    <span className=" text-white text-[23px] font-medium">FRENCH2</span>
+                    <span className=" text-white text-[23px] font-medium">
+                      FRENCH2
+                    </span>
                   </div>
 
                   <Link
-                  className="absolute flex justify-center w-full font-medium duration-300 -bottom-full group-hover:bottom-1"
-                  href={routes.DESTINATION_MORE_INFO}
-                >
-                  <button className="bg-transparent border-2 border-white w-[80%] lg:py-[17px] lg:px-[10px] py-[10px] px-[20px] uppercase text-white hover:bg-white hover:text-[#EB268F] font-medium absolute text-[13px] xl:text-[16px] -bottom-full group-hover:bottom-6 duration-300">
-                    VIEW DESTINATION
-                  </button>
-                </Link>
-                
+                    className="absolute flex justify-center w-full font-medium duration-300 -bottom-full group-hover:bottom-1"
+                    href={routes.DESTINATION_MORE_INFO}
+                  >
+                    <button className="bg-transparent border-2 border-white w-[80%] lg:py-[17px] lg:px-[10px] py-[10px] px-[20px] uppercase text-white hover:bg-white hover:text-[#EB268F] font-medium absolute text-[13px] xl:text-[16px] -bottom-full group-hover:bottom-6 duration-300">
+                      VIEW DESTINATION
+                    </button>
+                  </Link>
                 </div>
-                
               </div>
             </SwiperSlide>
           </Swiper>
         </div>
-        
       </div>
     </>
   );
