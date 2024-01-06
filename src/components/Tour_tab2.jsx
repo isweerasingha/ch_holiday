@@ -127,8 +127,8 @@ const Tour_tab2 = () => {
                     <h1 className='text-2xl font-bold text-[#262626]'>Inclusions :</h1>
                     <div className='grid w-full grid-cols-1 gap-3 pt-6 md:gap-5 lg:pt-10 md:grid-cols-2'>
 
-                        {inclusions.map((inclusion) => (
-                            <div className='flex items-center gap-3'>
+                        {inclusions.map((inclusion,index) => (
+                            <div key={index} className='flex items-center gap-3'>
                                 <Image src={inclusion.img} alt='/' />
                                 <span>{inclusion.description}</span>
                             </div>
@@ -140,8 +140,8 @@ const Tour_tab2 = () => {
                 <div className='flex flex-col px-3 lg:px-28 md:px-10'>
                     <h1 className='text-2xl font-bold text-[#262626]'>Exclusions :</h1>
                     <div className='grid w-full grid-cols-1 gap-3 pt-6 md:gap-5 lg:pt-10 md:grid-cols-2'>
-                    {exclusions.map((exclusion) => (
-                            <div className='flex items-center gap-3'>
+                    {exclusions.map((exclusion,index) => (
+                            <div key={index} className='flex items-center gap-3'>
                                 <Image src={exclusion.img} alt='/' />
                                 <span>{exclusion.description}</span>
                             </div>
