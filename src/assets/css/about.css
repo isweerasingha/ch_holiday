@@ -1,0 +1,13 @@
+/* Swiper */
+
+.swiper-pagination {
+    position: relative !important;
+    margin-top: 20px;
+}
+
+.swiper-pagination-bullet {
+    width: 30px !important;
+    height: 10px !important;
+    background-color: #3E4095;
+    border-radius: 0px !important;
+}

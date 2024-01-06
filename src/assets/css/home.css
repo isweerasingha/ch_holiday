@@ -1,0 +1,25 @@
+/* Swiper */
+
+.swiper-pagination {
+    position: absolute !important;
+    left: 97% !important;
+    top: 40% !important;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    --swiper-pagination-bullet-inactive-opacity: 0.4;
+    width: 13px;
+    height: 13px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    outline: 1px solid white;
+    outline-offset: 4px;
+}

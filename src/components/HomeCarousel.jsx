@@ -21,6 +21,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import routes from "@/constants/routes";
+import "../assets/css/home.css";
 
 const HomeCarousel = () => {
   const [scrolling, setScrolling] = useState(false);
@@ -49,7 +50,6 @@ const HomeCarousel = () => {
         }`}
       >
         <Swiper
-          direction={"horizontal"}
           pagination={{
             clickable: true,
           }}

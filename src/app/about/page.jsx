@@ -14,8 +14,6 @@ import About_img2 from "../../assets/About_img2.png";
 
 import Bridge from "../../assets/nine_arch_bridge.svg";
 
-
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -43,6 +41,7 @@ import Apart_imag1 from "../../assets/Apart_imag1.svg";
 import Apart_imag2 from "../../assets/Apart_imag2.svg";
 import Apart_imag3 from "../../assets/Apart_imag3.svg";
 import Apart_imag4 from "../../assets/Apart_imag4.svg";
+import "../../assets/css/about.css";
 
 const About = () => {
   const [opened1, setOpened1] = useState(false);
@@ -126,7 +125,6 @@ const About = () => {
 
         {/*  */}
         <div className="flex flex-col w-full gap-10 py-10 lg:gap-20 lg:py-20">
-
           <Fade>
             <div className="grid w-full grid-cols-1 px-3 md:grid-cols-2 lg:px-28 md:px-10">
               <div className="flex items-center justify-center">
@@ -134,8 +132,8 @@ const About = () => {
               </div>
               <div className="flex flex-col justify-center gap-6 md:pl-10 xl:pl-20">
                 <h1 className="md:text-[33px] text-[28px] font-bold">
-                  Welcome to CH Asian Holidays, your gateway to unforgettable travel
-                  experiences in the beautiful island of Sri Lanka.{" "}
+                  Welcome to CH Asian Holidays, your gateway to unforgettable
+                  travel experiences in the beautiful island of Sri Lanka.{" "}
                 </h1>
                 <p className="text-[13px] text-justify">
                   We are a passionate team dedicated to curating exceptional
@@ -158,12 +156,13 @@ const About = () => {
                 </h1>
                 <p className="text-[13px] text-justify">
                   At CH Asian Holidays, we believe that travel is not just about
-                  reaching a destination but about the experiences that shape your
-                  journey. Founded in the heart of Sri Lanka, our team consists of
-                  seasoned travel enthusiasts who are committed to providing you
-                  with personalized and seamless travel solutions. We take pride in
-                  showcasing the best of Sri Lanka, ensuring that every moment of
-                  your vacation is filled with joy and discovery.
+                  reaching a destination but about the experiences that shape
+                  your journey. Founded in the heart of Sri Lanka, our team
+                  consists of seasoned travel enthusiasts who are committed to
+                  providing you with personalized and seamless travel solutions.
+                  We take pride in showcasing the best of Sri Lanka, ensuring
+                  that every moment of your vacation is filled with joy and
+                  discovery.
                 </p>
               </div>
 
@@ -175,7 +174,11 @@ const About = () => {
 
           <Fade>
             <div className="relative w-full ">
-              <Image src={Bridge} alt="/" className="w-full h-[50vh] md:h-full" />
+              <Image
+                src={Bridge}
+                alt="/"
+                className="w-full h-[50vh] md:h-full"
+              />
               <div className="absolute top-0 left-0 w-full h-full bg-[#000000b6] flex justify-center items-center text-white px-3 lg:px-28 md:px-10 py-3">
                 <div className="flex flex-col items-center w-full gap-4 md:w-2/3 ">
                   <h1 className="md:text-[33px] text-[28px] font-bold">
@@ -183,12 +186,12 @@ const About = () => {
                   </h1>
                   <p className="text-[16px] text-center">
                     Our vision is to be the preferred travel partner for those
-                    seeking authentic and immersive experiences in Sri Lanka. We aim
-                    to redefine travel by creating tailor-made itineraries that
-                    reflect the unique interests and preferences of our clients.
-                    Whether you are a solo traveler, a couple on a romantic getaway,
-                    or a family seeking adventure, we strive to turn your travel
-                    dreams into reality.
+                    seeking authentic and immersive experiences in Sri Lanka. We
+                    aim to redefine travel by creating tailor-made itineraries
+                    that reflect the unique interests and preferences of our
+                    clients. Whether you are a solo traveler, a couple on a
+                    romantic getaway, or a family seeking adventure, we strive
+                    to turn your travel dreams into reality.
                   </p>
                 </div>
               </div>
@@ -200,27 +203,26 @@ const About = () => {
               <div className="flex flex-col items-center w-full gap-4 md:w-2/3 ">
                 <h1 className="text-[33px] font-bold">What Sets Us Apart</h1>
                 <p className="text-[16px] text-center">
-                  At CH Asian Holidays, we take pride in our distinctive approach to
-                  travel, setting us apart as your premier choice for exploring Sri
-                  Lanka. Discover the elements that make your journey with us
-                  extraordinary.
+                  At CH Asian Holidays, we take pride in our distinctive
+                  approach to travel, setting us apart as your premier choice
+                  for exploring Sri Lanka. Discover the elements that make your
+                  journey with us extraordinary.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 lg:grid-cols-2">
-
                 <div className="flex flex-col items-center gap-5 p-5 text-center border-b lg:border-e">
-
                   <Image src={Apart_imag1} alt="/" className="" />
 
                   <h1 className="text-[23px] font-bold ">
                     Tailored Sri Lankan Adventures
                   </h1>
                   <p className="text-[16px] text-center">
-                    Explore the wonders of Sri Lanka with our thoughtfully curated
-                    tour packages. Immerse yourself in the cultural richness,
-                    historical marvels, and natural beauty of this tropical paradise
-                    with personalized itineraries designed to suit your preferences.
+                    Explore the wonders of Sri Lanka with our thoughtfully
+                    curated tour packages. Immerse yourself in the cultural
+                    richness, historical marvels, and natural beauty of this
+                    tropical paradise with personalized itineraries designed to
+                    suit your preferences.
                   </p>
                 </div>
 
@@ -230,23 +232,25 @@ const About = () => {
                     Global Odyssey Expeditions
                   </h1>
                   <p className="text-[16px] text-center">
-                    Venture beyond borders with CH Asian Holidays and discover the
-                    world&apos;s most iconic destinations. Our international tour
-                    packages offer a diverse range of experiences, from exploring
-                    historical landmarks to basking on exotic beaches, ensuring you
-                    create memories that span continents.
+                    Venture beyond borders with CH Asian Holidays and discover
+                    the world&apos;s most iconic destinations. Our international
+                    tour packages offer a diverse range of experiences, from
+                    exploring historical landmarks to basking on exotic beaches,
+                    ensuring you create memories that span continents.
                   </p>
                 </div>
 
                 <div className="flex flex-col items-center gap-5 p-5 text-center border-b lg:border-t lg:border-e lg:border-b-0">
                   <Image src={Apart_imag3} alt="/" className="" />
-                  <h1 className="text-[23px] font-bold">Expertly Guided Tours</h1>
+                  <h1 className="text-[23px] font-bold">
+                    Expertly Guided Tours
+                  </h1>
                   <p className="text-[16px] text-center">
-                    Benefit from the knowledge and passion of our experienced guides
-                    who accompany you on every journey. Our professional team is
-                    dedicated to providing insights into the local culture, history,
-                    and attractions, enhancing your travel experience with engaging
-                    and informative guidance.
+                    Benefit from the knowledge and passion of our experienced
+                    guides who accompany you on every journey. Our professional
+                    team is dedicated to providing insights into the local
+                    culture, history, and attractions, enhancing your travel
+                    experience with engaging and informative guidance.
                   </p>
                 </div>
 
@@ -257,13 +261,12 @@ const About = () => {
                   </h1>
                   <p className="text-[16px] text-center">
                     {" "}
-                    Enjoy a touch of indulgence during your travels with CH Asian
-                    Holidays. We partner with premium hotels and resorts, ensuring
-                    that your stay is not only comfortable but also adds a touch of
-                    luxury to your overall travel experience.
+                    Enjoy a touch of indulgence during your travels with CH
+                    Asian Holidays. We partner with premium hotels and resorts,
+                    ensuring that your stay is not only comfortable but also
+                    adds a touch of luxury to your overall travel experience.
                   </p>
                 </div>
-
               </div>
             </div>
           </Fade>
@@ -273,11 +276,12 @@ const About = () => {
               <div className="flex flex-col items-center w-full gap-4 md:w-2/3 ">
                 <h1 className="text-[33px] font-bold">Our Team Members</h1>
                 <p className="text-[16px] text-center">
-                  Discover the faces behind CH Asian Holidays, a team united by a
-                  shared love for travel and a commitment to crafting unforgettable
-                  journeys. Meet the passionate individuals dedicated to ensuring
-                  every step of your adventure, from planning to execution, is
-                  infused with enthusiasm and professionalism.
+                  Discover the faces behind CH Asian Holidays, a team united by
+                  a shared love for travel and a commitment to crafting
+                  unforgettable journeys. Meet the passionate individuals
+                  dedicated to ensuring every step of your adventure, from
+                  planning to execution, is infused with enthusiasm and
+                  professionalism.
                 </p>
               </div>
 
@@ -300,6 +304,9 @@ const About = () => {
                   }}
                   modules={[Pagination, Autoplay, Navigation]}
                   loop={true}
+                  pagination={{
+                    clickable: true,
+                  }}
                 >
                   <SwiperSlide>
                     <div className="relative">
@@ -329,7 +336,9 @@ const About = () => {
                       <div className="absolute top-0 left-0 flex items-end w-full h-full px-3 ">
                         <div className="flex flex-col items-center w-full gap-2 p-3 bg-[#3E4095] text-white">
                           <h1 className="font-bold ">Ms. Emerson Jane</h1>
-                          <span className="text-sm">Lead Travel Consultant</span>
+                          <span className="text-sm">
+                            Lead Travel Consultant
+                          </span>
                           <div className="flex justify-between w-1/2 pt-2">
                             <div className="">
                               <Image src={FB} alt="/" className="w-6" />
@@ -375,7 +384,9 @@ const About = () => {
                       <div className="absolute top-0 left-0 flex items-end w-full h-full px-3 ">
                         <div className="flex flex-col items-center w-full gap-2 p-3 bg-[#3E4095] text-white">
                           <h1 className="font-bold ">Ms. Emerson Jane</h1>
-                          <span className="text-sm">Lead Travel Consultant</span>
+                          <span className="text-sm">
+                            Lead Travel Consultant
+                          </span>
                           <div className="flex justify-between w-1/2 pt-2">
                             <div className="">
                               <Image src={FB} alt="/" className="w-6" />
@@ -397,7 +408,9 @@ const About = () => {
                       <div className="absolute top-0 left-0 flex items-end w-full h-full px-3 ">
                         <div className="flex flex-col items-center w-full gap-2 p-3 bg-[#3E4095] text-white">
                           <h1 className="font-bold ">Ms. Emerson Jane</h1>
-                          <span className="text-sm">Lead Travel Consultant</span>
+                          <span className="text-sm">
+                            Lead Travel Consultant
+                          </span>
                           <div className="flex justify-between w-1/2 pt-2">
                             <div className="">
                               <Image src={FB} alt="/" className="w-6" />
@@ -415,8 +428,6 @@ const About = () => {
                   </SwiperSlide>
                 </Swiper>
               </div>
-
-
             </div>
           </Fade>
 
@@ -428,8 +439,8 @@ const About = () => {
                 </h1>
                 <p className="text-[16px] text-center">
                   Explore answers to commonly asked questions about booking,
-                  customization, inclusions, and more. Find the information you need
-                  to plan your perfect journey with CH Asian Holidays.
+                  customization, inclusions, and more. Find the information you
+                  need to plan your perfect journey with CH Asian Holidays.
                 </p>
               </div>
 
@@ -624,8 +635,8 @@ const About = () => {
                           <div className="flex gap-3">
                             <Image src={Rectangle} alt="/" />
                             <span>
-                              Secure online payment options are available through
-                              our website.
+                              Secure online payment options are available
+                              through our website.
                             </span>
                           </div>
                           <div className="flex gap-3">
@@ -673,15 +684,15 @@ const About = () => {
                           <div className="flex gap-3">
                             <Image src={Rectangle} alt="/" />
                             <span>
-                              Refer to our terms and conditions for information on
-                              cancellations.
+                              Refer to our terms and conditions for information
+                              on cancellations.
                             </span>
                           </div>
                           <div className="flex gap-3">
                             <Image src={Rectangle} alt="/" />
                             <span>
-                              Cancellation policies may vary based on the type of
-                              tour and time of cancellation.
+                              Cancellation policies may vary based on the type
+                              of tour and time of cancellation.
                             </span>
                           </div>
                         </div>
@@ -779,9 +790,9 @@ const About = () => {
                           <div className="flex gap-3">
                             <Image src={Rectangle} alt="/" />
                             <span>
-                              We strive to offer comfortable and reputable lodging
-                              options suitable for different preferences and
-                              budgets.
+                              We strive to offer comfortable and reputable
+                              lodging options suitable for different preferences
+                              and budgets.
                             </span>
                           </div>
                         </div>
@@ -822,8 +833,8 @@ const About = () => {
                           <div className="flex gap-3">
                             <Image src={Rectangle} alt="/" />
                             <span>
-                              Yes, transportation is generally included in our tour
-                              packages.
+                              Yes, transportation is generally included in our
+                              tour packages.
                             </span>
                           </div>
                           <div className="flex gap-3">
@@ -878,8 +889,8 @@ const About = () => {
                           <div className="flex gap-3">
                             <Image src={Rectangle} alt="/" />
                             <span>
-                              Ensure you check visa requirements well in advance of
-                              your travel dates.
+                              Ensure you check visa requirements well in advance
+                              of your travel dates.
                             </span>
                           </div>
                         </div>
@@ -920,15 +931,15 @@ const About = () => {
                           <div className="flex gap-3">
                             <Image src={Rectangle} alt="/" />
                             <span>
-                              Travel insurance is not automatically included but can
-                              be arranged upon request.
+                              Travel insurance is not automatically included but
+                              can be arranged upon request.
                             </span>
                           </div>
                           <div className="flex gap-3">
                             <Image src={Rectangle} alt="/" />
                             <span>
-                              It is advisable to have comprehensive travel insurance
-                              for your journey.
+                              It is advisable to have comprehensive travel
+                              insurance for your journey.
                             </span>
                           </div>
                         </div>
@@ -946,7 +957,8 @@ const About = () => {
                         >
                           <div className="flex items-center gap-5">
                             <h1 className="font-bold text-[23px]">
-                              11. What safety measures are in place during tours?
+                              11. What safety measures are in place during
+                              tours?
                             </h1>
                           </div>
 
@@ -969,8 +981,8 @@ const About = () => {
                           <div className="flex gap-3">
                             <Image src={Rectangle} alt="/" />
                             <span>
-                              Your safety is our priority. Our tours adhere to local
-                              regulations and safety standards.
+                              Your safety is our priority. Our tours adhere to
+                              local regulations and safety standards.
                             </span>
                           </div>
                           <div className="flex gap-3">
@@ -997,8 +1009,8 @@ const About = () => {
                         >
                           <div className="flex items-center gap-5">
                             <h1 className="font-bold text-[23px]">
-                              12. How can I contact CH Asian Holidays for further
-                              assistance?
+                              12. How can I contact CH Asian Holidays for
+                              further assistance?
                             </h1>
                           </div>
 
@@ -1021,15 +1033,16 @@ const About = () => {
                           <div className="flex gap-3">
                             <Image src={Rectangle} alt="/" />
                             <span>
-                              Visit our &apos;Contact Us&apos; page for phone numbers, email
-                              addresses, and our physical address.
+                              Visit our &apos;Contact Us&apos; page for phone
+                              numbers, email addresses, and our physical
+                              address.
                             </span>
                           </div>
                           <div className="flex gap-3">
                             <Image src={Rectangle} alt="/" />
                             <span>
-                              Our customer support team is available to assist you
-                              with any queries or concerns.
+                              Our customer support team is available to assist
+                              you with any queries or concerns.
                             </span>
                           </div>
                         </div>
@@ -1040,7 +1053,6 @@ const About = () => {
               </div>
             </div>
           </Fade>
-
         </div>
 
         <Footer />
