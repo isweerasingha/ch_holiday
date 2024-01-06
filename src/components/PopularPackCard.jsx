@@ -11,6 +11,8 @@ const PopularPackCard = ({ Img, Days, Location, Price, Rate }) => {
         <div className="relative flex flex-col">
           <div className="relative w-full overflow-hidden group">
             <Image
+              width={100}
+              height={50}
               src={Img}
               alt="/"
               className="w-full duration-300 group-hover:scale-110"

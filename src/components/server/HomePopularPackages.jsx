@@ -14,8 +14,10 @@ import PopularPackImg3 from "../../assets/popularPack_img3.png";
 import PopularPackImg4 from "../../assets/popularPack_img4.png";
 import PopularPackImg5 from "../../assets/popularPack_img5.png";
 import PopularPackImg6 from "../../assets/popularPack_img6.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import routes from "@/constants/routes";
+import http from "@/services/http";
+import apiRoutes from "@/constants/apiRoutes";
 
 const tours = [
   {
@@ -69,7 +71,22 @@ const tours = [
 ];
 
 const HomePopularPackages = () => {
-  const [tourPackages, setTourPackages] = useState(tours);
+  const [tourPackages, setTourPackages] = useState([]);
+
+  useEffect(() => {
+    fetchPackages();
+  }, []);
+
+  const fetchPackages = async () => {
+    try {
+      const response = await http().get(apiRoutes.LIST_TOUR_PACKAGES);
+      console.log("Tour Packages", response.data);
+      setTourPackages(response.data);
+    } catch (err) {
+      console.log("Error fetching Tour", err);
+    }
+  };
+
   return (
     <>
       <Swiper
@@ -94,18 +111,18 @@ const HomePopularPackages = () => {
           },
         }}
       >
-        {tourPackages.map((tour) => (
-          <Link key={tour.id} href={routes.TOUR_PACKAGE_MORE_INFO + tour.id}>
-            <SwiperSlide>
+        {tourPackages?.map((tour, index) => (
+          <SwiperSlide key={index}>
+            <Link href={routes.TOUR_PACKAGE_MORE_INFO + tour.id}>
               <PopularPackCard
-                Img={tour.image}
+                Img={tour.image.original}
                 Days={tour.days}
                 Location={tour.location}
                 Price={tour.price}
                 Rate={tour.rate}
               />
-            </SwiperSlide>
-          </Link>
+            </Link>
+          </SwiperSlide>
         ))}
       </Swiper>
     </>
