@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import Link from "next/link";
-
+import { Loader, Skeleton } from "@mantine/core";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
@@ -71,7 +71,7 @@ const tours = [
 ];
 
 const HomePopularPackages = () => {
-  const [tourPackages, setTourPackages] = useState([]);
+  const [tourPackages, setTourPackages] = useState();
 
   useEffect(() => {
     fetchPackages();
@@ -89,42 +89,55 @@ const HomePopularPackages = () => {
 
   return (
     <>
-      <Swiper
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        modules={[Autoplay, Navigation]}
-        loop={true}
-        navigation={{
-          nextEl: ".swiper-button-next-home-packages",
-          prevEl: ".swiper-button-prev-home-packages",
-        }}
-        slidesPerView={1}
-        spaceBetween={20}
-        breakpoints={{
-          768: {
-            slidesPerView: 2,
-          },
-          1024: {
-            slidesPerView: 3,
-          },
-        }}
-      >
-        {tourPackages?.map((tour, index) => (
-          <SwiperSlide key={index}>
-            <Link href={routes.TOUR_PACKAGE_MORE_INFO + tour.id}>
-              <PopularPackCard
-                Img={tour.image.original}
-                Days={tour.days}
-                Location={tour.location}
-                Price={tour.price}
-                Rate={tour.rate}
-              />
-            </Link>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      {tourPackages ? (
+        <Swiper
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay, Navigation]}
+          loop={true}
+          navigation={{
+            nextEl: ".swiper-button-next-home-packages",
+            prevEl: ".swiper-button-prev-home-packages",
+          }}
+          slidesPerView={1}
+          spaceBetween={20}
+          breakpoints={{
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
+        >
+          {tourPackages?.map((tour, index) => (
+            <SwiperSlide key={index}>
+              <Link href={routes.TOUR_PACKAGE_MORE_INFO + tour.id}>
+                <PopularPackCard
+                  Img={tour.image.original}
+                  Days={tour.days}
+                  Location={tour.location}
+                  Price={tour.price}
+                  Rate={tour.rate}
+                />
+              </Link>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      ) : (
+        <div className="w-full lg:py-10 flex flex-col lg:flex-row gap-10">
+          {[1, 2, 3].map(() => (
+            <div className="w-full lg:w-1/3">
+              <Skeleton height={50} circle mb="xl" />
+              <Skeleton height={8} radius="xl" />
+              <Skeleton height={8} mt={6} radius="xl" />
+              <Skeleton height={8} mt={6} width="70%" radius="xl" />
+            </div>
+          ))}
+        </div>
+      )}
     </>
   );
 };

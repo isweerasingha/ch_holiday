@@ -92,9 +92,7 @@ const Tours = () => {
           </div>
         </div>
 
-        <div className="grid w-full grid-cols-1 gap-3 px-3 py-10 lg:gap-10 md:grid-cols-3 lg:py-20 lg:px-28 md:px-10">
-          <TourPackages />
-        </div>
+        <TourPackages />
 
         <Footer />
       </Fade>

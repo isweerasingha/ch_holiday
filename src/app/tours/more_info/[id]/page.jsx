@@ -6,7 +6,7 @@ import Image from "next/image";
 import hero from "../../../../assets/tours_moreinfo_hero.png";
 import Footer from "@/components/Footer";
 import Arrow from "../../../../assets/arrow_back_ios_new.png";
-import { Loader, Tabs, rem } from "@mantine/core";
+import { Loader, Skeleton, Tabs, rem } from "@mantine/core";
 import { HiBriefcase } from "react-icons/hi";
 import { FaArrowUpFromGroundWater } from "react-icons/fa6";
 import { FaSackDollar } from "react-icons/fa6";
@@ -119,8 +119,13 @@ const TourMoreInfo = ({ params }) => {
           </div>
         </Fade>
       ) : (
-        <div className="w-full h-screen ld:h-dvh flex justify-center items-center">
-          <Loader color="dark" size={40} />
+        <div className="w-full py-24 px-5 lg:px-10">
+          <Skeleton height={100} circle mb="xl" />
+          <Skeleton height={15} radius="sm" mb="sm" />
+          <Skeleton height={15} radius="sm" mb="sm" />
+          <Skeleton height={15} radius="sm" mb="sm" />
+          <Skeleton height={15} radius="sm" mb="sm" />
+          <Skeleton height={15} width="70%" radius="sm" />
         </div>
       )}
 

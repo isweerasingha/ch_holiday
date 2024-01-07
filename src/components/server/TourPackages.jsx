@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import Link from "next/link";
-
+import { Loader, Skeleton } from "@mantine/core";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
@@ -71,7 +71,7 @@ const tours = [
 ];
 
 const TourPackages = () => {
-  const [tourPackages, setTourPackages] = useState([]);
+  const [tourPackages, setTourPackages] = useState();
 
   useEffect(() => {
     fetchPackages();
@@ -89,17 +89,32 @@ const TourPackages = () => {
 
   return (
     <>
-      {tourPackages?.map((tour, index) => (
-        <Link key={index} href={routes.TOUR_PACKAGE_MORE_INFO + tour.id}>
-          <PopularPackCard
-            Img={tour.image.original}
-            Days={tour.days}
-            Location={tour.location}
-            Price={tour.price}
-            Rate={tour.rate}
-          />
-        </Link>
-      ))}
+      {tourPackages ? (
+        <div className="grid w-full grid-cols-1 gap-3 px-3 py-10 lg:gap-10 md:grid-cols-3 lg:py-20 lg:px-28 md:px-10">
+          {tourPackages.map((tour, index) => (
+            <Link key={index} href={routes.TOUR_PACKAGE_MORE_INFO + tour.id}>
+              <PopularPackCard
+                Img={tour.image.original}
+                Days={tour.days}
+                Location={tour.location}
+                Price={tour.price}
+                Rate={tour.rate}
+              />
+            </Link>
+          ))}
+        </div>
+      ) : (
+        <div className="grid w-full grid-cols-1 lg:grid-cols-3 gap-20 py-24 px-10">
+          {[1, 2, 3,4,5,6].map(() => (
+            <div className="w-full">
+              <Skeleton height={50} circle mb="xl" />
+              <Skeleton height={8} radius="xl" />
+              <Skeleton height={8} mt={6} radius="xl" />
+              <Skeleton height={8} mt={6} width="70%" radius="xl" />
+            </div>
+          ))}
+        </div>
+      )}
     </>
   );
 };
