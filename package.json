@@ -27,6 +27,8 @@
     "swiper": "^11.0.5"
   },
   "devDependencies": {
+    "@types/node": "20.10.6",
+    "@types/react": "18.2.47",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
