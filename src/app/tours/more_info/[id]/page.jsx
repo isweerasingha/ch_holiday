@@ -24,7 +24,7 @@ const TourMoreInfo = ({ params }) => {
 
   useEffect(() => {
     fetchTourData();
-  }, [tourData]);
+  }, [fetchTourData]);
 
   const fetchTourData = async () => {
     try {

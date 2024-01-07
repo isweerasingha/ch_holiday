@@ -128,8 +128,8 @@ const HomePopularPackages = () => {
         </Swiper>
       ) : (
         <div className="w-full lg:py-10 flex flex-col lg:flex-row gap-10">
-          {[1, 2, 3].map(() => (
-            <div className="w-full lg:w-1/3">
+          {[1, 2, 3].map((index) => (
+            <div className="w-full lg:w-1/3" key={index}>
               <Skeleton height={50} circle mb="xl" />
               <Skeleton height={8} radius="xl" />
               <Skeleton height={8} mt={6} radius="xl" />
