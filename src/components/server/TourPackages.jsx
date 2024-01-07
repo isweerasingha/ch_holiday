@@ -105,8 +105,8 @@ const TourPackages = () => {
         </div>
       ) : (
         <div className="grid w-full grid-cols-1 lg:grid-cols-3 gap-20 py-24 px-10">
-          {[1, 2, 3,4,5,6].map(() => (
-            <div className="w-full">
+          {[1, 2, 3,4,5,6].map((index) => (
+            <div className="w-full" key={index}>
               <Skeleton height={50} circle mb="xl" />
               <Skeleton height={8} radius="xl" />
               <Skeleton height={8} mt={6} radius="xl" />
