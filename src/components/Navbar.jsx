@@ -178,7 +178,7 @@ const Navbar = () => {
           <Link href={routes.HOME}>
             <Image
               src={Logo}
-              alt="Description of your image"
+              alt="ch_holiday_logo"
               className="w-32 lg:w-56 md:w-36"
             />
           </Link>
