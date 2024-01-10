@@ -188,7 +188,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="w-full py-[36px] text-center text-white bg-[#3E4095] px-3">
+      <div className="w-full py-[20px] text-center text-white bg-[#3E4095] px-3">
         <span>
           Copyright © 2023 CH Asian Holidays. All Rights Reserved. | Developed
           By Mindcode Digital Solutions (Pvt) Ltd{" "}

@@ -36,7 +36,7 @@ const Navbar = () => {
   return (
     <div className={`z-50 flex flex-col w-full   poppin_font `}>
       {/*  */}
-      <div className="flex justify-between bg-[#3E4095] w-full lg:px-28 md:px-5 px-3 text-white py-3 ">
+      <div className="flex justify-between bg-[#3E4095] w-full lg:px-28 md:px-5 px-3 text-white py-2 ">
         <div className="flex items-center gap-2 md:gap-5">
           <div className="flex items-center gap-2 md:gap-3">
             <svg
@@ -79,11 +79,11 @@ const Navbar = () => {
           </div>
         </div>
         <div className="hidden gap-3 md:flex">
-          <div className="bg-[#EB268F] p-1 flex justify-center items-center lg:w-10 lg:h-10 md:w-8 md:h-8 hover:bg-[#bc4283] hover:cursor-pointer">
+          <div className="bg-[#EB268F] p-1 flex justify-center items-center   md:w-8 md:h-8 hover:bg-[#bc4283] hover:cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
+              width="28"
+              height="28"
               viewBox="0 0 32 32"
               fill="none"
             >
@@ -93,11 +93,11 @@ const Navbar = () => {
               />
             </svg>
           </div>
-          <div className="bg-[#EB268F] p-1 flex justify-center items-center lg:w-10 lg:h-10 md:w-8 md:h-8 hover:bg-[#bc4283] hover:cursor-pointer">
+          <div className="bg-[#EB268F] p-1 flex justify-center items-center  md:w-8 md:h-8 hover:bg-[#bc4283] hover:cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="20"
+              height="20"
               viewBox="0 0 24 24"
               fill="none"
             >
@@ -119,11 +119,11 @@ const Navbar = () => {
               />
             </svg>
           </div>
-          <div className="bg-[#EB268F] p-1 flex justify-center items-center lg:w-10 lg:h-10 md:w-8 md:h-8 hover:bg-[#bc4283] hover:cursor-pointer">
+          <div className="bg-[#EB268F] p-1 flex justify-center items-center md:w-8 md:h-8 hover:bg-[#bc4283] hover:cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="20"
+              height="20"
               viewBox="0 0 24 24"
               fill="none"
             >
@@ -142,11 +142,11 @@ const Navbar = () => {
               </defs>
             </svg>
           </div>
-          <div className="bg-[#EB268F] p-1 flex justify-center items-center lg:w-10 lg:h-10 md:w-8 md:h-8 hover:bg-[#bc4283] hover:cursor-pointer">
+          <div className="bg-[#EB268F] p-1 flex justify-center items-center md:w-8 md:h-8 hover:bg-[#bc4283] hover:cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="20"
+              height="20"
               viewBox="0 0 24 24"
               fill="none"
             >
