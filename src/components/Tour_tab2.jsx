@@ -133,7 +133,7 @@ const Tour_tab2 = () => {
                                 <span>{inclusion.description}</span>
                             </div>
                         ))}
-
+                        
                     </div>
                 </div>
 
