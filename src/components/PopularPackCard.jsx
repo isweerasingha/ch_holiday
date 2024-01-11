@@ -4,7 +4,7 @@ import { Fade } from "react-awesome-reveal";
 import React from "react";
 import Image from "next/image";
 
-const PopularPackCard = ({ Img, Days, Location, Price, Rate }) => {
+const PopularPackCard = ({ Img, Days, Location, Price, Rate,Title }) => {
   return (
     <div>
       <Fade>
@@ -22,7 +22,7 @@ const PopularPackCard = ({ Img, Days, Location, Price, Rate }) => {
             <div className="flex justify-between gap-3">
               <div className="flex flex-col items-start w-3/5 gap-3 pr-2 border-e-2">
                 <span className="text-start">
-                  Sri Lanka Tour Package {Days} Days | Private Tour
+                  {Title}
                 </span>
                 <div className="flex items-center gap-3">
                   <svg

@@ -49,7 +49,7 @@ const Tour_tab1 = ({ tourData }) => {
     <div className="w-full">
       <Fade>
         <div className="grid grid-cols-1 px-3 pb-10 md:grid-cols-2 lg:px-28 md:px-10">
-          <Image src={Img1} alt="/" />
+          <Image src={tourData.images[0].original} alt="/" width={500} height={100}/>
           <div className="flex items-center justify-center py-6 md:py-0 lg:px-20 md:px-6">
             <div className="flex flex-col w-full gap-3 lg:gap-5">
               <h1 className="text-2xl font-bold lg:text-4xl text-[#262626]">

@@ -95,6 +95,7 @@ const TourPackages = () => {
             <Link key={index} href={routes.TOUR_PACKAGE_MORE_INFO + tour.id}>
               <PopularPackCard
                 Img={tour.image.original}
+                Title={tour.headerTitle}
                 Days={tour.days}
                 Location={tour.location}
                 Price={tour.price}
@@ -105,7 +106,7 @@ const TourPackages = () => {
         </div>
       ) : (
         <div className="grid w-full grid-cols-1 lg:grid-cols-3 gap-20 py-24 px-10">
-          {[1, 2, 3,4,5,6].map((index) => (
+          {[1, 2, 3, 4, 5, 6].map((index) => (
             <div className="w-full" key={index}>
               <Skeleton height={50} circle mb="xl" />
               <Skeleton height={8} radius="xl" />

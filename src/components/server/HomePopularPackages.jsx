@@ -117,6 +117,7 @@ const HomePopularPackages = () => {
               <Link href={routes.TOUR_PACKAGE_MORE_INFO + tour.id}>
                 <PopularPackCard
                   Img={tour.image.original}
+                  Title={tour.headerTitle}
                   Days={tour.days}
                   Location={tour.location}
                   Price={tour.price}
